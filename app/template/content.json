@@ -1,0 +1,161 @@
+{ 
+	"pages" : {
+		"1" : {
+			"title" : "О компании",
+			"link" : "about.html"
+		},
+
+		"2" : {
+			"title" : "Сотрудничество",
+			"link" : "partners.html"
+		},
+
+		"3" : {
+			"title" : "Проекты",
+			"link" : "project.html"
+		},
+
+		"4" : {
+			"title" : "Оплата и доставка",
+			"link" : "orders.html"
+		},
+
+		"5" : {
+			"title" : "Контакты",
+			"link" : "contacts.html"
+		},
+
+		"6" : {
+			"title" : "Акции",
+			"link" : "action.html"
+		}		
+	},
+
+	"slider" : {
+		"1" : {
+			"title" : "Безграничные возможности",
+			"desc" : "в выборе освещения представлены для вас в нашем каталоге",
+			"links" : "#",
+			"image" : "img/main/slider/6.jpg"
+		},
+
+		"2" : {
+			"title" : "Сложный проект?",
+			"desc" : "наши специалисты подберут для вас светильники любой конфигурации",
+			"links" : "#",
+			"image" : "img/main/slider/5.jpg"
+		},
+
+		"3" : {
+			"title" : "Уникальные светильники",
+			"desc" : "для гостиниц, торговых центров, офисов",
+			"links" : "#",
+			"image" : "img/main/slider/3.jpg"
+		},
+
+		"4" : {
+			"title" : "Модная коллекция дизайнерских бра",
+			"desc" : " ",
+			"links" : "#",
+			"image" : "img/main/slider/4.jpg"
+		}
+		,
+
+		"5" : {
+			"title" : "Уникальный стиль",
+			"desc" : "Новая коллекция потолочных светильников",
+			"links" : "#",
+			"image" : "img/main/slider/1.jpg"
+		}
+	},
+
+	"news" : {
+		"1" : {
+			"title" : "Туры на Кипр",
+			"text" : "Lorem ipsum dlilor sit dioilewioru amet, consectetur adiuyipiswiiing elit, sertyid do eitusimod teiimpor incididdwwyunt ut lyuaytboiire et doloqre magyrrwreqna airyloiqua. Ut enim ad minrtyiim veniiiam, sit uiiiuis nostrud exercitaiition dolor ullamco laboris nisi ut.",
+			"image" : "img/news/1.jpg",
+			"dates" : "27/05/12"
+		},
+
+		"2" : {
+			"title" : "Туры в Болгарию",
+			"text" : "Lorem ipsum dlilor sit dioilewioru amet, consectetur adiuyipiswiiing elit, sertyid do eitusimod teiimpor incididdwwyunt ut lyuaytboiire et doloqre magyrrwreqna airyloiqua. Ut enim ad minrtyiim veniiiam, sit uiiiuis nostrud exercitaiition dolor ullamco laboris nisi ut.",
+			"image" : "img/news/2.jpg",
+			"dates" : "27/07/12"
+		},
+
+		"3" : {
+			"title" : "Туры в Египет",
+			"text" : "Lorem ipsum dlilor sit dioilewioru amet, consectetur adiuyipiswiiing elit, sertyid do eitusimod teiimpor incididdwwyunt ut lyuaytboiire et doloqre magyrrwreqna airyloiqua. Ut enim ad minrtyiim veniiiam, sit uiiiuis nostrud exercitaiition dolor ullamco laboris nisi ut.",
+			"image" : "img/news/3.jpg",
+			"dates" : "27/09/12"
+		}
+	},
+
+	"products" : {
+		"1" : {
+			"products_title" : "Светильник потолочный подвесной",
+			"image" : "img/main/goods/4af2d2f0f57de6b9c65371a645d79fad.jpg",
+			"articul" : "SV00001775",
+			"old_price" : " ",
+			"price" : "9 000"
+		},
+
+		"2" : {
+			"products_title" : "Светильник потолочный подвесной",
+			"image" : "img/main/goods/4af2d2f0f57de6b9c65371a645d79fad.jpg",
+			"articul" : "SV00001793",
+			"old_price" : "11 000",
+			"price" : "19 000"
+		},
+
+		"3" : {
+			"products_title" : "Светильник потолочный подвесной",
+			"image" : "img/main/goods/4af2d2f0f57de6b9c65371a645d79fad.jpg",
+			"articul" : "SV00001789",
+			"old_price" : "10 000",
+			"price" : "9 000"
+		},
+
+		"4" : {
+			"products_title" : "Светильник потолочный подвесной",
+			"image" : "img/main/goods/4af2d2f0f57de6b9c65371a645d79fad.jpg",
+			"articul" : "SV00001799",
+			"old_price" : " ",
+			"price" : "13 000"
+		},
+
+		"5" : {
+			"products_title" : "Светильник потолочный подвесной",
+			"image" : "img/main/goods/4af2d2f0f57de6b9c65371a645d79fad.jpg",
+			"articul" : "SV00001796",
+			"old_price" : "11 000",
+			"price" : "9 000"
+		},
+
+		"6" : {
+			"products_title" : "Светильник потолочный подвесной",
+			"image" : "img/main/goods/4af2d2f0f57de6b9c65371a645d79fad.jpg",
+			"articul" : "SV00001793",
+			"old_price" : "11 000",
+			"price" : "9 000"
+		},
+
+		"7" : {
+			"products_title" : "Светильник потолочный подвесной",
+			"image" : "img/main/goods/4af2d2f0f57de6b9c65371a645d79fad.jpg",
+			"articul" : "SV00001798",
+			"old_price" : " ",
+			"price" : "9 000"
+		},
+
+		"8" : {
+			"products_title" : "Светильник потолочный подвесной",
+			"image" : "img/main/goods/4af2d2f0f57de6b9c65371a645d79fad.jpg",
+			"articul" : "SV00001793",
+			"old_price" : "11 000",
+			"price" : "9 000"
+		}
+
+	}
+}
