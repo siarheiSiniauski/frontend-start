@@ -77,7 +77,7 @@ gulp.task('browser-sync', function() {
 });
 
 gulp.task('sass', function() {
-	return gulp.src('app/sass/**/*.sass')
+	return gulp.src('app/style/**/*.sass')
 	.pipe(plumber())
 	.pipe(sass({outputStyle: 'expand'})
 	.on('error', notify.onError(function(err){
