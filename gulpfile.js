@@ -184,4 +184,3 @@ gulp.task('watch', function() {
 
 gulp.task('default', gulp.parallel('watch', 'pug', 'code', 'sass', 'js', 'browser-sync'));
 gulp.task('build', gulp.series('clean:build', gulp.parallel('imagemin', 'sass', 'js', 'copy:htaccess', 'copy:html', 'copy:css', 'copy:js', 'copy:fonts')));
-
