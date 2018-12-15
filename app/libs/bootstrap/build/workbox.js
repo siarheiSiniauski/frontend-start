@@ -1,3 +1,10 @@
+/*!
+ * Script to generate our docs service worker.
+ * Copyright 2017-2018 The Bootstrap Authors
+ * Copyright 2017-2018 Twitter, Inc.
+ * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
+ */
+
 'use strict'
 
 const fs = require('fs')
@@ -9,7 +16,7 @@ const buildPrefix = '_gh_pages/'
 
 const workboxSWSrcPath = require.resolve('workbox-sw')
 const wbFileName = path.basename(workboxSWSrcPath)
-const workboxSWDestPath = `${buildPrefix}assets/js/vendor/${wbFileName}`
+const workboxSWDestPath = `${buildPrefix}docs/4.1/assets/js/vendor/${wbFileName}`
 const workboxSWSrcMapPath = `${workboxSWSrcPath}.map`
 const workboxSWDestMapPath = `${workboxSWDestPath}.map`
 
