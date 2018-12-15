@@ -48,7 +48,6 @@ gulp.task('browser-sync', function() {
 // Скрипты проекта
 gulp.task('pug', function() {
 	// var locals = require('app/template/content.json');
-
 	gulp.src(paths.pug.src)
 		.pipe(plumber())
 		.pipe(pug({
@@ -62,6 +61,11 @@ gulp.task('pug', function() {
 		})))
 		.pipe(gulp.dest(paths.pug.dist))
 		.pipe(browserSync.reload({stream: true}))
+});
+
+gulp.task('code', function() {
+	return gulp.src(paths.pug.src)
+	.pipe(browserSync.reload({ stream: true }))
 });
 
 gulp.task('sass', function() {
@@ -173,9 +177,11 @@ gulp.task('clearcache', function () { return cache.clearAll(); });
 
 gulp.task('watch', function() {
 	gulp.watch(paths.pug.watch, gulp.parallel('pug'));
+	gulp.watch(paths.pug.watch, gulp.parallel('code'));
 	gulp.watch(paths.sass.watch, gulp.parallel('sass'));
 	gulp.watch(['libs/**/*.js', 'app/js/common.js'], gulp.parallel('js'));
 });
 
-gulp.task('default', gulp.parallel('watch', 'pug','sass', 'js', 'browser-sync'));
+gulp.task('default', gulp.parallel('watch', 'pug', 'code', 'sass', 'js', 'browser-sync'));
 gulp.task('build', gulp.series('clean:build', gulp.parallel('imagemin', 'sass', 'js', 'copy:htaccess', 'copy:html', 'copy:css', 'copy:js', 'copy:fonts')));
+
