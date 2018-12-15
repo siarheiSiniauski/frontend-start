@@ -173,7 +173,7 @@ gulp.task('clearcache', function () { return cache.clearAll(); });
 
 gulp.task('watch', function() {
 	gulp.watch(paths.pug.watch, gulp.parallel('pug'));
-	gulp.watch(paths.pug.watch, gulp.parallel('sass'));
+	gulp.watch(paths.sass.watch, gulp.parallel('sass'));
 	gulp.watch(['libs/**/*.js', 'app/js/common.js'], gulp.parallel('js'));
 });
 
