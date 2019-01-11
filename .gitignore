@@ -1,9 +1,9 @@
-node_modules/
-production/
-.git/
+/node_modules/
+/production/
+/.git/
 yarn.lock/
-app/css/
-app/js/
+/app/css/
+/app/js/
 package-lock.json/
 /**/_backstage
 /**/Thumbs.db
