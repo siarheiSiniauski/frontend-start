@@ -17,19 +17,6 @@ var gulp           = require('gulp'),
 		rsync          = require('gulp-rsync');
 
 // Пользовательские скрипты проекта
-var paths = {
-	pug : {
-		src : 'app/template/pages/*.pug',
-		watch : 'app/template/**/*.pug',
-		dist : 'app/'
-	},
-	sass : {
-		src : 'app/style/**/*.sass',
-		watch : 'app/style/**/*.sass',
-		dist : 'app/css'
-	}
-}
-
 gulp.task('clean:build', function() {
 	return del('production');
 });
@@ -45,13 +32,10 @@ gulp.task('browser-sync', function() {
 	});
 });
 
-// Скрипты проекта
 gulp.task('pug', function() {
-	// var locals = require('app/template/content.json');
-	gulp.src(paths.pug.src)
+	return gulp.src("app/template/pages/*.pug")
 		.pipe(plumber())
 		.pipe(pug({
-			// locals : locals,
 			pretty: true,
 		}).on('error', notify.onError(function(err){
 			return {
@@ -59,17 +43,13 @@ gulp.task('pug', function() {
 				message: err.message
 			};
 		})))
-		.pipe(gulp.dest(paths.pug.dist))
+		.pipe(gulp.dest("app/"))
 		.pipe(browserSync.reload({stream: true}))
 });
 
-gulp.task('code', function() {
-	return gulp.src(paths.pug.src)
-	.pipe(browserSync.reload({ stream: true }))
-});
 
 gulp.task('sass', function() {
-	return gulp.src(paths.sass.src)
+	return gulp.src('app/style/**/*.sass')
 	.pipe(plumber())
 	.pipe(sass({outputStyle: 'expand'})
 	.on('error', notify.onError(function(err){
@@ -81,26 +61,19 @@ gulp.task('sass', function() {
 	.pipe(rename({suffix: '.min', prefix : ''}))
 	.pipe(autoprefixer(['last 15 versions']))
 	.pipe(cleanCSS()) // Опционально, закомментировать при отладке
-	.pipe(gulp.dest(paths.sass.dist))
+	.pipe(gulp.dest('app/css/'))
 	.pipe(browserSync.reload({stream: true}));
 });
 
-gulp.task('common-js', function() {
-	return gulp.src([
-		'app/js/common.js',
-		])
-	.pipe(concat('common.min.js'))
-	.pipe(uglify())
-	.pipe(gulp.dest('app/js'));
-});
 
-gulp.task('js', gulp.parallel('common-js'), function() {
+
+gulp.task('scripts', function() {
 	return gulp.src([
 		'app/libs/jquery/dist/jquery.min.js',
-		'app/js/common.min.js', // Всегда в конце
+		'app/js/common.js', // Всегда в конце
 		])
 	.pipe(concat('app.min.js'))
-	// .pipe(uglify()) // Минимизировать весь js (на выбор)
+	//.pipe(uglify()) // Минимизировать весь js (на выбор)
 	.pipe(gulp.dest('app/js'))
 	.pipe(browserSync.reload({stream: true}));
 });
@@ -176,11 +149,10 @@ gulp.task('rsync', function() {
 gulp.task('clearcache', function () { return cache.clearAll(); });
 
 gulp.task('watch', function() {
-	gulp.watch(paths.pug.watch, gulp.parallel('pug'));
-	gulp.watch(paths.pug.watch, gulp.parallel('code'));
-	gulp.watch(paths.sass.watch, gulp.parallel('sass'));
-	gulp.watch(['libs/**/*.js', 'app/js/common.js'], gulp.parallel('js'));
+	gulp.watch('app/template/**/*.pug', gulp.parallel('pug'));
+	gulp.watch('app/style/**/*.sass', gulp.parallel('sass'));
+	gulp.watch(['libs/**/*.js', 'app/js/common.js'], gulp.parallel('scripts'));
 });
 
-gulp.task('default', gulp.parallel('watch', 'pug', 'code', 'sass', 'js', 'browser-sync'));
-gulp.task('build', gulp.series('clean:build', gulp.parallel('imagemin', 'sass', 'js', 'copy:htaccess', 'copy:html', 'copy:css', 'copy:js', 'copy:fonts')));
+gulp.task('default', gulp.parallel('watch', 'pug', 'sass', 'scripts','browser-sync'));
+gulp.task('build', gulp.series('clean:build', gulp.parallel('imagemin', 'sass', 'scripts', 'copy:htaccess', 'copy:html', 'copy:css', 'copy:js', 'copy:fonts')));
