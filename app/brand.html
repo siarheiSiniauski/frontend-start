@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <title> Производители 
+    </title>
+    <meta name="description" content="">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <meta property="og:image" content="path/to/image.jpg">
+    <link rel="shortcut icon" href="img/favicon/favicon.ico" type="image/x-icon">
+    <link rel="apple-touch-icon" href="img/favicon/apple-touch-icon.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="img/favicon/apple-touch-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="img/favicon/apple-touch-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="img/favicon/apple-touch-icon-180x180.png">
+    <link href="http://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!-- Chrome, Firefox OS and Opera-->
+    <meta name="theme-color" content="#000">
+    <!-- Windows Phone-->
+    <meta name="msapplication-navbutton-color" content="#000">
+    <!-- iOS Safari-->
+    <meta name="apple-mobile-web-app-status-bar-style" content="#000">
+  </head>
+  <body class="page-header-fixed page-sidebar-fixed">
+    <!-- Custom Jade-->
+    <div class="page-content">
+      <header id="header">
+        <div class="header-left">
+          <div class="navbar-header"><a class="navbar-brand" href="/"><img class="logo" src="img/logo-white.png" alt="brand logo"></a></div>
+        </div>
+        <div class="header-right">
+          <div class="navbar navbar-toolbar">
+            <div class="navbar-minimize-mobile left hidden-lg hidden-md hidden-sm"><a href="javascript:void(0);"><i class="fa fa-bars"></i></a></div>
+            <ul class="nav navbar-nav navbar-left">
+              <li class="navbar-minimize"><a href="javascript:void(0);" title="Minimize sidebar"><i class="fa fa-bars"></i></a></li>
+            </ul>
+            <ul class="nav navbar-nav navbar-right">
+              <li class="dropdown navbar-order"><a class="dropdown-toggle" href="#"><i class="fa fa-shopping-cart"></i><span class="circle count label label-danger">7</span></a></li>
+              <li class="dropdown navbar-message"><a class="dropdown-toggle" href="#" data-toggle="dropdown"><i class="fa fa-envelope-o"></i><span class="circle count label label-danger">7   </span></a></li>
+              <li class="dropdown navbar-logout"><a class="dropdown-toggle" href="page-signin.html"><i class="fa fa-sign-out"></i>Logout</a></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <aside class="sidebar-circle" id="sidebar-left">
+        <ul class="sidebar-menu">
+          <li><a href="/"><span class="icon"><i class="fa fa-home"></i></span><span class="text">Заказы</span><span class="label label-danger pull-right">60</span></a></li>
+          <li class="submenu active"><a href="javascript:void(0);"><span class="icon"><i class="fa fa-television"></i></span><span class="text">Товары</span><span class="arrow"> </span></a>
+            <ul>
+              <li><a href="products.html">Все товары</a></li>
+              <li><a href="product-edit.html">Добавить товар</a></li>
+              <li><a href="kit.html">Комплекты</a></li>
+            </ul>
+          </li>
+          <li class="submenu"><a href="javascript:void(0);"><span class="icon"><i class="fa fa-list"></i></span><span class="text">Категории </span><span class="arrow"></span></a>
+            <ul>
+              <li><a href="category.html">Все категории</a></li>
+              <li><a href="category-edit.html">Добавить категорию</a></li>
+            </ul>
+          </li>
+          <li class="submenu"><a href="javascript:void(0);"><span class="icon"><i class="fa fa-sliders"></i></span><span class="text">Характеристики и атрибуты</span><span class="arrow"></span></a>
+            <ul>
+              <li><a href="characteristics.html">Все Характеристики</a></li>
+              <li><a href="characteristics-edit.html">Добавить характеристику</a></li>
+            </ul>
+          </li>
+          <li class="submenu"><a href="javascript:void(0);"><span class="icon"><i class="fa fa-amazon"></i></span><span class="text">Производители</span><span class="arrow"></span></a>
+            <ul>
+              <li><a href="brand.html">Все производители</a></li>
+              <li><a href="brand-edit.html">Добавить производителя</a></li>
+            </ul>
+          </li>
+          <li><a href="users.html"><span class="icon"><i class="fa fa-users"></i></span><span class="text">Покупатели</span></a></li>
+          <li class="submenu"><a href="javascript:void(0);"><span class="icon"><i class="fa fa-car"></i></span><span class="text">Доставка</span><span class="arrow"></span></a>
+            <ul>
+              <li><a href="delivery.html">Все способы доставки</a></li>
+              <li><a href="delivery-edit.html">Добавить способ доставки</a></li>
+            </ul>
+          </li>
+          <li class="submenu"><a href="javascript:void(0);"><span class="icon"><i class="fa fa-credit-card"></i></span><span class="text">Оплата</span><span class="arrow"></span></a>
+            <ul>
+              <li><a href="payments.html">Все способы оплаты</a></li>
+              <li><a href="payments-edit.html">Добавить способ оплаты</a></li>
+            </ul>
+          </li>
+          <li class="submenu"><a href="#"><span class="icon"><i class="fa fa-file-text-o"></i></span><span class="text">Выгрузки XML  </span></a></li>
+          <li class="submenu"><a href="javascript:void(0);"><span class="icon"><i class="fa fa-usd"></i></span><span class="text">Курсы валют</span><span class="arrow"></span></a>
+            <ul>
+              <li><a href="exchange.html">Все курсы валют</a></li>
+              <li><a href="exchange-edit.html">Добавить курс</a></li>
+            </ul>
+          </li>
+          <li class="submenu"><a href="javascript:void(0);"><span class="icon"><i class="fa fa-file-o"></i></span><span class="text">Статьи</span><span class="arrow"></span></a>
+            <ul>
+              <li><a href="articles.html">Все статьи</a></li>
+              <li><a href="article-edit.html">Добавить статью</a></li>
+            </ul>
+          </li>
+          <li class="submenu"><a href="javascript:void(0);"><span class="icon"><i class="fa fa-newspaper-o"></i></span><span class="text">Новости</span><span class="arrow"></span></a>
+            <ul>
+              <li><a href="news.html">Все новости</a></li>
+              <li><a href="news-edit.html">Добавить новость</a></li>
+            </ul>
+          </li>
+          <li class="submenu"><a href="javascript:void(0);"><span class="icon"><i class="fa fa-share"></i></span><span class="text">Сниппеты</span><span class="arrow"></span></a>
+            <ul>
+              <li><a href="#">Сниппеты услуги</a></li>
+              <li><a href="#">Сниппеты категории</a></li>
+            </ul>
+          </li>
+          <li class="submenu"><a href="javascript:void(0);"><span class="icon"><i class="fa fa-file-image-o"></i></span><span class="text">Баннеры</span><span class="arrow"></span></a>
+            <ul>
+              <li><a href="banners.html">Все баннеры</a></li>
+              <li><a href="banners-edit.html">Добавить банер</a></li>
+            </ul>
+          </li>
+          <li class="submenu"><a href="#"><span class="icon"><i class="fa fa-cogs"></i></span><span class="text">Настройки</span></a></li>
+        </ul>
+      </aside>
+      <section id="page-content">
+        <div class="header-content">
+          <h2>Производители </h2>
+          <div class="breadcrumb-wrapper hidden-xs">
+            <ol class="breadcrumb">
+              <li><i class="fa fa-home"></i><a href="/">Главная</a><i class="fa fa-angle-right"></i></li>
+              <li class="active">Производители </li>
+            </ol>
+          </div>
+        </div>
+        <div class="body-content">
+          <div class="row">
+            <div class="col-md-12">
+              <div class="panel panel-success shadow">
+                <div class="panel-heading">
+                  <h3 class="panel-title">Список производителей</h3>
+                </div>
+                <div class="panel-body no-padding">
+                  <div class="list">
+                    <ul class="list__wrap">
+                      <li class="list__item">
+                        <div class="list__info"> 
+                          <div class="list__img"><img class="img-circle img-responsive" src="img/avatar/4.png" alt="Daddy Botak"></div><a class="list__link" href="brand-edit.html">Бренд 1</a>
+                        </div>
+                        <div class="list__action"> 
+                          <div class="list__id"> <small>id:</small>900                </div>
+                          <div class="list__btn"><a class="btn btn-danger btn-xs" href="#" data-toggle="tooltip" data-placement="top" data-original-title="Удалить"><i class="fa fa-times"> </i></a></div>
+                        </div>
+                      </li>
+                      <li class="list__item">
+                        <div class="list__info">  
+                          <div class="list__img"><img class="img-circle img-responsive" src="img/avatar/4.png" alt="Daddy Botak"></div><a class="list__link" href="brand-edit.html">Бренд 1</a>
+                        </div>
+                        <div class="list__action"> 
+                          <div class="list__id"> <small>id:</small>900                 </div>
+                          <div class="list__btn"><a class="btn btn-danger btn-xs" href="#" data-toggle="tooltip" data-placement="top" data-original-title="Удалить"><i class="fa fa-times"> </i></a></div>
+                        </div>
+                      </li>
+                      <li class="list__item">
+                        <div class="list__info"> 
+                          <div class="list__img"><img class="img-circle img-responsive" src="img/avatar/4.png" alt="Daddy Botak"></div><a class="list__link" href="brand-edit.html">Бренд 1</a>
+                        </div>
+                        <div class="list__action"> 
+                          <div class="list__id"> <small>id:</small>900                 </div>
+                          <div class="list__btn"><a class="btn btn-danger btn-xs" href="#" data-toggle="tooltip" data-placement="top" data-original-title="Удалить"><i class="fa fa-times"> </i></a></div>
+                        </div>
+                      </li>
+                      <li class="list__item">
+                        <div class="list__info"> 
+                          <div class="list__img"><img class="img-circle img-responsive" src="img/avatar/4.png" alt="Daddy Botak"></div><a class="list__link" href="brand-edit.html">Бренд 1</a>
+                        </div>
+                        <div class="list__action"> 
+                          <div class="list__id"> <small>id:</small>900                 </div>
+                          <div class="list__btn"><a class="btn btn-danger btn-xs" href="#" data-toggle="tooltip" data-placement="top" data-original-title="Удалить"><i class="fa fa-times"></i></a></div>
+                        </div>
+                      </li>
+                      <li class="list__item">
+                        <div class="list__info"> 
+                          <div class="list__img"><img class="img-circle img-responsive" src="img/avatar/4.png" alt="Daddy Botak"></div><a class="list__link" href="brand-edit.html">Бренд 1 </a>
+                        </div>
+                        <div class="list__action"> 
+                          <div class="list__id"> <small>id:</small>900                 </div>
+                          <div class="list__btn"><a class="btn btn-danger btn-xs" href="#" data-toggle="tooltip" data-placement="top" data-original-title="Удалить"><i class="fa fa-times"> </i></a></div>
+                        </div>
+                      </li>
+                      <li class="list__item">
+                        <div class="list__info">  
+                          <div class="list__img"><img class="img-circle img-responsive" src="img/avatar/4.png" alt="Daddy Botak"></div><a class="list__link" href="brand-edit.html">Бренд 1 </a>
+                        </div>
+                        <div class="list__action">
+                          <div class="list__id"> <small>id:</small>900                 </div>
+                          <div class="list__btn"><a class="btn btn-danger btn-xs" href="#" data-toggle="tooltip" data-placement="top" data-original-title="Удалить"><i class="fa fa-times"> </i></a></div>
+                        </div>
+                      </li>
+                      <li class="list__item">
+                        <div class="list__info"> 
+                          <div class="list__img"><img class="img-circle img-responsive" src="img/avatar/4.png" alt="Daddy Botak"></div><a class="list__link" href="brand-edit.html">Бренд 1</a>
+                        </div>
+                        <div class="list__action">
+                          <div class="list__id"> <small>id:</small>900                  </div>
+                          <div class="list__btn"><a class="btn btn-danger btn-xs" href="#" data-toggle="tooltip" data-placement="top" data-original-title="Удалить"><i class="fa fa-times">                 </i></a></div>
+                        </div>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <footer class="footer-content">
+          <div class="pull-right"> <span id="tour-19">2014 - <span id="copyright-year"></span></span></div>
+          <div class="clearfix"></div>
+        </footer>
+      </section>
+    </div>
+    <link rel="stylesheet" href="css/app.min.css">
+    <script src="js/app.min.js" async></script>
+  </body>
+</html>

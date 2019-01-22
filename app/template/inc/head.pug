@@ -1,0 +1,31 @@
+header#header
+  .header-left
+    
+
+    .navbar-header
+      a.navbar-brand(href='/')
+        img.logo(src='img/logo-white.png', alt='brand logo')
+
+  .header-right
+    .navbar.navbar-toolbar
+      .navbar-minimize-mobile.left.hidden-lg.hidden-md.hidden-sm
+        a(href='javascript:void(0);')
+          i.fa.fa-bars
+      ul.nav.navbar-nav.navbar-left
+        li.navbar-minimize
+          a(href='javascript:void(0);', title='Minimize sidebar')
+            i.fa.fa-bars
+      ul.nav.navbar-nav.navbar-right
+        li.dropdown.navbar-order
+          a.dropdown-toggle(href='#')
+            i.fa.fa-shopping-cart
+            span.circle.count.label.label-danger 7
+        li.dropdown.navbar-message
+          a.dropdown-toggle(href='#', data-toggle='dropdown')
+            i.fa.fa-envelope-o
+            span.circle.count.label.label-danger 7   
+       
+        li.dropdown.navbar-logout
+          a(href='page-signin.html').dropdown-toggle
+            i.fa.fa-sign-out
+            | Logout

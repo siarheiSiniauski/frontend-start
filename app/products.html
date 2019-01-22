@@ -1,0 +1,1129 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <title> Товары
+    </title>
+    <meta name="description" content="">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <meta property="og:image" content="path/to/image.jpg">
+    <link rel="shortcut icon" href="img/favicon/favicon.ico" type="image/x-icon">
+    <link rel="apple-touch-icon" href="img/favicon/apple-touch-icon.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="img/favicon/apple-touch-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="img/favicon/apple-touch-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="img/favicon/apple-touch-icon-180x180.png">
+    <link href="http://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!-- Chrome, Firefox OS and Opera-->
+    <meta name="theme-color" content="#000">
+    <!-- Windows Phone-->
+    <meta name="msapplication-navbutton-color" content="#000">
+    <!-- iOS Safari-->
+    <meta name="apple-mobile-web-app-status-bar-style" content="#000">
+  </head>
+  <body class="page-header-fixed page-sidebar-fixed">
+    <!-- Custom Jade-->
+    <div class="page-content">
+      <header id="header">
+        <div class="header-left">
+          <div class="navbar-header"><a class="navbar-brand" href="/"><img class="logo" src="img/logo-white.png" alt="brand logo"></a></div>
+        </div>
+        <div class="header-right">
+          <div class="navbar navbar-toolbar">
+            <div class="navbar-minimize-mobile left hidden-lg hidden-md hidden-sm"><a href="javascript:void(0);"><i class="fa fa-bars"></i></a></div>
+            <ul class="nav navbar-nav navbar-left">
+              <li class="navbar-minimize"><a href="javascript:void(0);" title="Minimize sidebar"><i class="fa fa-bars"></i></a></li>
+            </ul>
+            <ul class="nav navbar-nav navbar-right">
+              <li class="dropdown navbar-order"><a class="dropdown-toggle" href="#"><i class="fa fa-shopping-cart"></i><span class="circle count label label-danger">7</span></a></li>
+              <li class="dropdown navbar-message"><a class="dropdown-toggle" href="#" data-toggle="dropdown"><i class="fa fa-envelope-o"></i><span class="circle count label label-danger">7   </span></a></li>
+              <li class="dropdown navbar-logout"><a class="dropdown-toggle" href="page-signin.html"><i class="fa fa-sign-out"></i>Logout</a></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <aside class="sidebar-circle" id="sidebar-left">
+        <ul class="sidebar-menu">
+          <li><a href="/"><span class="icon"><i class="fa fa-home"></i></span><span class="text">Заказы</span><span class="label label-danger pull-right">60</span></a></li>
+          <li class="submenu active"><a href="javascript:void(0);"><span class="icon"><i class="fa fa-television"></i></span><span class="text">Товары</span><span class="arrow"> </span></a>
+            <ul>
+              <li><a href="products.html">Все товары</a></li>
+              <li><a href="product-edit.html">Добавить товар</a></li>
+              <li><a href="kit.html">Комплекты</a></li>
+            </ul>
+          </li>
+          <li class="submenu"><a href="javascript:void(0);"><span class="icon"><i class="fa fa-list"></i></span><span class="text">Категории </span><span class="arrow"></span></a>
+            <ul>
+              <li><a href="category.html">Все категории</a></li>
+              <li><a href="category-edit.html">Добавить категорию</a></li>
+            </ul>
+          </li>
+          <li class="submenu"><a href="javascript:void(0);"><span class="icon"><i class="fa fa-sliders"></i></span><span class="text">Характеристики и атрибуты</span><span class="arrow"></span></a>
+            <ul>
+              <li><a href="characteristics.html">Все Характеристики</a></li>
+              <li><a href="characteristics-edit.html">Добавить характеристику</a></li>
+            </ul>
+          </li>
+          <li class="submenu"><a href="javascript:void(0);"><span class="icon"><i class="fa fa-amazon"></i></span><span class="text">Производители</span><span class="arrow"></span></a>
+            <ul>
+              <li><a href="brand.html">Все производители</a></li>
+              <li><a href="brand-edit.html">Добавить производителя</a></li>
+            </ul>
+          </li>
+          <li><a href="users.html"><span class="icon"><i class="fa fa-users"></i></span><span class="text">Покупатели</span></a></li>
+          <li class="submenu"><a href="javascript:void(0);"><span class="icon"><i class="fa fa-car"></i></span><span class="text">Доставка</span><span class="arrow"></span></a>
+            <ul>
+              <li><a href="delivery.html">Все способы доставки</a></li>
+              <li><a href="delivery-edit.html">Добавить способ доставки</a></li>
+            </ul>
+          </li>
+          <li class="submenu"><a href="javascript:void(0);"><span class="icon"><i class="fa fa-credit-card"></i></span><span class="text">Оплата</span><span class="arrow"></span></a>
+            <ul>
+              <li><a href="payments.html">Все способы оплаты</a></li>
+              <li><a href="payments-edit.html">Добавить способ оплаты</a></li>
+            </ul>
+          </li>
+          <li class="submenu"><a href="#"><span class="icon"><i class="fa fa-file-text-o"></i></span><span class="text">Выгрузки XML  </span></a></li>
+          <li class="submenu"><a href="javascript:void(0);"><span class="icon"><i class="fa fa-usd"></i></span><span class="text">Курсы валют</span><span class="arrow"></span></a>
+            <ul>
+              <li><a href="exchange.html">Все курсы валют</a></li>
+              <li><a href="exchange-edit.html">Добавить курс</a></li>
+            </ul>
+          </li>
+          <li class="submenu"><a href="javascript:void(0);"><span class="icon"><i class="fa fa-file-o"></i></span><span class="text">Статьи</span><span class="arrow"></span></a>
+            <ul>
+              <li><a href="articles.html">Все статьи</a></li>
+              <li><a href="article-edit.html">Добавить статью</a></li>
+            </ul>
+          </li>
+          <li class="submenu"><a href="javascript:void(0);"><span class="icon"><i class="fa fa-newspaper-o"></i></span><span class="text">Новости</span><span class="arrow"></span></a>
+            <ul>
+              <li><a href="news.html">Все новости</a></li>
+              <li><a href="news-edit.html">Добавить новость</a></li>
+            </ul>
+          </li>
+          <li class="submenu"><a href="javascript:void(0);"><span class="icon"><i class="fa fa-share"></i></span><span class="text">Сниппеты</span><span class="arrow"></span></a>
+            <ul>
+              <li><a href="#">Сниппеты услуги</a></li>
+              <li><a href="#">Сниппеты категории</a></li>
+            </ul>
+          </li>
+          <li class="submenu"><a href="javascript:void(0);"><span class="icon"><i class="fa fa-file-image-o"></i></span><span class="text">Баннеры</span><span class="arrow"></span></a>
+            <ul>
+              <li><a href="banners.html">Все баннеры</a></li>
+              <li><a href="banners-edit.html">Добавить банер</a></li>
+            </ul>
+          </li>
+          <li class="submenu"><a href="#"><span class="icon"><i class="fa fa-cogs"></i></span><span class="text">Настройки</span></a></li>
+        </ul>
+      </aside>
+      <section class="page__products" id="page-content">
+        <div class="header-content">
+          <h2>Товары </h2>
+          <div class="breadcrumb-wrapper hidden-xs">
+            <ol class="breadcrumb">
+              <li><i class="fa fa-home"></i><a href="/">Главная</a><i class="fa fa-angle-right"></i></li>
+              <li class="active">Товары </li>
+            </ol>
+          </div>
+        </div>
+        <div class="body-content">
+          <div class="row">
+            <div class="col-lg-9">
+              <div class="panel panel-success shadow">
+                <div class="panel-heading">
+                  <h3 class="panel-title">Список товаров (4179 шт.)</h3>
+                </div>
+                <div class="panel-body no-padding">
+                  <div class="list">
+                    <div class="list__checks">
+                      <div class="ckbox ckbox-success">
+                        <input id="checkbox-all" type="checkbox">
+                        <label for="checkbox-all"></label>
+                      </div>
+                    </div>
+                    <ul class="list__wrap list__product" id="sortable">
+                      <li class="list__item">
+                        <input class="cat__position" type="hidden" name="cat_position" value="1">
+                        <input class="cat__id" type="hidden" name="cat_id" value="900">
+                        <div class="list__info">
+                          <div class="list__sort">
+                            <div class="fa fa-sort"></div>
+                          </div>
+                          <div class="list__check">
+                            <div class="ckbox ckbox-success">
+                              <input id="id1" type="checkbox">
+                              <label for="id1"></label>
+                            </div>
+                          </div>
+                          <div class="list__img"><img class="img-circle img-responsive" src="img/avatar/4.png" alt="Daddy Botak"></div><a class="list__link" href="product-edit.html">LED телевизор 4K Ultra HD LG 43UK6300PLB  </a>
+                        </div>
+                        <div class="list__action">
+                          <div class="list__input">
+                            <div class="input-group">
+                              <input class="form-control" type="text" value="1000000"><span class="input-group-btn">
+                                <button class="btn btn-success" type="button"><i class="fa fa-floppy-o"></i></button>
+                                <button class="btn btn-primary" type="button"><i class="fa fa-rub"></i></button></span>
+                            </div>
+                            <div class="input-group">
+                              <input class="form-control" type="text" value="9999"><span class="input-group-btn">
+                                <button class="btn btn-success" type="button"><i class="fa fa-floppy-o"></i></button></span>
+                            </div>
+                          </div>
+                          <div class="list__btn"><a class="list__active active" href="#" data-toggle="tooltip" data-placement="top" data-original-title="Активен"><i class="fa fa-circle"></i></a><a class="btn btn-default btn-xs" href="#" data-toggle="tooltip" data-placement="top" data-original-title="Копировать"><i class="fa fa-files-o"></i></a><a class="btn btn-danger btn-xs" href="#" data-toggle="tooltip" data-placement="top" data-original-title="Удалить"><i class="fa fa-times"></i></a></div>
+                        </div>
+                      </li>
+                      <li class="list__item">
+                        <input class="cat__position" type="hidden" name="cat_position" value="1">
+                        <input class="cat__id" type="hidden" name="cat_id" value="900">
+                        <div class="list__info">
+                          <div class="list__sort">
+                            <div class="fa fa-sort"></div>
+                          </div>
+                          <div class="list__check">
+                            <div class="ckbox ckbox-success">
+                              <input id="id2" type="checkbox">
+                              <label for="id2"></label>
+                            </div>
+                          </div>
+                          <div class="list__img"><img class="img-circle img-responsive" src="img/avatar/4.png" alt="Daddy Botak"></div><a class="list__link" href="product-edit.html">LED телевизор 4K Ultra HD LG 43UK6300PLB  </a>
+                        </div>
+                        <div class="list__action">
+                          <div class="list__input">
+                            <div class="input-group">
+                              <input class="form-control" type="text" value="1000000"><span class="input-group-btn">
+                                <button class="btn btn-success" type="button"><i class="fa fa-floppy-o"></i></button>
+                                <button class="btn btn-primary" type="button"><i class="fa fa-rub"></i></button></span>
+                            </div>
+                            <div class="input-group">
+                              <input class="form-control" type="text" value="9999"><span class="input-group-btn">
+                                <button class="btn btn-success" type="button"><i class="fa fa-floppy-o"></i></button></span>
+                            </div>
+                          </div>
+                          <div class="list__btn"><a class="list__active" href="#" data-toggle="tooltip" data-placement="top" data-original-title="Не активен"><i class="fa fa-circle"></i></a><a class="btn btn-default btn-xs" href="#" data-toggle="tooltip" data-placement="top" data-original-title="Копировать"><i class="fa fa-files-o"></i></a><a class="btn btn-danger btn-xs" href="#" data-toggle="tooltip" data-placement="top" data-original-title="Удалить"><i class="fa fa-times"></i></a></div>
+                        </div>
+                      </li>
+                      <li class="list__item">
+                        <input class="cat__position" type="hidden" name="cat_position" value="1">
+                        <input class="cat__id" type="hidden" name="cat_id" value="900">
+                        <div class="list__info">
+                          <div class="list__sort">
+                            <div class="fa fa-sort"></div>
+                          </div>
+                          <div class="list__check">
+                            <div class="ckbox ckbox-success">
+                              <input id="id3" type="checkbox">
+                              <label for="id3"></label>
+                            </div>
+                          </div>
+                          <div class="list__img"><img class="img-circle img-responsive" src="img/avatar/4.png" alt="Daddy Botak"></div><a class="list__link" href="product-edit.html">LED телевизор 4K Ultra HD LG 43UK6300PLB  </a>
+                        </div>
+                        <div class="list__action">
+                          <div class="list__input">
+                            <div class="input-group">
+                              <input class="form-control" type="text" value="1000000"><span class="input-group-btn">
+                                <button class="btn btn-success" type="button"><i class="fa fa-floppy-o"></i></button>
+                                <button class="btn btn-primary" type="button"><i class="fa fa-rub"></i></button></span>
+                            </div>
+                            <div class="input-group">
+                              <input class="form-control" type="text" value="9999"><span class="input-group-btn">
+                                <button class="btn btn-success" type="button"><i class="fa fa-floppy-o"></i></button></span>
+                            </div>
+                          </div>
+                          <div class="list__btn"><a class="list__active active" href="#" data-toggle="tooltip" data-placement="top" data-original-title="Активен"><i class="fa fa-circle"></i></a><a class="btn btn-default btn-xs" href="#" data-toggle="tooltip" data-placement="top" data-original-title="Копировать"><i class="fa fa-files-o"></i></a><a class="btn btn-danger btn-xs" href="#" data-toggle="tooltip" data-placement="top" data-original-title="Удалить"><i class="fa fa-times"></i></a></div>
+                        </div>
+                      </li>
+                      <li class="list__item">
+                        <input class="cat__position" type="hidden" name="cat_position" value="1">
+                        <input class="cat__id" type="hidden" name="cat_id" value="900">
+                        <div class="list__info">
+                          <div class="list__sort">
+                            <div class="fa fa-sort"></div>
+                          </div>
+                          <div class="list__check">
+                            <div class="ckbox ckbox-success">
+                              <input id="id4" type="checkbox">
+                              <label for="id4"></label>
+                            </div>
+                          </div>
+                          <div class="list__img"><img class="img-circle img-responsive" src="img/avatar/4.png" alt="Daddy Botak"></div><a class="list__link" href="product-edit.html">LED телевизор 4K Ultra HD LG 43UK6300PLB  </a>
+                        </div>
+                        <div class="list__action">
+                          <div class="list__input">
+                            <div class="input-group">
+                              <input class="form-control" type="text" value="1000000"><span class="input-group-btn">
+                                <button class="btn btn-success" type="button"><i class="fa fa-floppy-o"></i></button>
+                                <button class="btn btn-primary" type="button"><i class="fa fa-rub"></i></button></span>
+                            </div>
+                            <div class="input-group">
+                              <input class="form-control" type="text" value="9999"><span class="input-group-btn">
+                                <button class="btn btn-success" type="button"><i class="fa fa-floppy-o"></i></button></span>
+                            </div>
+                          </div>
+                          <div class="list__btn"><a class="list__active" href="#" data-toggle="tooltip" data-placement="top" data-original-title="Не активен"><i class="fa fa-circle"></i></a><a class="btn btn-default btn-xs" href="#" data-toggle="tooltip" data-placement="top" data-original-title="Копировать"><i class="fa fa-files-o"></i></a><a class="btn btn-danger btn-xs" href="#" data-toggle="tooltip" data-placement="top" data-original-title="Удалить"><i class="fa fa-times"></i></a></div>
+                        </div>
+                      </li>
+                      <li class="list__item">
+                        <input class="cat__position" type="hidden" name="cat_position" value="1">
+                        <input class="cat__id" type="hidden" name="cat_id" value="900">
+                        <div class="list__info">
+                          <div class="list__sort">
+                            <div class="fa fa-sort"></div>
+                          </div>
+                          <div class="list__check">
+                            <div class="ckbox ckbox-success">
+                              <input id="id5" type="checkbox">
+                              <label for="id5"></label>
+                            </div>
+                          </div>
+                          <div class="list__img"><img class="img-circle img-responsive" src="img/avatar/4.png" alt="Daddy Botak"></div><a class="list__link" href="product-edit.html">LED телевизор 4K Ultra HD LG 43UK6300PLB  </a>
+                        </div>
+                        <div class="list__action">
+                          <div class="list__input">
+                            <div class="input-group">
+                              <input class="form-control" type="text" value="1000000"><span class="input-group-btn">
+                                <button class="btn btn-success" type="button"><i class="fa fa-floppy-o"></i></button>
+                                <button class="btn btn-primary" type="button"><i class="fa fa-rub"></i></button></span>
+                            </div>
+                            <div class="input-group">
+                              <input class="form-control" type="text" value="9999"><span class="input-group-btn">
+                                <button class="btn btn-success" type="button"><i class="fa fa-floppy-o"></i></button></span>
+                            </div>
+                          </div>
+                          <div class="list__btn"><a class="list__active active" href="#" data-toggle="tooltip" data-placement="top" data-original-title="Активен"><i class="fa fa-circle"></i></a><a class="btn btn-default btn-xs" href="#" data-toggle="tooltip" data-placement="top" data-original-title="Копировать"><i class="fa fa-files-o"></i></a><a class="btn btn-danger btn-xs" href="#" data-toggle="tooltip" data-placement="top" data-original-title="Удалить"><i class="fa fa-times"></i></a></div>
+                        </div>
+                      </li>
+                      <li class="list__item">
+                        <input class="cat__position" type="hidden" name="cat_position" value="1">
+                        <input class="cat__id" type="hidden" name="cat_id" value="900">
+                        <div class="list__info">
+                          <div class="list__sort">
+                            <div class="fa fa-sort"></div>
+                          </div>
+                          <div class="list__check">
+                            <div class="ckbox ckbox-success">
+                              <input id="id6" type="checkbox">
+                              <label for="id6"></label>
+                            </div>
+                          </div>
+                          <div class="list__img"><img class="img-circle img-responsive" src="img/avatar/4.png" alt="Daddy Botak"></div><a class="list__link" href="product-edit.html">LED телевизор 4K Ultra HD LG 43UK6300PLB  </a>
+                        </div>
+                        <div class="list__action">
+                          <div class="list__input">
+                            <div class="input-group">
+                              <input class="form-control" type="text" value="1000000"><span class="input-group-btn">
+                                <button class="btn btn-success" type="button"><i class="fa fa-floppy-o"></i></button>
+                                <button class="btn btn-primary" type="button"><i class="fa fa-rub"></i></button></span>
+                            </div>
+                            <div class="input-group">
+                              <input class="form-control" type="text" value="9999"><span class="input-group-btn">
+                                <button class="btn btn-success" type="button"><i class="fa fa-floppy-o"></i></button></span>
+                            </div>
+                          </div>
+                          <div class="list__btn"><a class="list__active" href="#" data-toggle="tooltip" data-placement="top" data-original-title="Не активен"><i class="fa fa-circle"></i></a><a class="btn btn-default btn-xs" href="#" data-toggle="tooltip" data-placement="top" data-original-title="Копировать"><i class="fa fa-files-o"></i></a><a class="btn btn-danger btn-xs" href="#" data-toggle="tooltip" data-placement="top" data-original-title="Удалить"><i class="fa fa-times"></i></a></div>
+                        </div>
+                      </li>
+                      <li class="list__item">
+                        <input class="cat__position" type="hidden" name="cat_position" value="1">
+                        <input class="cat__id" type="hidden" name="cat_id" value="900">
+                        <div class="list__info">
+                          <div class="list__sort">
+                            <div class="fa fa-sort"></div>
+                          </div>
+                          <div class="list__check">
+                            <div class="ckbox ckbox-success">
+                              <input id="id7" type="checkbox">
+                              <label for="id7"></label>
+                            </div>
+                          </div>
+                          <div class="list__img"><img class="img-circle img-responsive" src="img/avatar/4.png" alt="Daddy Botak"></div><a class="list__link" href="product-edit.html">LED телевизор 4K Ultra HD LG 43UK6300PLB  </a>
+                        </div>
+                        <div class="list__action">
+                          <div class="list__input">
+                            <div class="input-group">
+                              <input class="form-control" type="text" value="1000000"><span class="input-group-btn">
+                                <button class="btn btn-success" type="button"><i class="fa fa-floppy-o"></i></button>
+                                <button class="btn btn-primary" type="button"><i class="fa fa-rub"></i></button></span>
+                            </div>
+                            <div class="input-group">
+                              <input class="form-control" type="text" value="9999"><span class="input-group-btn">
+                                <button class="btn btn-success" type="button"><i class="fa fa-floppy-o"></i></button></span>
+                            </div>
+                          </div>
+                          <div class="list__btn"><a class="list__active active" href="#" data-toggle="tooltip" data-placement="top" data-original-title="Активен"><i class="fa fa-circle"></i></a><a class="btn btn-default btn-xs" href="#" data-toggle="tooltip" data-placement="top" data-original-title="Копировать"><i class="fa fa-files-o"></i></a><a class="btn btn-danger btn-xs" href="#" data-toggle="tooltip" data-placement="top" data-original-title="Удалить"><i class="fa fa-times"></i></a></div>
+                        </div>
+                      </li>
+                      <li class="list__item">
+                        <input class="cat__position" type="hidden" name="cat_position" value="1">
+                        <input class="cat__id" type="hidden" name="cat_id" value="900">
+                        <div class="list__info">
+                          <div class="list__sort">
+                            <div class="fa fa-sort"></div>
+                          </div>
+                          <div class="list__check">
+                            <div class="ckbox ckbox-success">
+                              <input id="id8" type="checkbox">
+                              <label for="id8"></label>
+                            </div>
+                          </div>
+                          <div class="list__img"><img class="img-circle img-responsive" src="img/avatar/4.png" alt="Daddy Botak"></div><a class="list__link" href="product-edit.html">LED телевизор 4K Ultra HD LG 43UK6300PLB  </a>
+                        </div>
+                        <div class="list__action">
+                          <div class="list__input">
+                            <div class="input-group">
+                              <input class="form-control" type="text" value="1000000"><span class="input-group-btn">
+                                <button class="btn btn-success" type="button"><i class="fa fa-floppy-o"></i></button>
+                                <button class="btn btn-primary" type="button"><i class="fa fa-rub"></i></button></span>
+                            </div>
+                            <div class="input-group">
+                              <input class="form-control" type="text" value="9999"><span class="input-group-btn">
+                                <button class="btn btn-success" type="button"><i class="fa fa-floppy-o"></i></button></span>
+                            </div>
+                          </div>
+                          <div class="list__btn"><a class="list__active" href="#" data-toggle="tooltip" data-placement="top" data-original-title="Не активен"><i class="fa fa-circle"></i></a><a class="btn btn-default btn-xs" href="#" data-toggle="tooltip" data-placement="top" data-original-title="Копировать"><i class="fa fa-files-o"></i></a><a class="btn btn-danger btn-xs" href="#" data-toggle="tooltip" data-placement="top" data-original-title="Удалить"><i class="fa fa-times"></i></a></div>
+                        </div>
+                      </li>
+                      <li class="list__item">
+                        <input class="cat__position" type="hidden" name="cat_position" value="1">
+                        <input class="cat__id" type="hidden" name="cat_id" value="900">
+                        <div class="list__info">
+                          <div class="list__sort">
+                            <div class="fa fa-sort"></div>
+                          </div>
+                          <div class="list__check">
+                            <div class="ckbox ckbox-success">
+                              <input id="id9" type="checkbox">
+                              <label for="id9"></label>
+                            </div>
+                          </div>
+                          <div class="list__img"><img class="img-circle img-responsive" src="img/avatar/4.png" alt="Daddy Botak"></div><a class="list__link" href="product-edit.html">LED телевизор 4K Ultra HD LG 43UK6300PLB  </a>
+                        </div>
+                        <div class="list__action">
+                          <div class="list__input list__inputs">
+                            <div class="mb-5">
+                              <label class="control-label">40"</label>
+                              <div class="input-group mr-15">
+                                <input class="form-control" type="text" value="1000000"><span class="input-group-btn">
+                                  <button class="btn btn-success" type="button"><i class="fa fa-floppy-o"></i></button>
+                                  <button class="btn btn-primary" type="button"><i class="fa fa-rub">                         </i></button></span>
+                              </div>
+                              <div class="input-group">
+                                <input class="form-control" type="text" value="9999"><span class="input-group-btn">
+                                  <button class="btn btn-success" type="button"><i class="fa fa-floppy-o"></i></button></span>
+                              </div>
+                            </div>
+                            <div class="mb-5">
+                              <label class="control-label">46"</label>
+                              <div class="input-group mr-15">
+                                <input class="form-control" type="text" value="1000000"><span class="input-group-btn">
+                                  <button class="btn btn-success" type="button"><i class="fa fa-floppy-o"></i></button>
+                                  <button class="btn btn-primary" type="button"><i class="fa fa-rub"></i></button></span>
+                              </div>
+                              <div class="input-group">
+                                <input class="form-control" type="text" value="9999"><span class="input-group-btn">
+                                  <button class="btn btn-success" type="button"><i class="fa fa-floppy-o"></i></button></span>
+                              </div>
+                            </div>
+                            <div class="mb-5">
+                              <label class="control-label">48"</label>
+                              <div class="input-group mr-15">
+                                <input class="form-control" type="text" value="1000000"><span class="input-group-btn">
+                                  <button class="btn btn-success" type="button"><i class="fa fa-floppy-o"></i></button>
+                                  <button class="btn btn-primary" type="button"><i class="fa fa-rub"></i></button></span>
+                              </div>
+                              <div class="input-group">
+                                <input class="form-control" type="text" value="9999"><span class="input-group-btn">
+                                  <button class="btn btn-success" type="button"><i class="fa fa-floppy-o"></i></button></span>
+                              </div>
+                            </div>
+                            <div class="mb-5">
+                              <label class="control-label">50"</label>
+                              <div class="input-group mr-15">
+                                <input class="form-control" type="text" value="1000000"><span class="input-group-btn">
+                                  <button class="btn btn-success" type="button"><i class="fa fa-floppy-o"></i></button>
+                                  <button class="btn btn-primary" type="button"><i class="fa fa-rub"></i></button></span>
+                              </div>
+                              <div class="input-group">
+                                <input class="form-control" type="text" value="9999"><span class="input-group-btn">
+                                  <button class="btn btn-success" type="button"><i class="fa fa-floppy-o"></i></button></span>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="list__btn"><a class="list__active active" href="#" data-toggle="tooltip" data-placement="top" data-original-title="Активен"><i class="fa fa-circle"></i></a><a class="btn btn-default btn-xs" href="#" data-toggle="tooltip" data-placement="top" data-original-title="Копировать"><i class="fa fa-files-o"></i></a><a class="btn btn-danger btn-xs" href="#" data-toggle="tooltip" data-placement="top" data-original-title="Удалить"><i class="fa fa-times"></i></a></div>
+                        </div>
+                      </li>
+                      <li class="list__item">
+                        <input class="cat__position" type="hidden" name="cat_position" value="1">
+                        <input class="cat__id" type="hidden" name="cat_id" value="900">
+                        <div class="list__info">
+                          <div class="list__sort">
+                            <div class="fa fa-sort"></div>
+                          </div>
+                          <div class="list__check">
+                            <div class="ckbox ckbox-success">
+                              <input id="id10" type="checkbox">
+                              <label for="id10"></label>
+                            </div>
+                          </div>
+                          <div class="list__img"><img class="img-circle img-responsive" src="img/avatar/4.png" alt="Daddy Botak"></div><a class="list__link" href="product-edit.html">LED телевизор 4K Ultra HD LG 43UK6300PLB  </a>
+                        </div>
+                        <div class="list__action">
+                          <div class="list__input">
+                            <div class="input-group">
+                              <input class="form-control" type="text" value="1000000"><span class="input-group-btn">
+                                <button class="btn btn-success" type="button"><i class="fa fa-floppy-o"></i></button>
+                                <button class="btn btn-primary" type="button"><i class="fa fa-rub"></i></button></span>
+                            </div>
+                            <div class="input-group">
+                              <input class="form-control" type="text" value="9999"><span class="input-group-btn">
+                                <button class="btn btn-success" type="button"><i class="fa fa-floppy-o"></i></button></span>
+                            </div>
+                          </div>
+                          <div class="list__btn"><a class="list__active" href="#" data-toggle="tooltip" data-placement="top" data-original-title="Не активен"><i class="fa fa-circle"></i></a><a class="btn btn-default btn-xs" href="#" data-toggle="tooltip" data-placement="top" data-original-title="Копировать"><i class="fa fa-files-o"></i></a><a class="btn btn-danger btn-xs" href="#" data-toggle="tooltip" data-placement="top" data-original-title="Удалить"><i class="fa fa-times"></i></a></div>
+                        </div>
+                      </li>
+                      <li class="list__item">
+                        <input class="cat__position" type="hidden" name="cat_position" value="1">
+                        <input class="cat__id" type="hidden" name="cat_id" value="900">
+                        <div class="list__info">
+                          <div class="list__sort">
+                            <div class="fa fa-sort"></div>
+                          </div>
+                          <div class="list__check">
+                            <div class="ckbox ckbox-success">
+                              <input id="id11" type="checkbox">
+                              <label for="id11"></label>
+                            </div>
+                          </div>
+                          <div class="list__img"><img class="img-circle img-responsive" src="img/avatar/4.png" alt="Daddy Botak"></div><a class="list__link" href="product-edit.html">LED телевизор 4K Ultra HD LG 43UK6300PLB  </a>
+                        </div>
+                        <div class="list__action">
+                          <div class="list__input">
+                            <div class="input-group">
+                              <input class="form-control" type="text" value="1000000"><span class="input-group-btn">
+                                <button class="btn btn-success" type="button"><i class="fa fa-floppy-o"></i></button>
+                                <button class="btn btn-primary" type="button"><i class="fa fa-rub"></i></button></span>
+                            </div>
+                            <div class="input-group">
+                              <input class="form-control" type="text" value="9999"><span class="input-group-btn">
+                                <button class="btn btn-success" type="button"><i class="fa fa-floppy-o"></i></button></span>
+                            </div>
+                          </div>
+                          <div class="list__btn"><a class="list__active active" href="#" data-toggle="tooltip" data-placement="top" data-original-title="Активен"><i class="fa fa-circle"></i></a><a class="btn btn-default btn-xs" href="#" data-toggle="tooltip" data-placement="top" data-original-title="Копировать"><i class="fa fa-files-o"></i></a><a class="btn btn-danger btn-xs" href="#" data-toggle="tooltip" data-placement="top" data-original-title="Удалить"><i class="fa fa-times"></i></a></div>
+                        </div>
+                      </li>
+                      <li class="list__item">
+                        <input class="cat__position" type="hidden" name="cat_position" value="1">
+                        <input class="cat__id" type="hidden" name="cat_id" value="900">
+                        <div class="list__info">
+                          <div class="list__sort">
+                            <div class="fa fa-sort"></div>
+                          </div>
+                          <div class="list__check">
+                            <div class="ckbox ckbox-success">
+                              <input id="id12" type="checkbox">
+                              <label for="id12"></label>
+                            </div>
+                          </div>
+                          <div class="list__img"><img class="img-circle img-responsive" src="img/avatar/4.png" alt="Daddy Botak"></div><a class="list__link" href="product-edit.html">LED телевизор 4K Ultra HD LG 43UK6300PLB  </a>
+                        </div>
+                        <div class="list__action">
+                          <div class="list__input">
+                            <div class="input-group">
+                              <input class="form-control" type="text" value="1000000"><span class="input-group-btn">
+                                <button class="btn btn-success" type="button"><i class="fa fa-floppy-o"></i></button>
+                                <button class="btn btn-primary" type="button"><i class="fa fa-rub"></i></button></span>
+                            </div>
+                            <div class="input-group">
+                              <input class="form-control" type="text" value="9999"><span class="input-group-btn">
+                                <button class="btn btn-success" type="button"><i class="fa fa-floppy-o"></i></button></span>
+                            </div>
+                          </div>
+                          <div class="list__btn"><a class="list__active" href="#" data-toggle="tooltip" data-placement="top" data-original-title="Не активен"><i class="fa fa-circle"></i></a><a class="btn btn-default btn-xs" href="#" data-toggle="tooltip" data-placement="top" data-original-title="Копировать"><i class="fa fa-files-o"></i></a><a class="btn btn-danger btn-xs" href="#" data-toggle="tooltip" data-placement="top" data-original-title="Удалить"><i class="fa fa-times"></i></a></div>
+                        </div>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <ul class="pagination">
+                <li class="paginate_button previous"><a href="#"><i class="fa fa-chevron-left"></i></a></li>
+                <li class="paginate_button"><a href="#">1</a></li>
+                <li class="paginate_button active"><a href="#">2</a></li>
+                <li class="paginate_button"><a href="#">3</a></li>
+                <li class="paginate_button"><a href="#">4</a></li>
+                <li class="paginate_button"><a href="#">5</a></li>
+                <li class="paginate_button"><a href="#">6</a></li>
+                <li class="paginate_button next"><a href="#"><i class="fa fa-chevron-right"></i></a></li>
+              </ul>
+            </div>
+            <div class="col-lg-3 hidden-md hidden-sm hidden-xs">
+              <div class="panel panel-success shadow opt" id="opt">
+                <div class="panel-heading">
+                  <div class="pull-left">
+                    <h3 class="panel-title">Выбрано товаров:<strong> </strong></h3>
+                  </div>
+                  <div class="pull-right">
+                    <button class="btn btn-sm" data-action="collapse" data-container="body" data-toggle="tooltip" data-placement="top" data-title="Collapse" data-original-title="" title=""><i class="fa fa-angle-up">            </i></button>
+                  </div>
+                  <div class="clearfix"></div>
+                </div>
+                <div class="panel-body">
+                  <div class="form-group">
+                    <label class="control-label" for="description">Размер наценки (%)</label>
+                    <input class="form-control mb-10" id="extra_charge" type="text" name="extra_charge" placeholder="Например, -7 или 5.2">
+                    <input class="btn btn-success mb-10" id="pre_extra_charge_btn" type="buttom" value="Выставить наценку" name="pre_extra_charge_btn">
+                    <input class="btn btn-primary mb-10" id="extra_charge_btn" type="buttom" value="Сохранить наценку" name="extra_charge_btn">
+                    <input class="btn btn-warning" id="cansel_extra_charge_btn" type="buttom" value="Отменить наценку" name="cansel_extra_charge_btn">
+                  </div>
+                  <div class="form-group">
+                    <label class="control-label" for="description">Массовое удаление</label>
+                    <input class="btn btn-danger" id="delete_all_obj" type="buttom" value="Удалить выбранное" name="delete_all_obj">
+                  </div>
+                  <div class="form-group">
+                    <label class="control-label" for="description">Изменить категорию</label>
+                    <select class="form-control mb-10" id="new_category" name="new_category">
+                      <option value="822">Резьбовые фитинги</option>
+                      <option value="823">     Американки</option>
+                      <option value="824">     Водорозетки</option>
+                      <option value="825">     Заглушки</option>
+                      <option value="826">     Контргайки</option>
+                      <option value="827">     Концовки для коллекторов</option>
+                      <option value="828">     Крестовины</option>
+                      <option value="829">     Муфты</option>
+                      <option value="830">     Ниппели</option>
+                      <option value="831">     Переходники</option>
+                      <option value="832">     Сгоны</option>
+                      <option value="833">     Тройники</option>
+                      <option value="834">     Уголки</option>
+                      <option value="835">     Удлинительные бочонки</option>
+                      <option value="836">     Удлинители</option>
+                      <option value="837">     Футорки</option>
+                      <option value="838">     Штуцеры</option>
+                      <option value="879">     Обвод</option>
+                      <option value="880">     Бочонок</option>
+                      <option value="881">     Отводы</option>
+                      <option value="882">     Резьба</option>
+                      <option value="883">     Фланцы, комплектующие для фланцев</option>
+                      <option value="819">Запорная арматура</option>
+                      <option value="821">     Миникраны шаровые</option>
+                      <option value="820">     Краны шаровые</option>
+                      <option value="873">     Шаровые краны под сварку</option>
+                      <option value="874">     Фланцевые краны</option>
+                      <option value="875">     Балансировочные клапаны</option>
+                      <option value="876">     Обратные клапана</option>
+                      <option value="877">     Вентиля, задвижки клиновые</option>
+                      <option value="878">     Водоотводы</option>
+                      <option value="844">Отопление и водоснабжение</option>
+                      <option value="845">     Радиаторные терморегуляторы и запорные клапаны</option>
+                      <option value="846">     Фильтры, водоочистка и водоподготовка</option>
+                      <option value="932">          Системы водоочистки</option>
+                      <option value="933">          Аксессуары для водоочистителей</option>
+                      <option value="934">          Фильтры для воды</option>
+                      <option value="935">          Комплектующие</option>
+                      <option value="847">     Нейтрализаторы магнитные</option>
+                      <option value="848">     Теплоавтоматика</option>
+                      <option value="854">     Система антиобледенения</option>
+                      <option value="855">     Электрические конвекторы, котлы и комплектующие</option>
+                      <option value="856">     Отопление пола</option>
+                      <option value="857">     Управление системами отопления</option>
+                      <option value="858">     Бытовые насосы и комплектующие</option>
+                      <option value="948">          Циркуляционные насосы</option>
+                      <option value="949">          Циркуляционные насосы регулируемые</option>
+                      <option value="950">          Вибрационные насосы</option>
+                      <option value="951">          Гидроаккумуляторы и расширительные баки</option>
+                      <option value="952">          Дренажные насосы, канализационные станции</option>
+                      <option value="953">          Комплектующие к насосам</option>
+                      <option value="954">          Станции водоснабжения</option>
+                      <option value="955">          Насосы</option>
+                      <option value="861">     Трубы</option>
+                      <option value="860">     Уплотнение и герметизация</option>
+                      <option value="957">          Герметики, лен</option>
+                      <option value="958">          Нити, ленты</option>
+                      <option value="959">          Сантехнаборы, прокладки</option>
+                      <option value="976">          Изоляция</option>
+                      <option value="859">     Аксессуары и принадлежности</option>
+                      <option value="922">          Манометры, термоманометры, комплектующие</option>
+                      <option value="960">          Средства для очистки рук</option>
+                      <option value="975">          Крепление</option>
+                      <option value="884">     Подводка</option>
+                      <option value="885">     Шланги</option>
+                      <option value="886">     Водосчетчики</option>
+                      <option value="908">     Фитинги для  меди и бронзы</option>
+                      <option value="909">     Коллекторы и комплектующие</option>
+                      <option value="917">     Система контроля протечки воды, группы безопасности</option>
+                      <option value="919">     Радиаторы и полотенцесушители</option>
+                      <option value="921">          Комплектующие к радиаторам и полотенцесушителям</option>
+                      <option value="941">          Радиаторы</option>
+                      <option value="942">          Полотенцесушители</option>
+                      <option value="920">     Вентили для радиаторов</option>
+                      <option value="923">     Канализация</option>
+                      <option value="924">          Канализация внутренняя</option>
+                      <option value="925">          Наружная канализация</option>
+                      <option value="926">          Бесшумная канализация</option>
+                      <option value="927">          Водосборная канализация</option>
+                      <option value="928">          Комплектующие к канализации</option>
+                      <option value="956">          Инструмент для прочистки труб</option>
+                      <option value="929">     Сифоны, арматура</option>
+                      <option value="930">          Комплектующие к сифонам и арматуре</option>
+                      <option value="931">          Трубы гибкие, латунные, гофры</option>
+                      <option value="936">          Сифоны</option>
+                      <option value="937">          Арматура</option>
+                      <option value="938">          Сливы-переливы, выпуски</option>
+                      <option value="939">          Трапы</option>
+                      <option value="940">          Трубы фановые</option>
+                      <option value="974">     Муфты, хомуты</option>
+                      <option value="977">     Люки и воздуховоды</option>
+                      <option value="978">          Сантехнические люки</option>
+                      <option value="979">          Комплектующие к воздуховодам</option>
+                      <option value="839">Пресс фитинги</option>
+                      <option value="840">     Переходники</option>
+                      <option value="841">     Уголки</option>
+                      <option value="842">     Водорозетки</option>
+                      <option value="843">     Тройники</option>
+                      <option value="887">Сантехника из полипропилена</option>
+                      <option value="888">     Вентиль</option>
+                      <option value="889">     Трубы</option>
+                      <option value="890">     Заглушки,опоры, соединительные элементы</option>
+                      <option value="891">     Колено, крестовины</option>
+                      <option value="892">     Коллекторы</option>
+                      <option value="893">     Кран шаровый</option>
+                      <option value="894">     Муфта, обратный клапан</option>
+                      <option value="895">     Тройники</option>
+                      <option value="849">Запорная и регулирующая арматура</option>
+                      <option value="850">     Воздухоотведение</option>
+                      <option value="851">     Клапаны предохранительные. Группы безопасности</option>
+                      <option value="852">     Редукторы давления. Термосмесители</option>
+                      <option value="896">Фитинги для ПЭ</option>
+                      <option value="897">     Заглушка, гильза</option>
+                      <option value="898">     Кран шаровый</option>
+                      <option value="899">     Муфта</option>
+                      <option value="900">     Отводы</option>
+                      <option value="901">     Тройники</option>
+                      <option value="902">     Трубы, хомуты</option>
+                      <option value="903">Фитинги для металлопластика</option>
+                      <option value="904">     Крестовины, муфты</option>
+                      <option value="905">     Трубы и комплектующие</option>
+                      <option value="906">     Тройники</option>
+                      <option value="907">     Уголки</option>
+                      <option value="910">Поливочные шланги и оборудование</option>
+                      <option value="911">     Комплектующие</option>
+                      <option value="912">     Шланги</option>
+                      <option value="913">     Переходники, соединители для шлангов</option>
+                      <option value="914">Смесители и душевые системы</option>
+                      <option value="915">     Смесители</option>
+                      <option value="916">     Комплектующие к смесителям</option>
+                      <option value="965">          Шланги к смесителям</option>
+                      <option value="966">          Изливы</option>
+                      <option value="967">          Лейки</option>
+                      <option value="968">          Картриджи</option>
+                      <option value="969">          Держатели, стойки, кронштейны, отражатели</option>
+                      <option value="970">          Кран-букса</option>
+                      <option value="971">          Аэраторы, маховики</option>
+                      <option value="972">          Крепление, пластины, кольца, наборы сантехнические</option>
+                      <option value="973">          Дивертеры, эксцентрики, отводы, переходники</option>
+                      <option value="982">     Мойки</option>
+                      <option value="918">Оборудование</option>
+                      <option value="961">Газовое оборудование</option>
+                      <option value="962">     Муфта диэлектрическая</option>
+                      <option value="963">     Краны шаровые для газа</option>
+                      <option value="964">     Подводка сильфонного типа</option>
+                      <option value="981">Распродажа</option>
+                      <option value="983">Новое поступление</option>
+                      <option value="984">     Аксессуары для душа</option>
+                      <option value="985">          Стойки, крепления и держатели</option>
+                      <option value="986">          Душевые шланги</option>
+                      <option value="987">          Душевые лейки</option>
+                      <option value="988">          Комплекты и лейки для биде</option>
+                      <option value="989">          Установочные аксессуары</option>
+                      <option value="990">     Аксессуары для ванной</option>
+                      <option value="991">          Держатели полотенец, бумажных полотенец</option>
+                      <option value="992">          Полочки, этажерки для ванной комнаты</option>
+                      <option value="993">          Крючки</option>
+                      <option value="994">          Стаканы, подстаканники</option>
+                      <option value="995">          Мыльницы, дозаторы</option>
+                      <option value="996">          Бумагодержатели, ерш</option>
+                      <option value="997">          Поручни для ванной</option>
+                      <option value="998">          Зеркала</option>
+                      <option value="999">          Ведра</option>
+                      <option value="1000">          Разные аксессуары для ванной</option>
+                      <option value="1001">          Держатели фена, газет, освежителя воздуха</option>
+                      <option value="1002">          Стойки для ванной и туалета</option>
+                      <option value="1003">          Органайзеры, корзины для белья</option>
+                      <option value="1004">          Шторки для ванной</option>
+                      <option value="1010">          Коврики</option>
+                      <option value="1005">     Инсталяции</option>
+                      <option value="1006">          Инсталяции, комплекты</option>
+                      <option value="1007">          Кнопки смыва</option>
+                      <option value="1008">          Механизмы для сливных бачков</option>
+                      <option value="1009">          Бачок сливной</option>
+                      <option value="1011">     Смесители и аксессуары</option>
+                      <option value="1012">          Смесители для кухни, раковины</option>
+                      <option value="1013">          Аксессуары для кухни</option>
+                      <option value="1014">          Смесители для биде</option>
+                      <option value="1016">          Смесители для ванны и душа</option>
+                      <option value="1017">          Наборы смесителей</option>
+                      <option value="1018">          Для писсуаров</option>
+                      <option value="1019">          Кран-буксы, картриджи</option>
+                      <option value="1020">          Изливы, диверторы, аэраторы</option>
+                      <option value="1021">          Ремкомплекты, гайки</option>
+                      <option value="1022">          Гофрированная, гибкая подводка</option>
+                    </select>
+                    <input class="btn btn-primary" id="save_new_category" type="buttom" value="Применить" name="save_new_category">
+                  </div>
+                </div>
+              </div>
+              <div class="panel panel-success shadow">
+                <div class="panel-heading">
+                  <div class="pull-left">
+                    <h3 class="panel-title">Поиск</h3>
+                  </div>
+                  <div class="pull-right">
+                    <button class="btn btn-sm" data-action="collapse" data-container="body" data-toggle="tooltip" data-placement="top" data-title="Collapse" data-original-title="" title=""><i class="fa fa-angle-up">            </i></button>
+                  </div>
+                  <div class="clearfix"></div>
+                </div>
+                <div class="panel-body">
+                  <form>
+                    <div class="input-group">
+                      <input class="form-control" type="text" placeholder="Что будем искать?"><span class="input-group-btn">
+                        <button class="btn btn-success" type="submit"><i class="fa fa-search"></i></button></span>
+                    </div>
+                  </form>
+                </div>
+              </div>
+              <div class="panel panel-success shadow">
+                <div class="panel-heading">
+                  <div class="pull-left">
+                    <h3 class="panel-title">Фильтр</h3>
+                  </div>
+                  <div class="pull-right">
+                    <button class="btn btn-sm" data-action="collapse" data-container="body" data-toggle="tooltip" data-placement="top" data-title="Collapse" data-original-title="" title=""><i class="fa fa-angle-up">            </i></button>
+                  </div>
+                  <div class="clearfix"></div>
+                </div>
+                <div class="panel-body no-padding">
+                  <div class="list-group no-margin"><a class="list-group-item" href="#">Все</a><a class="list-group-item" href="#">Активные</a><a class="list-group-item active" href="#">Не активные</a></div>
+                </div>
+              </div>
+              <div class="panel panel-success shadow">
+                <div class="panel-heading">
+                  <div class="pull-left">
+                    <h3 class="panel-title">Категории</h3>
+                  </div>
+                  <div class="pull-right">
+                    <button class="btn btn-sm" data-action="collapse" data-container="body" data-toggle="tooltip" data-placement="top" data-title="Collapse" data-original-title="" title=""><i class="fa fa-angle-up">            </i></button>
+                  </div>
+                  <div class="clearfix"></div>
+                </div>
+                <div class="panel-body no-padding">
+                  <div class="list-group no-margin"><a class="list-group-item" href="#">Все категории</a><a class="list-group-item" href="#">Телевизоры</a><a class="list-group-item active" href="#">Телевизоры  </a><a class="list-group-item" href="#">Телевизоры</a><a class="list-group-item" href="#">Телевизоры</a><a class="list-group-item" href="#">Телевизоры</a><a class="list-group-item" href="#">Телевизоры</a></div>
+                </div>
+              </div>
+              <div class="panel panel-success shadow">
+                <div class="panel-heading">
+                  <div class="pull-left">
+                    <h3 class="panel-title">Производители</h3>
+                  </div>
+                  <div class="pull-right">
+                    <button class="btn btn-sm" data-action="collapse" data-container="body" data-toggle="tooltip" data-placement="top" data-title="Collapse" data-original-title="" title=""><i class="fa fa-angle-up">            </i></button>
+                  </div>
+                  <div class="clearfix"></div>
+                </div>
+                <div class="panel-body no-padding">
+                  <div class="list-group no-margin"><a class="list-group-item" href="#">Все категории</a><a class="list-group-item" href="#">Hyundai</a><a class="list-group-item" href="#">LG     </a><a class="list-group-item" href="#">Panasonic     </a><a class="list-group-item" href="#">Philips     </a><a class="list-group-item" href="#">Samsung     </a><a class="list-group-item active" href="#">Sharp     </a><a class="list-group-item" href="#">Sony     </a><a class="list-group-item" href="#">Supra     </a><a class="list-group-item" href="#">TCL     </a><a class="list-group-item" href="#">Telefunken     </a><a class="list-group-item" href="#">Toshiba   </a></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <aside id="sidebar-right">
+          <div class="panel panel-success shadow opt" id="opt">
+            <div class="panel-heading">
+              <div class="pull-left">
+                <h3 class="panel-title">Выбрано товаров:<strong> </strong></h3>
+              </div>
+              <div class="pull-right">
+                <button class="btn btn-sm" data-action="collapse" data-container="body" data-toggle="tooltip" data-placement="top" data-title="Collapse" data-original-title="" title=""><i class="fa fa-angle-up">            </i></button>
+              </div>
+              <div class="clearfix"></div>
+            </div>
+            <div class="panel-body">
+              <div class="form-group">
+                <label class="control-label" for="description">Размер наценки (%)</label>
+                <input class="form-control mb-10" id="extra_charge" type="text" name="extra_charge" placeholder="Например, -7 или 5.2">
+                <input class="btn btn-success mb-10" id="pre_extra_charge_btn" type="buttom" value="Выставить наценку" name="pre_extra_charge_btn">
+                <input class="btn btn-primary mb-10" id="extra_charge_btn" type="buttom" value="Сохранить наценку" name="extra_charge_btn">
+                <input class="btn btn-warning" id="cansel_extra_charge_btn" type="buttom" value="Отменить наценку" name="cansel_extra_charge_btn">
+              </div>
+              <div class="form-group">
+                <label class="control-label" for="description">Массовое удаление</label>
+                <input class="btn btn-danger" id="delete_all_obj" type="buttom" value="Удалить выбранное" name="delete_all_obj">
+              </div>
+              <div class="form-group">
+                <label class="control-label" for="description">Изменить категорию</label>
+                <select class="form-control mb-10" id="new_category" name="new_category">
+                  <option value="822">Резьбовые фитинги</option>
+                  <option value="823">     Американки</option>
+                  <option value="824">     Водорозетки</option>
+                  <option value="825">     Заглушки</option>
+                  <option value="826">     Контргайки</option>
+                  <option value="827">     Концовки для коллекторов</option>
+                  <option value="828">     Крестовины</option>
+                  <option value="829">     Муфты</option>
+                  <option value="830">     Ниппели</option>
+                  <option value="831">     Переходники</option>
+                  <option value="832">     Сгоны</option>
+                  <option value="833">     Тройники</option>
+                  <option value="834">     Уголки</option>
+                  <option value="835">     Удлинительные бочонки</option>
+                  <option value="836">     Удлинители</option>
+                  <option value="837">     Футорки</option>
+                  <option value="838">     Штуцеры</option>
+                  <option value="879">     Обвод</option>
+                  <option value="880">     Бочонок</option>
+                  <option value="881">     Отводы</option>
+                  <option value="882">     Резьба</option>
+                  <option value="883">     Фланцы, комплектующие для фланцев</option>
+                  <option value="819">Запорная арматура</option>
+                  <option value="821">     Миникраны шаровые</option>
+                  <option value="820">     Краны шаровые</option>
+                  <option value="873">     Шаровые краны под сварку</option>
+                  <option value="874">     Фланцевые краны</option>
+                  <option value="875">     Балансировочные клапаны</option>
+                  <option value="876">     Обратные клапана</option>
+                  <option value="877">     Вентиля, задвижки клиновые</option>
+                  <option value="878">     Водоотводы</option>
+                  <option value="844">Отопление и водоснабжение</option>
+                  <option value="845">     Радиаторные терморегуляторы и запорные клапаны</option>
+                  <option value="846">     Фильтры, водоочистка и водоподготовка</option>
+                  <option value="932">          Системы водоочистки</option>
+                  <option value="933">          Аксессуары для водоочистителей</option>
+                  <option value="934">          Фильтры для воды</option>
+                  <option value="935">          Комплектующие</option>
+                  <option value="847">     Нейтрализаторы магнитные</option>
+                  <option value="848">     Теплоавтоматика</option>
+                  <option value="854">     Система антиобледенения</option>
+                  <option value="855">     Электрические конвекторы, котлы и комплектующие</option>
+                  <option value="856">     Отопление пола</option>
+                  <option value="857">     Управление системами отопления</option>
+                  <option value="858">     Бытовые насосы и комплектующие</option>
+                  <option value="948">          Циркуляционные насосы</option>
+                  <option value="949">          Циркуляционные насосы регулируемые</option>
+                  <option value="950">          Вибрационные насосы</option>
+                  <option value="951">          Гидроаккумуляторы и расширительные баки</option>
+                  <option value="952">          Дренажные насосы, канализационные станции</option>
+                  <option value="953">          Комплектующие к насосам</option>
+                  <option value="954">          Станции водоснабжения</option>
+                  <option value="955">          Насосы</option>
+                  <option value="861">     Трубы</option>
+                  <option value="860">     Уплотнение и герметизация</option>
+                  <option value="957">          Герметики, лен</option>
+                  <option value="958">          Нити, ленты</option>
+                  <option value="959">          Сантехнаборы, прокладки</option>
+                  <option value="976">          Изоляция</option>
+                  <option value="859">     Аксессуары и принадлежности</option>
+                  <option value="922">          Манометры, термоманометры, комплектующие</option>
+                  <option value="960">          Средства для очистки рук</option>
+                  <option value="975">          Крепление</option>
+                  <option value="884">     Подводка</option>
+                  <option value="885">     Шланги</option>
+                  <option value="886">     Водосчетчики</option>
+                  <option value="908">     Фитинги для  меди и бронзы</option>
+                  <option value="909">     Коллекторы и комплектующие</option>
+                  <option value="917">     Система контроля протечки воды, группы безопасности</option>
+                  <option value="919">     Радиаторы и полотенцесушители</option>
+                  <option value="921">          Комплектующие к радиаторам и полотенцесушителям</option>
+                  <option value="941">          Радиаторы</option>
+                  <option value="942">          Полотенцесушители</option>
+                  <option value="920">     Вентили для радиаторов</option>
+                  <option value="923">     Канализация</option>
+                  <option value="924">          Канализация внутренняя</option>
+                  <option value="925">          Наружная канализация</option>
+                  <option value="926">          Бесшумная канализация</option>
+                  <option value="927">          Водосборная канализация</option>
+                  <option value="928">          Комплектующие к канализации</option>
+                  <option value="956">          Инструмент для прочистки труб</option>
+                  <option value="929">     Сифоны, арматура</option>
+                  <option value="930">          Комплектующие к сифонам и арматуре</option>
+                  <option value="931">          Трубы гибкие, латунные, гофры</option>
+                  <option value="936">          Сифоны</option>
+                  <option value="937">          Арматура</option>
+                  <option value="938">          Сливы-переливы, выпуски</option>
+                  <option value="939">          Трапы</option>
+                  <option value="940">          Трубы фановые</option>
+                  <option value="974">     Муфты, хомуты</option>
+                  <option value="977">     Люки и воздуховоды</option>
+                  <option value="978">          Сантехнические люки</option>
+                  <option value="979">          Комплектующие к воздуховодам</option>
+                  <option value="839">Пресс фитинги</option>
+                  <option value="840">     Переходники</option>
+                  <option value="841">     Уголки</option>
+                  <option value="842">     Водорозетки</option>
+                  <option value="843">     Тройники</option>
+                  <option value="887">Сантехника из полипропилена</option>
+                  <option value="888">     Вентиль</option>
+                  <option value="889">     Трубы</option>
+                  <option value="890">     Заглушки,опоры, соединительные элементы</option>
+                  <option value="891">     Колено, крестовины</option>
+                  <option value="892">     Коллекторы</option>
+                  <option value="893">     Кран шаровый</option>
+                  <option value="894">     Муфта, обратный клапан</option>
+                  <option value="895">     Тройники</option>
+                  <option value="849">Запорная и регулирующая арматура</option>
+                  <option value="850">     Воздухоотведение</option>
+                  <option value="851">     Клапаны предохранительные. Группы безопасности</option>
+                  <option value="852">     Редукторы давления. Термосмесители</option>
+                  <option value="896">Фитинги для ПЭ</option>
+                  <option value="897">     Заглушка, гильза</option>
+                  <option value="898">     Кран шаровый</option>
+                  <option value="899">     Муфта</option>
+                  <option value="900">     Отводы</option>
+                  <option value="901">     Тройники</option>
+                  <option value="902">     Трубы, хомуты</option>
+                  <option value="903">Фитинги для металлопластика</option>
+                  <option value="904">     Крестовины, муфты</option>
+                  <option value="905">     Трубы и комплектующие</option>
+                  <option value="906">     Тройники</option>
+                  <option value="907">     Уголки</option>
+                  <option value="910">Поливочные шланги и оборудование</option>
+                  <option value="911">     Комплектующие</option>
+                  <option value="912">     Шланги</option>
+                  <option value="913">     Переходники, соединители для шлангов</option>
+                  <option value="914">Смесители и душевые системы</option>
+                  <option value="915">     Смесители</option>
+                  <option value="916">     Комплектующие к смесителям</option>
+                  <option value="965">          Шланги к смесителям</option>
+                  <option value="966">          Изливы</option>
+                  <option value="967">          Лейки</option>
+                  <option value="968">          Картриджи</option>
+                  <option value="969">          Держатели, стойки, кронштейны, отражатели</option>
+                  <option value="970">          Кран-букса</option>
+                  <option value="971">          Аэраторы, маховики</option>
+                  <option value="972">          Крепление, пластины, кольца, наборы сантехнические</option>
+                  <option value="973">          Дивертеры, эксцентрики, отводы, переходники</option>
+                  <option value="982">     Мойки</option>
+                  <option value="918">Оборудование</option>
+                  <option value="961">Газовое оборудование</option>
+                  <option value="962">     Муфта диэлектрическая</option>
+                  <option value="963">     Краны шаровые для газа</option>
+                  <option value="964">     Подводка сильфонного типа</option>
+                  <option value="981">Распродажа</option>
+                  <option value="983">Новое поступление</option>
+                  <option value="984">     Аксессуары для душа</option>
+                  <option value="985">          Стойки, крепления и держатели</option>
+                  <option value="986">          Душевые шланги</option>
+                  <option value="987">          Душевые лейки</option>
+                  <option value="988">          Комплекты и лейки для биде</option>
+                  <option value="989">          Установочные аксессуары</option>
+                  <option value="990">     Аксессуары для ванной</option>
+                  <option value="991">          Держатели полотенец, бумажных полотенец</option>
+                  <option value="992">          Полочки, этажерки для ванной комнаты</option>
+                  <option value="993">          Крючки</option>
+                  <option value="994">          Стаканы, подстаканники</option>
+                  <option value="995">          Мыльницы, дозаторы</option>
+                  <option value="996">          Бумагодержатели, ерш</option>
+                  <option value="997">          Поручни для ванной</option>
+                  <option value="998">          Зеркала</option>
+                  <option value="999">          Ведра</option>
+                  <option value="1000">          Разные аксессуары для ванной</option>
+                  <option value="1001">          Держатели фена, газет, освежителя воздуха</option>
+                  <option value="1002">          Стойки для ванной и туалета</option>
+                  <option value="1003">          Органайзеры, корзины для белья</option>
+                  <option value="1004">          Шторки для ванной</option>
+                  <option value="1010">          Коврики</option>
+                  <option value="1005">     Инсталяции</option>
+                  <option value="1006">          Инсталяции, комплекты</option>
+                  <option value="1007">          Кнопки смыва</option>
+                  <option value="1008">          Механизмы для сливных бачков</option>
+                  <option value="1009">          Бачок сливной</option>
+                  <option value="1011">     Смесители и аксессуары</option>
+                  <option value="1012">          Смесители для кухни, раковины</option>
+                  <option value="1013">          Аксессуары для кухни</option>
+                  <option value="1014">          Смесители для биде</option>
+                  <option value="1016">          Смесители для ванны и душа</option>
+                  <option value="1017">          Наборы смесителей</option>
+                  <option value="1018">          Для писсуаров</option>
+                  <option value="1019">          Кран-буксы, картриджи</option>
+                  <option value="1020">          Изливы, диверторы, аэраторы</option>
+                  <option value="1021">          Ремкомплекты, гайки</option>
+                  <option value="1022">          Гофрированная, гибкая подводка</option>
+                </select>
+                <input class="btn btn-primary" id="save_new_category" type="buttom" value="Применить" name="save_new_category">
+              </div>
+            </div>
+          </div>
+          <div class="panel panel-success shadow">
+            <div class="panel-heading">
+              <div class="pull-left">
+                <h3 class="panel-title">Поиск</h3>
+              </div>
+              <div class="pull-right">
+                <button class="btn btn-sm" data-action="collapse" data-container="body" data-toggle="tooltip" data-placement="top" data-title="Collapse" data-original-title="" title=""><i class="fa fa-angle-up">            </i></button>
+              </div>
+              <div class="clearfix"></div>
+            </div>
+            <div class="panel-body">
+              <form>
+                <div class="input-group mb-15">
+                  <input class="form-control" type="text" placeholder="Что будем искать?"><span class="input-group-btn">
+                    <button class="btn btn-success" type="submit"><i class="fa fa-search"></i></button></span>
+                </div>
+              </form>
+            </div>
+          </div>
+          <div class="panel panel-success shadow">
+            <div class="panel-heading">
+              <div class="pull-left">
+                <h3 class="panel-title">Фильтр</h3>
+              </div>
+              <div class="pull-right">
+                <button class="btn btn-sm" data-action="collapse" data-container="body" data-toggle="tooltip" data-placement="top" data-title="Collapse" data-original-title="" title=""><i class="fa fa-angle-up">            </i></button>
+              </div>
+              <div class="clearfix"></div>
+            </div>
+            <div class="panel-body no-padding">
+              <div class="list-group no-margin"><a class="list-group-item" href="#">Все</a><a class="list-group-item" href="#">Активные</a><a class="list-group-item active" href="#">Не активные</a></div>
+            </div>
+          </div>
+          <div class="panel panel-success shadow">
+            <div class="panel-heading">
+              <div class="pull-left">
+                <h3 class="panel-title">Категории</h3>
+              </div>
+              <div class="pull-right">
+                <button class="btn btn-sm" data-action="collapse" data-container="body" data-toggle="tooltip" data-placement="top" data-title="Collapse" data-original-title="" title=""><i class="fa fa-angle-up">            </i></button>
+              </div>
+              <div class="clearfix"></div>
+            </div>
+            <div class="panel-body no-padding">
+              <div class="list-group no-margin"><a class="list-group-item" href="#">Все категории</a><a class="list-group-item" href="#">Телевизоры</a><a class="list-group-item active" href="#">Телевизоры  </a><a class="list-group-item" href="#">Телевизоры</a><a class="list-group-item" href="#">Телевизоры</a><a class="list-group-item" href="#">Телевизоры</a><a class="list-group-item" href="#">Телевизоры</a></div>
+            </div>
+          </div>
+          <div class="panel panel-success shadow">
+            <div class="panel-heading">
+              <div class="pull-left">
+                <h3 class="panel-title">Производители</h3>
+              </div>
+              <div class="pull-right">
+                <button class="btn btn-sm" data-action="collapse" data-container="body" data-toggle="tooltip" data-placement="top" data-title="Collapse" data-original-title="" title=""><i class="fa fa-angle-up">            </i></button>
+              </div>
+              <div class="clearfix"></div>
+            </div>
+            <div class="panel-body no-padding">
+              <div class="list-group no-margin"><a class="list-group-item" href="#">Все категории</a><a class="list-group-item" href="#">Hyundai</a><a class="list-group-item" href="#">LG     </a><a class="list-group-item" href="#">Panasonic     </a><a class="list-group-item" href="#">Philips     </a><a class="list-group-item" href="#">Samsung     </a><a class="list-group-item active" href="#">Sharp     </a><a class="list-group-item" href="#">Sony     </a><a class="list-group-item" href="#">Supra     </a><a class="list-group-item" href="#">TCL     </a><a class="list-group-item" href="#">Telefunken     </a><a class="list-group-item" href="#">Toshiba</a></div>
+            </div>
+          </div>
+        </aside>
+        <footer class="footer-content">
+          <div class="pull-right"> <span id="tour-19">2014 - <span id="copyright-year"></span></span></div>
+          <div class="clearfix"></div>
+        </footer>
+      </section>
+      <div class="filter__btn"><a href="#"><i class="fa fa-sliders"></i></a></div>
+    </div>
+    <link rel="stylesheet" href="css/app.min.css">
+    <script src="js/app.min.js" async></script>
+  </body>
+</html>

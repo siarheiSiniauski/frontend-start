@@ -69,7 +69,23 @@ gulp.task('sass', function() {
 
 gulp.task('scripts', function() {
 	return gulp.src([
-		'app/libs/jquery/dist/jquery.min.js',
+		'app/libs/global/plugins/bower_components/jquery/dist/jquery.min.js',
+		'app/libs/jquery.nicescroll/dist/jquery.nicescroll.min.js',
+		'app/libs/global/plugins/bower_components/jquery-cookie/jquery.cookie.js',
+		'app/libs/global/plugins/bower_components/bootstrap/dist/js/bootstrap.min.js',
+		'app/libs/global/plugins/bower_components/jasny-bootstrap-fileinput/js/jasny-bootstrap.fileinput.min.js',
+		'app/libs/global/plugins/bower_components/typehead.js/dist/handlebars.js',
+		'app/libs/global/plugins/bower_components/typehead.js/dist/typeahead.bundle.min.js',
+		'app/libs/global/plugins/bower_components/jquery.sparkline.min/index.js',
+		'app/libs/global/plugins/bower_components/jquery-easing-original/jquery.easing.1.3.min.js',
+		'app/libs/global/plugins/bower_components/ionsound/js/ion.sound.min.js',
+		'app/libs/global/plugins/bower_components/bootbox/bootbox.js',
+		'app/libs/global/plugins/bower_components/summernote/dist/summernote.min.js',
+		'app/libs/dropzone/dist/min/dropzone.min.js',
+		'app/libs/jQuery-UI-Sortable/jquery-ui-sortable.min.js',
+		'app/libs/global/plugins/bower_components/bootstrap-switch/dist/js/bootstrap-switch.min.js',		
+		'app/libs/global/plugins/bower_components/bootstrap-datepicker-vitalets/js/bootstrap-datepicker.js',		
+		'app/libs/global/plugins/bower_components/chosen_v1.2.0/chosen.jquery.min.js',		
 		'app/js/common.js', // Всегда в конце
 		])
 	.pipe(concat('app.min.js'))

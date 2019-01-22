@@ -1,0 +1,75 @@
+extends ../main.layout.pug
+
+block title
+  | Статьи
+
+
+block content
+  include ../inc/head
+  include ../inc/sidebar-left.pug
+  section#page-content.page__articles
+    .header-content
+      h2 Статьи
+      .breadcrumb-wrapper.hidden-xs
+        ol.breadcrumb
+          li
+            i.fa.fa-home
+            a(href='/') Главная
+            i.fa.fa-angle-right
+          li.active Статьи
+
+
+    .body-content
+      .row
+        .col-md-12
+          .panel.panel-success.shadow
+            .panel-heading
+              h3.panel-title Список статей
+
+            .panel-body.no-padding
+              .list
+                ul.list__wrap
+                  li.list__item
+                    .list__info               
+                      a(href="article-edit.html").list__link Статья № 1
+                    .list__action                 
+                      .list__btn
+                        a.btn.btn-primary.btn-xs(href='#')
+                          i.fa.fa-eye
+                        a.btn.btn-danger.btn-xs(href='#')
+                          i.fa.fa-times 
+
+                  li.list__item
+                    .list__info              
+                      a(href="article-edit.html").list__link Статья № 2
+                    .list__action                 
+                      .list__btn
+                        a.btn.btn-primary.btn-xs(href='#')
+                          i.fa.fa-eye
+                        a.btn.btn-danger.btn-xs(href='#')
+                          i.fa.fa-times 
+                          
+                  li.list__item
+                    .list__info               
+                      a(href="article-edit.html").list__link Статья № 3
+                    .list__action                 
+                      .list__btn
+                        a.btn.btn-primary.btn-xs(href='#')
+                          i.fa.fa-eye
+                        a.btn.btn-danger.btn-xs(href='#')
+                          i.fa.fa-times 
+
+                  li.list__item
+                    .list__info               
+                      a(href="article-edit.html").list__link Статья № 4
+                    .list__action                 
+                      .list__btn
+                        a.btn.btn-primary.btn-xs(href='#')
+                          i.fa.fa-eye
+                        a.btn.btn-danger.btn-xs(href='#')
+                          i.fa.fa-times 
+                       
+                
+      
+      include ../inc/pagination
+    include ../inc/footer

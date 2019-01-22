@@ -1,0 +1,109 @@
+extends ../main.layout.pug
+
+block title
+  | Курсы валют
+
+
+block content
+  include ../inc/head
+  include ../inc/sidebar-left.pug
+  section#page-content.page__exchange
+    .header-content
+      h2 Курсы валют
+      .breadcrumb-wrapper.hidden-xs
+        ol.breadcrumb
+          li
+            i.fa.fa-home
+            a(href='/') Главная
+            i.fa.fa-angle-right
+          li.active Курсы валют
+
+
+    .body-content
+      .row
+        .col-md-12
+          .panel.panel-success.shadow
+            .panel-heading
+              h3.panel-title Список валют
+              
+            .panel-body.no-padding
+              .list
+                ul.list__wrap#sortable
+                  li.list__item
+                    input.cat__position(type='hidden', name='cat_position', value='1')
+                    input.cat__id(type='hidden', name='cat_id', value='900')
+                    .list__info
+                      .list__sort
+                        .fa.fa-sort   
+                      .list__icon 
+                        i.i.fa.fa-rub      
+                      .list__code RUB       
+                      a(href="exchange-edit.html").list__link  Российский рубль
+                      
+                    .list__action                 
+                      .list__btn
+                        a.btn.btn-danger.btn-xs(href='#', data-toggle='tooltip', data-placement='top', data-original-title='Удалить')
+                          i.fa.fa-times 
+
+                  li.list__item
+                    input.cat__position(type='hidden', name='cat_position', value='1')
+                    input.cat__id(type='hidden', name='cat_id', value='900')
+                    .list__info
+                      .list__sort
+                        .fa.fa-sort 
+                      .list__icon 
+                        i.i.fa.fa-usd 
+                      .list__code USD               
+                      a(href="exchange-edit.html").list__link Доллар США
+                      
+                    .list__action                 
+                      .list__btn
+                        a.btn.btn-danger.btn-xs(href='#', data-toggle='tooltip', data-placement='top', data-original-title='Удалить')
+                          i.fa.fa-times
+
+                  li.list__item
+                    input.cat__position(type='hidden', name='cat_position', value='1')
+                    input.cat__id(type='hidden', name='cat_id', value='900')
+                    .list__info
+                      .list__sort
+                        .fa.fa-sort 
+                      .list__icon 
+                        i.i.fa.fa-eur  
+                      .list__code EUR              
+                      a(href="exchange-edit.html").list__link Евро
+                      
+                    .list__action                 
+                      .list__btn
+                        a.btn.btn-danger.btn-xs(href='#', data-toggle='tooltip', data-placement='top', data-original-title='Удалить')
+                          i.fa.fa-times 
+
+                  li.list__item
+                    input.cat__position(type='hidden', name='cat_position', value='1')
+                    input.cat__id(type='hidden', name='cat_id', value='900')
+                    .list__info
+                      .list__sort
+                        .fa.fa-sort 
+                      .list__icon 
+                        i.i.fa.fa-gbp 
+                      .list__code GBP              
+                      a(href="exchange-edit.html").list__link Фунт стерлингов
+                      
+                    .list__action                 
+                      .list__btn
+                        a.btn.btn-danger.btn-xs(href='#', data-toggle='tooltip', data-placement='top', data-original-title='Удалить')
+                          i.fa.fa-times 
+                          
+
+            //- .panel-body.padding-15
+            //-   .form-group
+            //-     .input-group
+            //-       span.input-group-addon.bg-success $
+            //-       input.form-control(type='text' placeholder="Курс доллара")
+            //-   .form-group
+            //-     .input-group
+            //-       span.input-group-addon.bg-success €
+            //-       input.form-control(type='text' placeholder="Курс евро")
+            //-   button(type="submit").btn.btn-success Сохранить
+                
+      
+    include ../inc/footer

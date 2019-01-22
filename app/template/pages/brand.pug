@@ -1,0 +1,124 @@
+extends ../main.layout.pug
+
+block title
+  | Производители 
+
+
+block content
+  include ../inc/head
+  include ../inc/sidebar-left.pug
+  section#page-content
+    .header-content
+      h2 Производители 
+      .breadcrumb-wrapper.hidden-xs
+        ol.breadcrumb
+          li
+            i.fa.fa-home
+            a(href='/') Главная
+            i.fa.fa-angle-right
+          li.active Производители 
+
+
+    .body-content
+      .row
+        .col-md-12
+          .panel.panel-success.shadow
+            .panel-heading
+              h3.panel-title Список производителей
+
+            .panel-body.no-padding
+              .list
+                ul.list__wrap
+                  li.list__item
+                    .list__info 
+                      .list__img
+                        img.img-circle.img-responsive(src='img/avatar/4.png', alt='Daddy Botak')               
+                      a(href="brand-edit.html").list__link Бренд 1
+                    .list__action 
+                      .list__id 
+                        small id:
+                        | 900                
+                      .list__btn
+                        a.btn.btn-danger.btn-xs(href='#', data-toggle='tooltip', data-placement='top', data-original-title='Удалить')
+                          i.fa.fa-times 
+
+                  li.list__item
+                    .list__info   
+                      .list__img
+                        img.img-circle.img-responsive(src='img/avatar/4.png', alt='Daddy Botak')            
+                      a(href="brand-edit.html").list__link Бренд 1
+                    .list__action 
+                      .list__id 
+                        small id:
+                        | 900                 
+                      .list__btn
+                        a.btn.btn-danger.btn-xs(href='#', data-toggle='tooltip', data-placement='top', data-original-title='Удалить')
+                          i.fa.fa-times 
+
+                  li.list__item
+                    .list__info  
+                      .list__img
+                        img.img-circle.img-responsive(src='img/avatar/4.png', alt='Daddy Botak')             
+                      a(href="brand-edit.html").list__link Бренд 1
+                    .list__action 
+                      .list__id 
+                        small id:
+                        | 900                 
+                      .list__btn
+                        a.btn.btn-danger.btn-xs(href='#', data-toggle='tooltip', data-placement='top', data-original-title='Удалить')
+                          i.fa.fa-times 
+
+                  li.list__item
+                    .list__info 
+                      .list__img
+                        img.img-circle.img-responsive(src='img/avatar/4.png', alt='Daddy Botak')              
+                      a(href="brand-edit.html").list__link Бренд 1
+                    .list__action 
+                      .list__id 
+                        small id:
+                        | 900                 
+                      .list__btn
+                        a.btn.btn-danger.btn-xs(href='#', data-toggle='tooltip', data-placement='top', data-original-title='Удалить')
+                          i.fa.fa-times
+
+                  li.list__item
+                    .list__info 
+                      .list__img
+                        img.img-circle.img-responsive(src='img/avatar/4.png', alt='Daddy Botak')               
+                      a(href="brand-edit.html").list__link Бренд 1 
+                    .list__action 
+                      .list__id 
+                        small id:
+                        | 900                 
+                      .list__btn
+                        a.btn.btn-danger.btn-xs(href='#', data-toggle='tooltip', data-placement='top', data-original-title='Удалить')
+                          i.fa.fa-times 
+
+                  li.list__item
+                    .list__info   
+                      .list__img
+                        img.img-circle.img-responsive(src='img/avatar/4.png', alt='Daddy Botak')                
+                      a(href="brand-edit.html").list__link Бренд 1 
+                    .list__action
+                      .list__id 
+                        small id:
+                        | 900                 
+                      .list__btn
+                        a.btn.btn-danger.btn-xs(href='#', data-toggle='tooltip', data-placement='top', data-original-title='Удалить')
+                          i.fa.fa-times 
+
+                  li.list__item
+                    .list__info 
+                      .list__img
+                        img.img-circle.img-responsive(src='img/avatar/4.png', alt='Daddy Botak')               
+                      a(href="brand-edit.html").list__link Бренд 1
+                    .list__action
+                      .list__id 
+                        small id:
+                        | 900                  
+                      .list__btn
+                        a.btn.btn-danger.btn-xs(href='#', data-toggle='tooltip', data-placement='top', data-original-title='Удалить')
+                          i.fa.fa-times                  
+                
+      
+    include ../inc/footer

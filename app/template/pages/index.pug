@@ -1,9 +1,348 @@
 extends ../main.layout.pug
 
 block title
-  | Главная
+  | Заказы
 
 
 block content
   include ../inc/head
-  include ../inc/footer
+  include ../inc/sidebar-left.pug
+  section#page-content.page__orders
+    .header-content
+      h2 Заказы 
+      .breadcrumb-wrapper.hidden-xs
+        ol.breadcrumb
+          li
+            i.fa.fa-home
+            a(href='/') Заказы 
+            
+
+
+    .body-content
+      .row
+        .col-md-12
+          .panel
+            .panel-heading
+              h3.panel-title Таблица заказов
+            
+            .panel-body.no-padding
+              .table-responsive
+                table.table.table-bordered.table-success
+                  thead
+                    tr
+                      th  
+                      th Дата
+                      th Покупатель
+                      th Статус
+                      th Сумма
+                      th.text-center 
+                        .btn.btn-danger.btn-xs
+                          i.fa.fa-times
+                  tbody
+                    tr.border-warning
+                      td.text-center(style='width: 7%;')
+                        a(href="order.html")  # 1024
+                      td 
+                        | Today
+                      td
+                        | Hopkins, Helen
+                      td
+                        span.label.label-warning В обработке
+                      td
+                        | $10.45
+                      td.text-center
+                        a.btn.btn-danger.btn-xs(href='#', data-toggle='tooltip', data-placement='top', data-original-title='Удалить')
+                          i.fa.fa-times
+
+                    tr.border-lilac
+                      td.text-center(style='width: 7%;')
+                        a(href="order.html")  # 1025
+                      td
+                        | Yesterday
+                      td
+                        | Thomas, Rose
+                      td
+                        span.label.label-lilac Отправленный
+                      td
+                        | $10.99
+                      td.text-center
+                        a.btn.btn-danger.btn-xs(href='#', data-toggle='tooltip', data-placement='top', data-original-title='Удалить')
+                          i.fa.fa-times
+                  
+                    tr.border-danger
+                      td.text-center(style='width: 7%;')
+                        a(href="order.html")  # 1026
+                      td
+                        | Yesterday
+                      td
+                        | Fields, Samuel
+                      td
+                        span.label.label-danger Отказ
+                      td
+                        | $23.99
+                      td.text-center
+                        a.btn.btn-danger.btn-xs(href='#', data-toggle='tooltip', data-placement='top', data-original-title='Удалить')
+                          i.fa.fa-times
+                  
+                    tr.border-warning
+                      td.text-center(style='width: 7%;')
+                        a(href="order.html")  # 1027
+                      td
+                        | 21st July 2015
+                      td
+                        | Ford, Judith
+                      td
+                        span.label.label-warning В обработке
+                      td
+                        | $9.45
+                      td.text-center
+                        a.btn.btn-danger.btn-xs(href='#', data-toggle='tooltip', data-placement='top', data-original-title='Удалить')
+                          i.fa.fa-times
+                  
+                    tr.border-info
+                      td.text-center(style='width: 7%;')
+                        a(href="order.html")  # 1028
+                      td
+                        | 19st July 2015
+                      td
+                        | Keller, Michelle
+                      td
+                        span.label.label-info Возврат
+                      td
+                        | $5.99
+                      td.text-center
+                        a.btn.btn-danger.btn-xs(href='#', data-toggle='tooltip', data-placement='top', data-original-title='Удалить')
+                          i.fa.fa-times
+                
+                    tr.border-warning
+                      td.text-center(style='width: 7%;')
+                        a(href="order.html")  # 1024
+                      td
+                        | Today
+                      td
+                        | Hopkins, Helen
+                      td
+                        span.label.label-warning В обработке
+                      td
+                        | $10.45
+                      td.text-center
+                        a.btn.btn-danger.btn-xs(href='#', data-toggle='tooltip', data-placement='top', data-original-title='Удалить')
+                          i.fa.fa-times
+                
+                    tr.border-lilac
+                      td.text-center(style='width: 7%;')
+                        a(href="order.html")  # 1025
+                      td
+                        | Yesterday
+                      td
+                        | Thomas, Rose
+                      td
+                        span.label.label-lilac Отправленный
+                      td
+                        | $10.99
+                      td.text-center
+                        a.btn.btn-danger.btn-xs(href='#', data-toggle='tooltip', data-placement='top', data-original-title='Удалить')
+                          i.fa.fa-times
+                     
+                    tr.border-danger
+                      td.text-center(style='width: 7%;')
+                        a(href="order.html")  # 1026
+                      td
+                        | Yesterday
+                      td
+                        | Fields, Samuel
+                      td
+                        span.label.label-danger Отказ
+                      td
+                        | $23.99
+                      td.text-center
+                        a.btn.btn-danger.btn-xs(href='#', data-toggle='tooltip', data-placement='top', data-original-title='Удалить')
+                          i.fa.fa-times
+                    
+                    tr.border-warning
+                      td.text-center(style='width: 7%;')
+                        a(href="order.html")  # 1027
+                      td
+                        | 21st July 2015
+                      td
+                        | Ford, Judith
+                      td
+                        span.label.label-warning В обработке
+                      td
+                        | $9.45
+                      td.text-center
+                        a.btn.btn-danger.btn-xs(href='#', data-toggle='tooltip', data-placement='top', data-original-title='Удалить')
+                          i.fa.fa-times
+                     
+                    tr.border-info
+                      td.text-center(style='width: 7%;')
+                        a(href="order.html")  # 1028
+                      td
+                        | 19st July 2015
+                      td
+                        | Keller, Michelle
+                      td
+                        span.label.label-info Возврат
+                      td
+                        | $5.99
+                      td.text-center
+                        a.btn.btn-danger.btn-xs(href='#', data-toggle='tooltip', data-placement='top', data-original-title='Удалить')
+                          i.fa.fa-times
+               
+                    tr.border-warning
+                      td.text-center(style='width: 7%;')
+                        a(href="order.html")  # 1024
+                      td
+                        | Today
+                      td
+                        | Hopkins, Helen
+                      td
+                        span.label.label-warning В обработке
+                      td
+                        | $10.45
+                      td.text-center
+                        a.btn.btn-danger.btn-xs(href='#', data-toggle='tooltip', data-placement='top', data-original-title='Удалить')
+                          i.fa.fa-times
+              
+                    tr.border-lilac
+                      td.text-center(style='width: 7%;')
+                        a(href="order.html")  # 1025
+                      td
+                        | Yesterday
+                      td
+                        | Thomas, Rose
+                      td
+                        span.label.label-lilac Отправленный
+                      td
+                        | $10.99
+                      td.text-center
+                        a.btn.btn-danger.btn-xs(href='#', data-toggle='tooltip', data-placement='top', data-original-title='Удалить')
+                          i.fa.fa-times
+               
+                    tr.border-danger
+                      td.text-center(style='width: 7%;')
+                        a(href="order.html")  # 1026
+                      td
+                        | Yesterday
+                      td
+                        | Fields, Samuel
+                      td
+                        span.label.label-danger Отказ
+                      td
+                        | $23.99
+                      td.text-center
+                        a.btn.btn-danger.btn-xs(href='#', data-toggle='tooltip', data-placement='top', data-original-title='Удалить')
+                          i.fa.fa-times
+               
+                    tr.border-warning
+                      td.text-center(style='width: 7%;')
+                        a(href="order.html")  # 1027
+                      td
+                        | 21st July 2015
+                      td
+                        | Ford, Judith
+                      td
+                        span.label.label-warning В обработке
+                      td
+                        | $9.45
+                      td.text-center
+                        a.btn.btn-danger.btn-xs(href='#', data-toggle='tooltip', data-placement='top', data-original-title='Удалить')
+                          i.fa.fa-times
+          
+
+                    tr.border-info
+                      td.text-center(style='width: 7%;')
+                        a(href="order.html")  # 1028
+                      td
+                        | 19st July 2015
+                      td
+                        | Keller, Michelle
+                      td
+                        span.label.label-info Возврат
+                      td
+                        | $5.99
+                      td.text-center
+                        a.btn.btn-danger.btn-xs(href='#', data-toggle='tooltip', data-placement='top', data-original-title='Удалить')
+                          i.fa.fa-times
+       
+
+                    tr.border-warning
+                      td.text-center(style='width: 7%;')
+                        a(href="order.html")  # 1024
+                      td
+                        | Today
+                      td
+                        | Hopkins, Helen
+                      td
+                        span.label.label-warning В обработке
+                      td
+                        | $10.45
+                      td.text-center
+                        a.btn.btn-danger.btn-xs(href='#', data-toggle='tooltip', data-placement='top', data-original-title='Удалить')
+                          i.fa.fa-times
+                      
+                    tr.border-lilac
+                      td.text-center(style='width: 7%;')
+                        a(href="order.html")  # 1025
+                      td
+                        | Yesterday
+                      td
+                        | Thomas, Rose
+                      td
+                        span.label.label-lilac Отправленный
+                      td
+                        | $10.99
+                      td.text-center
+                        a.btn.btn-danger.btn-xs(href='#', data-toggle='tooltip', data-placement='top', data-original-title='Удалить')
+                          i.fa.fa-times
+           
+
+                    tr.border-danger
+                      td.text-center(style='width: 7%;')
+                        a(href="order.html")  # 1026
+                      td
+                        | Yesterday
+                      td
+                        | Fields, Samuel
+                      td
+                        span.label.label-danger Отказ
+                      td
+                        | $23.99
+                      td.text-center
+                        a.btn.btn-danger.btn-xs(href='#', data-toggle='tooltip', data-placement='top', data-original-title='Удалить')
+                          i.fa.fa-times
+                      
+                    tr.border-warning
+                      td.text-center(style='width: 7%;')
+                        a(href="order.html")  # 1027
+                      td
+                        | 21st July 2015
+                      td
+                        | Ford, Judith
+                      td
+                        span.label.label-warning В обработке
+                      td
+                        | $9.45
+                      td.text-center
+                        a.btn.btn-danger.btn-xs(href='#', data-toggle='tooltip', data-placement='top', data-original-title='Удалить')
+                          i.fa.fa-times
+
+                    tr.border-info
+                      td.text-center(style='width: 7%;')
+                        a(href="order.html")  # 1028
+                      td
+                        | 19st July 2015
+                      td
+                        | Keller, Michelle
+                      td
+                        span.label.label-info Возврат
+                      td
+                        | $5.99
+                      td.text-center
+                        a.btn.btn-danger.btn-xs(href='#', data-toggle='tooltip', data-placement='top', data-original-title='Удалить')
+                          i.fa.fa-times
+
+
+          include ../inc/pagination
+
+    include ../inc/footer

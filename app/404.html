@@ -13,6 +13,8 @@
     <link rel="apple-touch-icon" sizes="72x72" href="img/favicon/apple-touch-icon-72x72.png">
     <link rel="apple-touch-icon" sizes="114x114" href="img/favicon/apple-touch-icon-114x114.png">
     <link rel="apple-touch-icon" sizes="180x180" href="img/favicon/apple-touch-icon-180x180.png">
+    <link href="http://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <!-- Chrome, Firefox OS and Opera-->
     <meta name="theme-color" content="#000">
     <!-- Windows Phone-->
@@ -20,9 +22,31 @@
     <!-- iOS Safari-->
     <meta name="apple-mobile-web-app-status-bar-style" content="#000">
   </head>
-  <body>
+  <body class="page-header-fixed page-sidebar-fixed">
     <!-- Custom Jade-->
     <div class="page-content">
+      <header id="header">
+        <div class="header-left">
+          <div class="navbar-header"><a class="navbar-brand" href="/"><img class="logo" src="img/logo-white.png" alt="brand logo"></a></div>
+        </div>
+        <div class="header-right">
+          <div class="navbar navbar-toolbar">
+            <div class="navbar-minimize-mobile left hidden-lg hidden-md hidden-sm"><a href="javascript:void(0);"><i class="fa fa-bars"></i></a></div>
+            <ul class="nav navbar-nav navbar-left">
+              <li class="navbar-minimize"><a href="javascript:void(0);" title="Minimize sidebar"><i class="fa fa-bars"></i></a></li>
+            </ul>
+            <ul class="nav navbar-nav navbar-right">
+              <li class="dropdown navbar-order"><a class="dropdown-toggle" href="#"><i class="fa fa-shopping-cart"></i><span class="circle count label label-danger">7</span></a></li>
+              <li class="dropdown navbar-message"><a class="dropdown-toggle" href="#" data-toggle="dropdown"><i class="fa fa-envelope-o"></i><span class="circle count label label-danger">7   </span></a></li>
+              <li class="dropdown navbar-logout"><a class="dropdown-toggle" href="page-signin.html"><i class="fa fa-sign-out"></i>Logout</a></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <footer class="footer-content">
+        <div class="pull-right"> <span id="tour-19">2014 - <span id="copyright-year"></span></span></div>
+        <div class="clearfix"></div>
+      </footer>
     </div>
     <link rel="stylesheet" href="css/app.min.css">
     <script src="js/app.min.js" async></script>

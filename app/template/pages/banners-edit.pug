@@ -1,0 +1,77 @@
+extends ../main.layout.pug
+
+block title
+  | Редактирование банера
+
+
+block content
+  include ../inc/head
+  include ../inc/sidebar-left.pug
+  section#page-content.page__article
+    .header-content
+      h2 Редактирование банера
+      .breadcrumb-wrapper.hidden-xs
+        ol.breadcrumb
+          li
+            i.fa.fa-home
+            a(href='/') Главная
+            i.fa.fa-angle-right
+          li.active Редактирование банера
+
+
+    .body-content
+      .row
+        .col-md-8
+          .panel.panel-success.shadow
+            .panel-heading
+              .pull-left
+                h3.panel-title Параметры страницы
+              .pull-right
+                button.btn.btn-sm(data-action='collapse', data-container='body', data-toggle='tooltip', data-placement='top', data-title='Collapse', data-original-title='', title='')
+                  i.fa.fa-angle-up 
+              .clearfix
+
+            .panel-body.padding-15
+              .form-group
+                label.control-label Активный 
+                .switchs
+                  input.switch(type='checkbox',  name='switch', checked='', data-on-text='ON', data-off-text='OFF', data-on-color='teal')           
+
+              .form-group
+                label.control-label Заголовок
+                input(type="text" class="form-control" placeholder="Введите заголовок")
+              .form-group
+                label.control-label Описание
+                textarea.form-control(rows='4')
+              .form-group
+                label.control-label Адрес (url)
+                input.form-control(type='text' placeholder="Введите адрес страницы")
+                    
+        .col-md-4
+          .panel.panel-success.shadow
+            .panel-heading
+              .pull-left
+                h3.panel-title Дополнительно
+              .pull-right
+                button.btn.btn-sm(data-action='collapse', data-container='body', data-toggle='tooltip', data-placement='top', data-title='Collapse', data-original-title='', title='')
+                  i.fa.fa-angle-up 
+              .clearfix
+            
+            .panel-body.padding-15
+              .form-group
+                label.control-label Изображение статьи
+                .fileinput.fileinput-new(data-provides='fileinput')
+                  .fileinput-new.thumbnail(style='width: 200px; height: 150px;')
+                    img(data-src='holder.js/100%x100%/text:Картинка категории', alt='Картинка категории [100%x100%]', style='height: 100%; width: 100%; display: block;', src='data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiIHN0YW5kYWxvbmU9InllcyI/PjxzdmcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB3aWR0aD0iMTkwIiBoZWlnaHQ9IjE0MCIgdmlld0JveD0iMCAwIDE5MCAxNDAiIHByZXNlcnZlQXNwZWN0UmF0aW89Im5vbmUiPjxkZWZzLz48cmVjdCB3aWR0aD0iMTkwIiBoZWlnaHQ9IjE0MCIgZmlsbD0iI0VFRUVFRSIvPjxnPjx0ZXh0IHg9IjU3Ljk1ODM4MTY1MjgzMjAzIiB5PSI3MCIgc3R5bGU9ImZpbGw6I0FBQUFBQTtmb250LXdlaWdodDpib2xkO2ZvbnQtZmFtaWx5OkFyaWFsLCBIZWx2ZXRpY2EsIE9wZW4gU2Fucywgc2Fucy1zZXJpZiwgbW9ub3NwYWNlO2ZvbnQtc2l6ZToxMHB0O2RvbWluYW50LWJhc2VsaW5lOmNlbnRyYWwiPkZsdWlkIGltYWdlPC90ZXh0PjwvZz48L3N2Zz4=', data-holder-rendered='true')
+                  .fileinput-preview.fileinput-exists.thumbnail(data-trigger='fileinput', style='max-width: 200px; max-height: 150px;')
+                  div
+                    span.btn.btn-success.btn-file
+                      span.fileinput-new Выбрать 
+                      span.fileinput-exists Изменить
+                      input(type='file', name='...')
+                    a.btn.btn-danger.fileinput-exists(href='#', data-dismiss='fileinput') Удалить
+
+    include ../inc/footer
+
+    button.filter__btn(title="Сохранить" type="submit")      
+      i.fa.fa-save

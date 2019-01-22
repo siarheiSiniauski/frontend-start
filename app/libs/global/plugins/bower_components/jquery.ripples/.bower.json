@@ -1,0 +1,15 @@
+{
+  "name": "jquery.ripples",
+  "homepage": "https://github.com/sirxemic/jquery.ripples",
+  "version": "0.5.3",
+  "_release": "0.5.3",
+  "_resolution": {
+    "type": "version",
+    "tag": "v0.5.3",
+    "commit": "ee02d531cb875e858f314cfe1311532a1d944c71"
+  },
+  "_source": "git://github.com/sirxemic/jquery.ripples.git",
+  "_target": "^0.5.3",
+  "_originalSource": "git://github.com/sirxemic/jquery.ripples.git",
+  "_direct": true
+}

@@ -1,36 +1,98 @@
 @import "vars"
 
 /*==========  Desktop First  ==========*/
-
+	/* Large Devices, Wide Screens */
+@media only screen and (max-width : 1366px)
+	.upload__preview
+		grid-template-columns: repeat(4,1fr)
 /* Large Devices, Wide Screens */
 @media only screen and (max-width : 1199.98px)
-	/**/
+	.list__product 
+		.list
+			&__info
+				width: 40%
+			&__action
+				width: 60%
 
-
+	.opt
+		display: block
+	.filter
+		&__btn
+			display: flex
+	
+	.page
+		&__users
+			.form-control
+				width: 200px
+			.users__input
+				.form-control
+					width: 50px
 /* Medium Devices, Desktops */
 @media only screen and (max-width : 991.98px)
-	/**/
+	.upload__preview
+		grid-template-columns: repeat(4,1fr)		
 		
+	
+				
 /* Small Devices, Tablets */
 @media only screen and (max-width : 767.98px)
-	/**/
+	#header 
+		height: auto
+		> .header-left
+			display: none
+		.navbar-minimize
+			display: block
+		.header-right
+			top: 0
 
+		.navbar-minimize-mobile
+			background-color: #fff
+
+	.list
+		&__id
+			margin-right: 10px
+	#page-content 
+		.header-content
+    	padding: 15px 20px
+	
+	body.page-sidebar-minimize #header .header-left, 
+	body.page-sidebar-minimize-auto #header .header-left
+		display: none !important
+	body.page-sidebar-right-show #page-content
+    margin-left: -280px !important
+
+	.ckbox
+		label
+			&::before
+				top: 6x
+		input[type="checkbox"]:checked + label::after
+			top: 6x
+
+			
 /* Small Devices, Tablets */
 @media only screen and (max-width : 575.98px)
-	/**/	
+	.upload__preview
+		grid-template-columns: repeat(3,1fr)	
 
 /* Extra Small Devices, Phones */
 @media only screen and (max-width : 480px)
-	/**/
+	.upload__preview
+		grid-template-columns: repeat(2,1fr)	
 
 /* Extra Small Devices, Phones */
 @media only screen and (max-width : 414px)
-	/**/
+	.upload__preview
+		// grid-template-columns: repeat(1,1fr)
 
 /* Custom, iPhone Retina */
 @media only screen and (max-width : 360px)
-	/**/
-
+	.filter__open
+    right: 277px
+	.upload
+		&__active
+			top: 3px
+		&__del
+			bottom: 3px
 /* Custom, iPhone Retina */
 @media only screen and (max-width : 320px)
 	/**/

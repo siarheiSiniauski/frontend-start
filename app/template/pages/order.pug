@@ -1,0 +1,107 @@
+extends ../main.layout.pug
+
+block title
+  | Заказ № 1
+
+
+block content
+  include ../inc/head
+  include ../inc/sidebar-left.pug
+  section#page-content.page__order
+    .header-content
+      h2 Заказ № 1 
+      .breadcrumb-wrapper.hidden-xs
+        ol.breadcrumb
+          li
+            i.fa.fa-home
+            a(href='/') Главная 
+            i.fa.fa-angle-right
+          li.active Заказ № 1 
+            
+
+
+    .body-content
+      .row
+        .col-lg-8.col-md-12
+          .panel.panel-success.shadow
+            .panel-heading
+              h3.panel-title Информация о заказе
+            
+            .panel-body
+              .table-responsive
+                table.table.table-bordered.table-success
+                  tbody
+                    tr
+                      td(style='width: 200px;') Дата:
+                      td 12-01-2019 23:14:21
+                    tr
+                      td Пользователь:
+                      td Сергей (id:80)
+                    tr
+                      td Телефон:
+                      td
+                        input(class="form-control" type="text" value="+7(999)999-99-99")
+                    tr
+                      td Список товаров:
+                      td
+                        table.table.table-bordered
+                          tbody
+                            tr
+                              td 1
+                              td(style='width:200px')
+                                a(href='/gruppa-bezopasnosti-vasaotto-0300-rbm', target='_blank') Группа безопасности VASAOTTO 0300 RBM
+                              td 1 шт.
+                              td 2683.74 руб.
+                              td 2683.74 руб.
+                            tr
+                              td  
+                              td  
+                              td 1 шт.
+                              td(style='text-align: right;') Итого:
+                              td
+                                b 2683.74 руб.
+                    tr
+                      td Скидка:
+                      td 0%
+                    tr
+                      td Всего со скидкой:
+                      td
+                        b 2683.74 руб.
+                    tr
+                      td Способ доставки:
+                      td Самовывоз из г.Балашиха(150 руб.)
+                    tr
+                      td Стоимость доставки:
+                      td 150 руб.
+                    tr
+                      td Итого к оплате:
+                      td
+                        b 2833.74 руб.
+                    tr
+                      td Способ оплаты:
+                      td Наличными
+                    tr
+                      td Статус:
+                      td
+                        select.form-control
+                          option В обработке
+                          option Оплачено
+                          option В обработке
+                          option Оплачено
+                    tr
+                      td Адрес:
+                      td
+                        input(class="form-control" type="text" value="Добавить адрес")
+                    tr
+                      td Комментарий покупалетя:
+                      td
+                        input(class="form-control" type="text" value="Добавить комментарий")
+                    tr
+                      td Примечания:
+                      td
+                        textarea.form-control(rows='5')
+
+              .order__btn
+                button(type="submit").btn.btn-success Сохранить
+
+    include ../inc/footer

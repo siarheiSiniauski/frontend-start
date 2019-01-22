@@ -1,0 +1,53 @@
+extends ../main.layout.pug
+
+block title
+  | Добавить курс
+
+
+block content
+  include ../inc/head
+  include ../inc/sidebar-left.pug
+  section#page-content.page__exchange.page
+    .header-content
+      h2 Добавить курс
+      .breadcrumb-wrapper.hidden-xs
+        ol.breadcrumb
+          li
+            i.fa.fa-home
+            a(href='/') Главная
+            i.fa.fa-angle-right
+          li.active Добавить курс
+
+
+    .body-content
+      .row
+        .col-md-6
+          .panel.panel-success.shadow
+            .panel-heading
+              h3.panel-title Параметры
+              
+            .panel-body.padding-15
+              .form-group
+                label.control-label Название валюты
+                input.form-control(type='text' placeholder="Например рубль")
+              
+              .form-group
+                label.control-label Код ISO 4217
+                input.form-control(type='text' placeholder="Например RUB")
+              .form-group
+                label.control-label Иконка 
+                  a(href="https://fontawesome.com/v4.7.0/icons/" target="_blank") (fontawesome)   
+                  |  если есть такая
+                input.form-control(type='text' placeholder="<i class=\"fa fa-rub\"></i>")
+
+              .form-group
+                label.control-label Активная
+                .switchs
+                  input.switch(type='checkbox',  name='switch', checked='', data-on-text='ON', data-off-text='OFF', data-on-color='teal')
+              
+              button(type="submit").btn.btn-success Сохранить
+
+           
+                
+      
+    include ../inc/footer

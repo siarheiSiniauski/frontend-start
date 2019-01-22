@@ -1,0 +1,114 @@
+extends ../main.layout.pug
+
+block title
+  | Новости
+
+
+block content
+  include ../inc/head
+  include ../inc/sidebar-left.pug
+  section#page-content.page__articles
+    .header-content
+      h2 Новости
+      .breadcrumb-wrapper.hidden-xs
+        ol.breadcrumb
+          li
+            i.fa.fa-home
+            a(href='/') Главная
+            i.fa.fa-angle-right
+          li.active Новости
+
+
+    .body-content
+      .row
+        .col-md-12
+          .panel.panel-success.shadow
+            .panel-heading
+              h3.panel-title Список новостей
+
+            .panel-body.no-padding
+              .list
+                ul.list__wrap
+                  li.list__item
+                    .list__info               
+                      a(href="news-edit.html").list__link Новость № 1
+                    .list__action                 
+                      .list__btn
+                        a.btn.btn-primary.btn-xs(href='#')
+                          i.fa.fa-eye
+                        a.btn.btn-danger.btn-xs(href='#')
+                          i.fa.fa-times 
+
+                  li.list__item
+                    .list__info              
+                      a(href="news-edit.html").list__link Новость № 2
+                    .list__action                 
+                      .list__btn
+                        a.btn.btn-primary.btn-xs(href='#')
+                          i.fa.fa-eye
+                        a.btn.btn-danger.btn-xs(href='#')
+                          i.fa.fa-times 
+                          
+                  li.list__item
+                    .list__info               
+                      a(href="news-edit.html").list__link Новость № 3
+                    .list__action                 
+                      .list__btn
+                        a.btn.btn-primary.btn-xs(href='#')
+                          i.fa.fa-eye
+                        a.btn.btn-danger.btn-xs(href='#')
+                          i.fa.fa-times 
+
+                  li.list__item
+                    .list__info               
+                      a(href="news-edit.html").list__link Новость № 4
+                    .list__action                 
+                      .list__btn
+                        a.btn.btn-primary.btn-xs(href='#')
+                          i.fa.fa-eye
+                        a.btn.btn-danger.btn-xs(href='#')
+                          i.fa.fa-times 
+                  li.list__item
+                    .list__info               
+                      a(href="news-edit.html").list__link Новость № 1
+                    .list__action                 
+                      .list__btn
+                        a.btn.btn-primary.btn-xs(href='#')
+                          i.fa.fa-eye
+                        a.btn.btn-danger.btn-xs(href='#')
+                          i.fa.fa-times 
+
+                  li.list__item
+                    .list__info              
+                      a(href="news-edit.html").list__link Новость № 2
+                    .list__action                 
+                      .list__btn
+                        a.btn.btn-primary.btn-xs(href='#')
+                          i.fa.fa-eye
+                        a.btn.btn-danger.btn-xs(href='#')
+                          i.fa.fa-times 
+                          
+                  li.list__item
+                    .list__info               
+                      a(href="news-edit.html").list__link Новость № 3
+                    .list__action                 
+                      .list__btn
+                        a.btn.btn-primary.btn-xs(href='#')
+                          i.fa.fa-eye
+                        a.btn.btn-danger.btn-xs(href='#')
+                          i.fa.fa-times 
+
+                  li.list__item
+                    .list__info               
+                      a(href="news-edit.html").list__link Новость № 4
+                    .list__action                 
+                      .list__btn
+                        a.btn.btn-primary.btn-xs(href='#')
+                          i.fa.fa-eye
+                        a.btn.btn-danger.btn-xs(href='#')
+                          i.fa.fa-times 
+                       
+                
+      
+      include ../inc/pagination
+    include ../inc/footer

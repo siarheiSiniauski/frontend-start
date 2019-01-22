@@ -1,0 +1,289 @@
+extends ../main.layout.pug
+
+block title
+  | Категории
+
+
+block content
+  include ../inc/head
+  include ../inc/sidebar-left.pug
+  section#page-content
+    .header-content
+      h2 Категории 
+      .breadcrumb-wrapper.hidden-xs
+        ol.breadcrumb
+          li
+            i.fa.fa-home
+            a(href='/') Главная
+            i.fa.fa-angle-right
+          li.active Категории 
+
+
+    .body-content
+      .row
+        .col-md-12
+          .panel.panel-success.shadow
+            .panel-heading
+              h3.panel-title Список категорий
+
+            .panel-body.no-padding
+              .list
+                ul.list__wrap#sortable
+                  li.list__item
+                    input.cat__position(type='hidden', name='cat_position', value='1')
+                    input.cat__id(type='hidden', name='cat_id', value='900')
+                    .list__info
+                      .list__sort
+                        .fa.fa-sort
+                      .list__img
+                        img.img-circle.img-responsive(src='img/avatar/4.png', alt='Daddy Botak')                 
+                      a(href="category-edit.html").list__link Телевизоры  
+                    .list__action
+                      .list__id 
+                        small id:
+                        | 900
+                      .list__btn
+                        a.btn.btn-danger.btn-xs(href='#', data-toggle='tooltip', data-placement='top', data-original-title='Удалить')
+                          i.fa.fa-times
+                          
+                  li.list__item.list__level
+                    input.cat__position(type='hidden', name='cat_position', value='1')
+                    input.cat__id(type='hidden', name='cat_id', value='900')
+                    .list__info
+                      .list__sort
+                        .fa.fa-sort
+                      .list__img
+                        img.img-circle.img-responsive(src='img/avatar/4.png', alt='Daddy Botak')                 
+                      a(href="category-edit.html").list__link Телевизоры  
+                    .list__action
+                      .list__id 
+                        small id:
+                        | 900
+                      .list__btn                          
+                        a.btn.btn-danger.btn-xs(href='#', data-toggle='tooltip', data-placement='top', data-original-title='Удалить')
+                          i.fa.fa-times
+
+                  li.list__item.list__level
+                    input.cat__position(type='hidden', name='cat_position', value='1')
+                    input.cat__id(type='hidden', name='cat_id', value='900')
+                    .list__info
+                      .list__sort
+                        .fa.fa-sort
+                      .list__img
+                        img.img-circle.img-responsive(src='img/avatar/4.png', alt='Daddy Botak')                 
+                      a(href="category-edit.html").list__link Телевизоры  
+                    .list__action
+                      .list__id 
+                        small id:
+                        | 900
+                      .list__btn                          
+                        a.btn.btn-danger.btn-xs(href='#', data-toggle='tooltip', data-placement='top', data-original-title='Удалить')
+                          i.fa.fa-times
+                  
+                  li.list__item
+                    input.cat__position(type='hidden', name='cat_position', value='1')
+                    input.cat__id(type='hidden', name='cat_id', value='900')
+                    .list__info
+                      .list__sort
+                        .fa.fa-sort
+                      .list__img
+                        img.img-circle.img-responsive(src='img/avatar/4.png', alt='Daddy Botak')                 
+                      a(href="category-edit.html").list__link Телевизоры  
+                    .list__action
+                      .list__id 
+                        small id:
+                        | 900
+                      .list__btn                          
+                        a.btn.btn-danger.btn-xs(href='#', data-toggle='tooltip', data-placement='top', data-original-title='Удалить')
+                          i.fa.fa-times
+
+                  li.list__item
+                    input.cat__position(type='hidden', name='cat_position', value='1')
+                    input.cat__id(type='hidden', name='cat_id', value='900')
+                    .list__info
+                      .list__sort
+                        .fa.fa-sort
+                      .list__img
+                        img.img-circle.img-responsive(src='img/avatar/4.png', alt='Daddy Botak')                 
+                      a(href="category-edit.html").list__link Телевизоры  
+                    .list__action
+                      .list__id 
+                        small id:
+                        | 900
+                      .list__btn
+                        a.btn.btn-danger.btn-xs(href='#', data-toggle='tooltip', data-placement='top', data-original-title='Удалить')
+                          i.fa.fa-times
+
+                  li.list__item
+                    input.cat__position(type='hidden', name='cat_position', value='1')
+                    input.cat__id(type='hidden', name='cat_id', value='900')
+                    .list__info
+                      .list__sort
+                        .fa.fa-sort
+                      .list__img
+                        img.img-circle.img-responsive(src='img/avatar/4.png', alt='Daddy Botak')                 
+                      a(href="category-edit.html").list__link Телевизоры  
+                    .list__action
+                      .list__id 
+                        small id:
+                        | 900
+                      .list__btn                          
+                        a.btn.btn-danger.btn-xs(href='#', data-toggle='tooltip', data-placement='top', data-original-title='Удалить')
+                          i.fa.fa-times
+
+                  li.list__item.list__level
+                    input.cat__position(type='hidden', name='cat_position', value='1')
+                    input.cat__id(type='hidden', name='cat_id', value='900')
+                    .list__info
+                      .list__sort
+                        .fa.fa-sort
+                      .list__img
+                        img.img-circle.img-responsive(src='img/avatar/4.png', alt='Daddy Botak')                 
+                      a(href="category-edit.html").list__link Телевизоры  
+                    .list__action
+                      .list__id 
+                        small id:
+                        | 900
+                      .list__btn
+                        a.btn.btn-danger.btn-xs(href='#', data-toggle='tooltip', data-placement='top', data-original-title='Удалить')
+                          i.fa.fa-times
+
+                  li.list__item.list__level--two
+                    input.cat__position(type='hidden', name='cat_position', value='1')
+                    input.cat__id(type='hidden', name='cat_id', value='900')
+                    .list__info
+                      .list__sort
+                        .fa.fa-sort
+                      .list__img
+                        img.img-circle.img-responsive(src='img/avatar/4.png', alt='Daddy Botak')                 
+                      a(href="category-edit.html").list__link Телевизоры  
+                    .list__action
+                      .list__id 
+                        small id:
+                        | 900
+                      .list__btn
+                        a.btn.btn-danger.btn-xs(href='#', data-toggle='tooltip', data-placement='top', data-original-title='Удалить')
+                          i.fa.fa-times
+                  
+                  li.list__item.list__level--two
+                    input.cat__position(type='hidden', name='cat_position', value='1')
+                    input.cat__id(type='hidden', name='cat_id', value='900')
+                    .list__info
+                      .list__sort
+                        .fa.fa-sort
+                      .list__img
+                        img.img-circle.img-responsive(src='img/avatar/4.png', alt='Daddy Botak')                 
+                      a(href="category-edit.html").list__link Телевизоры  
+                    .list__action
+                      .list__id 
+                        small id:
+                        | 900
+                      .list__btn                          
+                        a.btn.btn-danger.btn-xs(href='#', data-toggle='tooltip', data-placement='top', data-original-title='Удалить')
+                          i.fa.fa-times
+
+                  li.list__item.list__level--two
+                    input.cat__position(type='hidden', name='cat_position', value='1')
+                    input.cat__id(type='hidden', name='cat_id', value='900')
+                    .list__info
+                      .list__sort
+                        .fa.fa-sort
+                      .list__img
+                        img.img-circle.img-responsive(src='img/avatar/4.png', alt='Daddy Botak')                 
+                      a(href="category-edit.html").list__link Телевизоры  
+                    .list__action
+                      .list__id 
+                        small id:
+                        | 900
+                      .list__btn                          
+                        a.btn.btn-danger.btn-xs(href='#', data-toggle='tooltip', data-placement='top', data-original-title='Удалить')
+                          i.fa.fa-times
+
+                  li.list__item.list__level--two
+                    input.cat__position(type='hidden', name='cat_position', value='1')
+                    input.cat__id(type='hidden', name='cat_id', value='900')
+                    .list__info
+                      .list__sort
+                        .fa.fa-sort
+                      .list__img
+                        img.img-circle.img-responsive(src='img/avatar/4.png', alt='Daddy Botak')                 
+                      a(href="category-edit.html").list__link Телевизоры  
+                    .list__action
+                      .list__id 
+                        small id:
+                        | 900
+                      .list__btn                          
+                        a.btn.btn-danger.btn-xs(href='#', data-toggle='tooltip', data-placement='top', data-original-title='Удалить')
+                          i.fa.fa-times
+
+                  li.list__item.list__level--three
+                    input.cat__position(type='hidden', name='cat_position', value='1')
+                    input.cat__id(type='hidden', name='cat_id', value='900')
+                    .list__info
+                      .list__sort
+                        .fa.fa-sort
+                      .list__img
+                        img.img-circle.img-responsive(src='img/avatar/4.png', alt='Daddy Botak')                 
+                      a(href="category-edit.html").list__link Телевизоры  
+                    .list__action
+                      .list__id 
+                        small id:
+                        | 900
+                      .list__btn
+                        a.btn.btn-danger.btn-xs(href='#', data-toggle='tooltip', data-placement='top', data-original-title='Удалить')
+                          i.fa.fa-times
+
+                  li.list__item
+                    input.cat__position(type='hidden', name='cat_position', value='1')
+                    input.cat__id(type='hidden', name='cat_id', value='900')
+                    .list__info
+                      .list__sort
+                        .fa.fa-sort
+                      .list__img
+                        img.img-circle.img-responsive(src='img/avatar/4.png', alt='Daddy Botak')                 
+                      a(href="category-edit.html").list__link Телевизоры  
+                    .list__action
+                      .list__id 
+                        small id:
+                        | 900
+                      .list__btn
+                        a.btn.btn-danger.btn-xs(href='#', data-toggle='tooltip', data-placement='top', data-original-title='Удалить')
+                          i.fa.fa-times
+                  
+                  li.list__item
+                    input.cat__position(type='hidden', name='cat_position', value='1')
+                    input.cat__id(type='hidden', name='cat_id', value='900')
+                    .list__info
+                      .list__sort
+                        .fa.fa-sort
+                      .list__img
+                        img.img-circle.img-responsive(src='img/avatar/4.png', alt='Daddy Botak')                 
+                      a(href="category-edit.html").list__link Телевизоры  
+                    .list__action
+                      .list__id 
+                        small id:
+                        | 900
+                      .list__btn
+                        a.btn.btn-danger.btn-xs(href='#', data-toggle='tooltip', data-placement='top', data-original-title='Удалить')
+                          i.fa.fa-times
+
+                  li.list__item
+                    input.cat__position(type='hidden', name='cat_position', value='1')
+                    input.cat__id(type='hidden', name='cat_id', value='900')
+                    .list__info
+                      .list__sort
+                        .fa.fa-sort
+                      .list__img
+                        img.img-circle.img-responsive(src='img/avatar/4.png', alt='Daddy Botak')                 
+                      a(href="category-edit.html").list__link Телевизоры  
+                    .list__action
+                      .list__id 
+                        small id:
+                        | 900
+                      .list__btn 
+                        a.btn.btn-danger.btn-xs(href='#', data-toggle='tooltip', data-placement='top', data-original-title='Удалить')
+                          i.fa.fa-times
+                
+                
+      
+    include ../inc/footer

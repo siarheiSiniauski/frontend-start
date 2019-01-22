@@ -1,0 +1,82 @@
+extends ../main.layout.pug
+
+block title
+  | Оплата
+
+
+block content
+  include ../inc/head
+  include ../inc/sidebar-left.pug
+  section#page-content
+    .header-content
+      h2 Оплата
+      .breadcrumb-wrapper.hidden-xs
+        ol.breadcrumb
+          li
+            i.fa.fa-home
+            a(href='/') Главная
+            i.fa.fa-angle-right
+          li.active Оплата 
+
+
+    .body-content
+      .row
+        .col-md-12
+          .panel.panel-success.shadow
+            .panel-heading
+              h3.panel-title Список видов оплаты 
+
+            .panel-body.no-padding
+              .list
+                ul.list__wrap#sortable
+                  li.list__item
+                    input.cat__position(type='hidden', name='cat_position', value='1')
+                    input.cat__id(type='hidden', name='cat_id', value='900')
+                    .list__info
+                      .list__sort
+                        .fa.fa-sort                
+                      a(href="payments-edit.html").list__link  Наличными
+                    .list__action                 
+                      .list__btn
+                        a.btn.btn-danger.btn-xs(href='#', data-toggle='tooltip', data-placement='top', data-original-title='Удалить')
+                          i.fa.fa-times 
+
+                  li.list__item
+                    input.cat__position(type='hidden', name='cat_position', value='1')
+                    input.cat__id(type='hidden', name='cat_id', value='900')
+                    .list__info
+                      .list__sort
+                        .fa.fa-sort                
+                      a(href="payments-edit.html").list__link Яндекс-касса
+                    .list__action                 
+                      .list__btn
+                        a.btn.btn-danger.btn-xs(href='#', data-toggle='tooltip', data-placement='top', data-original-title='Удалить')
+                          i.fa.fa-times
+
+                  li.list__item
+                    input.cat__position(type='hidden', name='cat_position', value='1')
+                    input.cat__id(type='hidden', name='cat_id', value='900')
+                    .list__info
+                      .list__sort
+                        .fa.fa-sort                
+                      a(href="payments-edit.html").list__link Банковский перевод (для юр.лиц)
+                    .list__action                 
+                      .list__btn
+                        a.btn.btn-danger.btn-xs(href='#', data-toggle='tooltip', data-placement='top', data-original-title='Удалить')
+                          i.fa.fa-times 
+
+                  li.list__item
+                    input.cat__position(type='hidden', name='cat_position', value='1')
+                    input.cat__id(type='hidden', name='cat_id', value='900')
+                    .list__info
+                      .list__sort
+                        .fa.fa-sort                
+                      a(href="payments-edit.html").list__link Картой (при получении)
+                    .list__action                 
+                      .list__btn
+                        a.btn.btn-danger.btn-xs(href='#', data-toggle='tooltip', data-placement='top', data-original-title='Удалить')
+                          i.fa.fa-times 
+                       
+                
+      
+    include ../inc/footer

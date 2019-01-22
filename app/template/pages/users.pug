@@ -1,0 +1,375 @@
+extends ../main.layout.pug
+
+block title
+  | Покупатели
+
+
+block content
+  include ../inc/head
+  include ../inc/sidebar-left.pug
+  section#page-content.page__users
+    .header-content
+      h2 Покупатели 
+      .breadcrumb-wrapper.hidden-xs
+        ol.breadcrumb
+          li
+            i.fa.fa-home
+            a(href='/') Главная 
+          
+          li.active Покупатели
+            
+
+
+    .body-content
+      .row
+        .col-md-12
+          .panel
+            .panel-heading
+              h3.panel-title Список покупателей
+            
+            .panel-body.no-padding
+              .table-responsive
+                table.table.table-bordered.table-success
+                  thead
+                    tr
+                      th.text-center ID 
+                      th ФИО
+                      th Телефон
+                      th E-mail
+                      th Город
+                      th Скидка
+                      th.text-center Действия 
+                  tbody
+                    tr
+                      td.text-center(style='width: 7%;') 1
+                      td 
+                        input.form-control(type='text' value="Фамилия Имя Отчество")
+                      td
+                        input.form-control(type='text' value="+7(999)999-99-99")
+                      td 
+                        input.form-control(type='text' value="test@test.ru") 
+                      td 
+                        input.form-control(type='text' value="Город") 
+                      td
+                        .users__input
+                          label Скидка
+                          input.form-control(type='text' placeholder="0%")
+                      td.text-center
+                        .list__btn
+                          button.btn.btn-success.btn-xs(type='button', , data-toggle='tooltip', data-placement='top', data-original-title='Сохранить')
+                            i.fa.fa-floppy-o 
+                          a.btn.btn-danger.btn-xs(href='#', data-toggle='tooltip', data-placement='top', data-original-title='Удалить')
+                            i.fa.fa-times
+                    tr
+                      td.text-center(style='width: 7%;') 1
+                      td 
+                        input.form-control(type='text' value="Фамилия Имя Отчество")
+                      td
+                        input.form-control(type='text' value="+7(999)999-99-99")
+                      td 
+                        input.form-control(type='text' value="test@test.ru") 
+                      td 
+                        input.form-control(type='text' value="Город") 
+                      td
+                        .users__input
+                          label Скидка
+                          input.form-control(type='text' placeholder="0%")
+                      td.text-center
+                        .list__btn
+                          button.btn.btn-success.btn-xs(type='button', , data-toggle='tooltip', data-placement='top', data-original-title='Сохранить')
+                            i.fa.fa-floppy-o 
+                          a.btn.btn-danger.btn-xs(href='#', data-toggle='tooltip', data-placement='top', data-original-title='Удалить')
+                            i.fa.fa-times
+                    
+                    tr
+                      td.text-center(style='width: 7%;') 1
+                      td 
+                        input.form-control(type='text' value="Фамилия Имя Отчество")
+                      td
+                        input.form-control(type='text' value="+7(999)999-99-99")
+                      td 
+                        input.form-control(type='text' value="test@test.ru") 
+                      td 
+                        input.form-control(type='text' value="Город") 
+                      td
+                        .users__input
+                          label Скидка
+                          input.form-control(type='text' placeholder="0%")
+                      td.text-center
+                        .list__btn
+                          button.btn.btn-success.btn-xs(type='button', , data-toggle='tooltip', data-placement='top', data-original-title='Сохранить')
+                            i.fa.fa-floppy-o 
+                          a.btn.btn-danger.btn-xs(href='#', data-toggle='tooltip', data-placement='top', data-original-title='Удалить')
+                            i.fa.fa-times
+                    tr
+                      td.text-center(style='width: 7%;') 1
+                      td 
+                        input.form-control(type='text' value="Фамилия Имя Отчество")
+                      td
+                        input.form-control(type='text' value="+7(999)999-99-99")
+                      td 
+                        input.form-control(type='text' value="test@test.ru") 
+                      td 
+                        input.form-control(type='text' value="Город") 
+                      td
+                        .users__input
+                          label Скидка
+                          input.form-control(type='text' placeholder="0%")
+                      td.text-center
+                        .list__btn
+                          button.btn.btn-success.btn-xs(type='button', , data-toggle='tooltip', data-placement='top', data-original-title='Сохранить')
+                            i.fa.fa-floppy-o 
+                          a.btn.btn-danger.btn-xs(href='#', data-toggle='tooltip', data-placement='top', data-original-title='Удалить')
+                            i.fa.fa-times
+                    tr
+                      td.text-center(style='width: 7%;') 1
+                      td 
+                        input.form-control(type='text' value="Фамилия Имя Отчество")
+                      td
+                        input.form-control(type='text' value="+7(999)999-99-99")
+                      td 
+                        input.form-control(type='text' value="test@test.ru") 
+                      td 
+                        input.form-control(type='text' value="Город") 
+                      td
+                        .users__input
+                          label Скидка
+                          input.form-control(type='text' placeholder="0%")
+                      td.text-center
+                        .list__btn
+                          button.btn.btn-success.btn-xs(type='button', , data-toggle='tooltip', data-placement='top', data-original-title='Сохранить')
+                            i.fa.fa-floppy-o 
+                          a.btn.btn-danger.btn-xs(href='#', data-toggle='tooltip', data-placement='top', data-original-title='Удалить')
+                            i.fa.fa-times
+                    tr
+                      td.text-center(style='width: 7%;') 1
+                      td 
+                        input.form-control(type='text' value="Фамилия Имя Отчество")
+                      td
+                        input.form-control(type='text' value="+7(999)999-99-99")
+                      td 
+                        input.form-control(type='text' value="test@test.ru") 
+                      td 
+                        input.form-control(type='text' value="Город") 
+                      td
+                        .users__input
+                          label Скидка
+                          input.form-control(type='text' placeholder="0%")
+                      td.text-center
+                        .list__btn
+                          button.btn.btn-success.btn-xs(type='button', , data-toggle='tooltip', data-placement='top', data-original-title='Сохранить')
+                            i.fa.fa-floppy-o 
+                          a.btn.btn-danger.btn-xs(href='#', data-toggle='tooltip', data-placement='top', data-original-title='Удалить')
+                            i.fa.fa-times
+                    
+                    tr
+                      td.text-center(style='width: 7%;') 1
+                      td 
+                        input.form-control(type='text' value="Фамилия Имя Отчество")
+                      td
+                        input.form-control(type='text' value="+7(999)999-99-99")
+                      td 
+                        input.form-control(type='text' value="test@test.ru") 
+                      td 
+                        input.form-control(type='text' value="Город") 
+                      td
+                        .users__input
+                          label Скидка
+                          input.form-control(type='text' placeholder="0%")
+                      td.text-center
+                        .list__btn
+                          button.btn.btn-success.btn-xs(type='button', , data-toggle='tooltip', data-placement='top', data-original-title='Сохранить')
+                            i.fa.fa-floppy-o 
+                          a.btn.btn-danger.btn-xs(href='#', data-toggle='tooltip', data-placement='top', data-original-title='Удалить')
+                            i.fa.fa-times
+                    tr
+                      td.text-center(style='width: 7%;') 1
+                      td 
+                        input.form-control(type='text' value="Фамилия Имя Отчество")
+                      td
+                        input.form-control(type='text' value="+7(999)999-99-99")
+                      td 
+                        input.form-control(type='text' value="test@test.ru") 
+                      td 
+                        input.form-control(type='text' value="Город") 
+                      td
+                        .users__input
+                          label Скидка
+                          input.form-control(type='text' placeholder="0%")
+                      td.text-center
+                        .list__btn
+                          button.btn.btn-success.btn-xs(type='button', , data-toggle='tooltip', data-placement='top', data-original-title='Сохранить')
+                            i.fa.fa-floppy-o 
+                          a.btn.btn-danger.btn-xs(href='#', data-toggle='tooltip', data-placement='top', data-original-title='Удалить')
+                            i.fa.fa-times
+                    tr
+                      td.text-center(style='width: 7%;') 1
+                      td 
+                        input.form-control(type='text' value="Фамилия Имя Отчество")
+                      td
+                        input.form-control(type='text' value="+7(999)999-99-99")
+                      td 
+                        input.form-control(type='text' value="test@test.ru") 
+                      td 
+                        input.form-control(type='text' value="Город") 
+                      td
+                        .users__input
+                          label Скидка
+                          input.form-control(type='text' placeholder="0%")
+                      td.text-center
+                        .list__btn
+                          button.btn.btn-success.btn-xs(type='button', , data-toggle='tooltip', data-placement='top', data-original-title='Сохранить')
+                            i.fa.fa-floppy-o 
+                          a.btn.btn-danger.btn-xs(href='#', data-toggle='tooltip', data-placement='top', data-original-title='Удалить')
+                            i.fa.fa-times
+                    tr
+                      td.text-center(style='width: 7%;') 1
+                      td 
+                        input.form-control(type='text' value="Фамилия Имя Отчество")
+                      td
+                        input.form-control(type='text' value="+7(999)999-99-99")
+                      td 
+                        input.form-control(type='text' value="test@test.ru") 
+                      td 
+                        input.form-control(type='text' value="Город") 
+                      td
+                        .users__input
+                          label Скидка
+                          input.form-control(type='text' placeholder="0%")
+                      td.text-center
+                        .list__btn
+                          button.btn.btn-success.btn-xs(type='button', , data-toggle='tooltip', data-placement='top', data-original-title='Сохранить')
+                            i.fa.fa-floppy-o 
+                          a.btn.btn-danger.btn-xs(href='#', data-toggle='tooltip', data-placement='top', data-original-title='Удалить')
+                            i.fa.fa-times
+                    
+                    tr
+                      td.text-center(style='width: 7%;') 1
+                      td 
+                        input.form-control(type='text' value="Фамилия Имя Отчество")
+                      td
+                        input.form-control(type='text' value="+7(999)999-99-99")
+                      td 
+                        input.form-control(type='text' value="test@test.ru") 
+                      td 
+                        input.form-control(type='text' value="Город") 
+                      td
+                        .users__input
+                          label Скидка
+                          input.form-control(type='text' placeholder="0%")
+                      td.text-center
+                        .list__btn
+                          button.btn.btn-success.btn-xs(type='button', , data-toggle='tooltip', data-placement='top', data-original-title='Сохранить')
+                            i.fa.fa-floppy-o 
+                          a.btn.btn-danger.btn-xs(href='#', data-toggle='tooltip', data-placement='top', data-original-title='Удалить')
+                            i.fa.fa-times
+                    tr
+                      td.text-center(style='width: 7%;') 1
+                      td 
+                        input.form-control(type='text' value="Фамилия Имя Отчество")
+                      td
+                        input.form-control(type='text' value="+7(999)999-99-99")
+                      td 
+                        input.form-control(type='text' value="test@test.ru") 
+                      td 
+                        input.form-control(type='text' value="Город") 
+                      td
+                        .users__input
+                          label Скидка
+                          input.form-control(type='text' placeholder="0%")
+                      td.text-center
+                        .list__btn
+                          button.btn.btn-success.btn-xs(type='button', , data-toggle='tooltip', data-placement='top', data-original-title='Сохранить')
+                            i.fa.fa-floppy-o 
+                          a.btn.btn-danger.btn-xs(href='#', data-toggle='tooltip', data-placement='top', data-original-title='Удалить')
+                            i.fa.fa-times
+                    tr
+                      td.text-center(style='width: 7%;') 1
+                      td 
+                        input.form-control(type='text' value="Фамилия Имя Отчество")
+                      td
+                        input.form-control(type='text' value="+7(999)999-99-99")
+                      td 
+                        input.form-control(type='text' value="test@test.ru") 
+                      td 
+                        input.form-control(type='text' value="Город") 
+                      td
+                        .users__input
+                          label Скидка
+                          input.form-control(type='text' placeholder="0%")
+                      td.text-center
+                        .list__btn
+                          button.btn.btn-success.btn-xs(type='button', , data-toggle='tooltip', data-placement='top', data-original-title='Сохранить')
+                            i.fa.fa-floppy-o 
+                          a.btn.btn-danger.btn-xs(href='#', data-toggle='tooltip', data-placement='top', data-original-title='Удалить')
+                            i.fa.fa-times
+                    tr
+                      td.text-center(style='width: 7%;') 1
+                      td 
+                        input.form-control(type='text' value="Фамилия Имя Отчество")
+                      td
+                        input.form-control(type='text' value="+7(999)999-99-99")
+                      td 
+                        input.form-control(type='text' value="test@test.ru") 
+                      td 
+                        input.form-control(type='text' value="Город") 
+                      td
+                        .users__input
+                          label Скидка
+                          input.form-control(type='text' placeholder="0%")
+                      td.text-center
+                        .list__btn
+                          button.btn.btn-success.btn-xs(type='button', , data-toggle='tooltip', data-placement='top', data-original-title='Сохранить')
+                            i.fa.fa-floppy-o 
+                          a.btn.btn-danger.btn-xs(href='#', data-toggle='tooltip', data-placement='top', data-original-title='Удалить')
+                            i.fa.fa-times
+                    
+                    tr
+                      td.text-center(style='width: 7%;') 1
+                      td 
+                        input.form-control(type='text' value="Фамилия Имя Отчество")
+                      td
+                        input.form-control(type='text' value="+7(999)999-99-99")
+                      td 
+                        input.form-control(type='text' value="test@test.ru") 
+                      td 
+                        input.form-control(type='text' value="Город") 
+                      td
+                        .users__input
+                          label Скидка
+                          input.form-control(type='text' placeholder="0%")
+                      td.text-center
+                        .list__btn
+                          button.btn.btn-success.btn-xs(type='button', , data-toggle='tooltip', data-placement='top', data-original-title='Сохранить')
+                            i.fa.fa-floppy-o 
+                          a.btn.btn-danger.btn-xs(href='#', data-toggle='tooltip', data-placement='top', data-original-title='Удалить')
+                            i.fa.fa-times
+                    tr
+                      td.text-center(style='width: 7%;') 1
+                      td 
+                        input.form-control(type='text' value="Фамилия Имя Отчество")
+                      td
+                        input.form-control(type='text' value="+7(999)999-99-99")
+                      td 
+                        input.form-control(type='text' value="test@test.ru") 
+                      td 
+                        input.form-control(type='text' value="Город") 
+                      td
+                        .users__input
+                          label Скидка
+                          input.form-control(type='text' placeholder="0%")
+                      td.text-center
+                        .list__btn
+                          button.btn.btn-success.btn-xs(type='button', , data-toggle='tooltip', data-placement='top', data-original-title='Сохранить')
+                            i.fa.fa-floppy-o 
+                          a.btn.btn-danger.btn-xs(href='#', data-toggle='tooltip', data-placement='top', data-original-title='Удалить')
+                            i.fa.fa-times
+                    
+
+                    
+
+
+          include ../inc/pagination
+          
+
+    include ../inc/footer

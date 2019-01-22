@@ -1,0 +1,878 @@
+extends ../main.layout.pug
+
+block title
+  | Товары
+
+
+block content
+  include ../inc/head
+  include ../inc/sidebar-left.pug
+  section#page-content.page__products
+    .header-content
+      h2 Товары 
+      .breadcrumb-wrapper.hidden-xs
+        ol.breadcrumb
+          li
+            i.fa.fa-home
+            a(href='/') Главная
+            i.fa.fa-angle-right
+          li.active Товары 
+
+
+    .body-content
+      .row
+        .col-lg-9
+          .panel.panel-success.shadow
+            .panel-heading
+              h3.panel-title Список товаров (4179 шт.)
+
+            .panel-body.no-padding
+              .list
+                .list__checks
+                  .ckbox.ckbox-success
+                    input#checkbox-all(type='checkbox')
+                    label(for='checkbox-all')
+                ul.list__wrap.list__product#sortable
+                  li.list__item
+                    input.cat__position(type='hidden', name='cat_position', value='1')
+                    input.cat__id(type='hidden', name='cat_id', value='900')
+                    .list__info
+                      .list__sort
+                        .fa.fa-sort
+                      .list__check
+                        .ckbox.ckbox-success
+                          input#id1(type='checkbox')
+                          label(for='id1')
+
+                      .list__img
+                        img.img-circle.img-responsive(src='img/avatar/4.png', alt='Daddy Botak')                 
+                      a(href="product-edit.html").list__link LED телевизор 4K Ultra HD LG 43UK6300PLB  
+                    .list__action
+                      .list__input
+                        .input-group
+                          input.form-control(type='text' value="1000000")
+                          span.input-group-btn
+                            button.btn.btn-success(type='button')
+                              i.fa.fa-floppy-o
+                            button(type='button').btn.btn-primary
+                              i.fa.fa-rub
+                        
+                        .input-group
+                          input.form-control(type='text' value="9999")
+                          span.input-group-btn
+                            button.btn.btn-success(type='button')
+                              i.fa.fa-floppy-o
+
+                      .list__btn
+                        a.list__active.active(href='#', data-toggle='tooltip', data-placement='top', data-original-title='Активен')
+                          i.fa.fa-circle
+                        a.btn.btn-default.btn-xs(href='#', data-toggle='tooltip', data-placement='top', data-original-title='Копировать')
+                          i.fa.fa-files-o
+                        
+                          
+                        
+                          
+                        a.btn.btn-danger.btn-xs(href='#', data-toggle='tooltip', data-placement='top', data-original-title='Удалить')
+                          i.fa.fa-times
+
+                  li.list__item
+                    input.cat__position(type='hidden', name='cat_position', value='1')
+                    input.cat__id(type='hidden', name='cat_id', value='900')
+                    .list__info
+                      .list__sort
+                        .fa.fa-sort
+                      .list__check
+                        .ckbox.ckbox-success
+                          input#id2(type='checkbox')
+                          label(for='id2')
+                          
+                      .list__img
+                        img.img-circle.img-responsive(src='img/avatar/4.png', alt='Daddy Botak')                 
+                      a(href="product-edit.html").list__link LED телевизор 4K Ultra HD LG 43UK6300PLB  
+                    .list__action
+                      .list__input
+                        .input-group
+                          input.form-control(type='text' value="1000000")
+                          span.input-group-btn
+                            button.btn.btn-success(type='button')
+                              i.fa.fa-floppy-o
+                            button(type='button').btn.btn-primary
+                              i.fa.fa-rub
+                        
+                        .input-group
+                          input.form-control(type='text' value="9999")
+                          span.input-group-btn
+                            button.btn.btn-success(type='button')
+                              i.fa.fa-floppy-o
+
+                      .list__btn
+                        a.list__active(href='#', data-toggle='tooltip', data-placement='top', data-original-title='Не активен')
+                          i.fa.fa-circle
+                        a.btn.btn-default.btn-xs(href='#', data-toggle='tooltip', data-placement='top', data-original-title='Копировать')
+                          i.fa.fa-files-o
+                        
+                          
+                        
+                          
+                        a.btn.btn-danger.btn-xs(href='#', data-toggle='tooltip', data-placement='top', data-original-title='Удалить')
+                          i.fa.fa-times
+                  li.list__item
+                    input.cat__position(type='hidden', name='cat_position', value='1')
+                    input.cat__id(type='hidden', name='cat_id', value='900')
+                    .list__info
+                      .list__sort
+                        .fa.fa-sort
+                      .list__check
+                        .ckbox.ckbox-success
+                          input#id3(type='checkbox')
+                          label(for='id3')
+
+                      .list__img
+                        img.img-circle.img-responsive(src='img/avatar/4.png', alt='Daddy Botak')                 
+                      a(href="product-edit.html").list__link LED телевизор 4K Ultra HD LG 43UK6300PLB  
+                    .list__action
+                      .list__input
+                        .input-group
+                          input.form-control(type='text' value="1000000")
+                          span.input-group-btn
+                            button.btn.btn-success(type='button')
+                              i.fa.fa-floppy-o
+                            button(type='button').btn.btn-primary
+                              i.fa.fa-rub
+                        
+                        .input-group
+                          input.form-control(type='text' value="9999")
+                          span.input-group-btn
+                            button.btn.btn-success(type='button')
+                              i.fa.fa-floppy-o
+
+                      .list__btn
+                        a.list__active.active(href='#', data-toggle='tooltip', data-placement='top', data-original-title='Активен')
+                          i.fa.fa-circle
+                        a.btn.btn-default.btn-xs(href='#', data-toggle='tooltip', data-placement='top', data-original-title='Копировать')
+                          i.fa.fa-files-o
+                        
+                          
+                        
+                          
+                        a.btn.btn-danger.btn-xs(href='#', data-toggle='tooltip', data-placement='top', data-original-title='Удалить')
+                          i.fa.fa-times
+
+                  li.list__item
+                    input.cat__position(type='hidden', name='cat_position', value='1')
+                    input.cat__id(type='hidden', name='cat_id', value='900')
+                    .list__info
+                      .list__sort
+                        .fa.fa-sort
+                      .list__check
+                        .ckbox.ckbox-success
+                          input#id4(type='checkbox')
+                          label(for='id4')
+                          
+                      .list__img
+                        img.img-circle.img-responsive(src='img/avatar/4.png', alt='Daddy Botak')                 
+                      a(href="product-edit.html").list__link LED телевизор 4K Ultra HD LG 43UK6300PLB  
+                    .list__action
+                      .list__input
+                        .input-group
+                          input.form-control(type='text' value="1000000")
+                          span.input-group-btn
+                            button.btn.btn-success(type='button')
+                              i.fa.fa-floppy-o
+                            button(type='button').btn.btn-primary
+                              i.fa.fa-rub
+                        
+                        .input-group
+                          input.form-control(type='text' value="9999")
+                          span.input-group-btn
+                            button.btn.btn-success(type='button')
+                              i.fa.fa-floppy-o
+
+                      .list__btn
+                        a.list__active(href='#', data-toggle='tooltip', data-placement='top', data-original-title='Не активен')
+                          i.fa.fa-circle
+                        a.btn.btn-default.btn-xs(href='#', data-toggle='tooltip', data-placement='top', data-original-title='Копировать')
+                          i.fa.fa-files-o
+                        
+                          
+                        
+                          
+                        a.btn.btn-danger.btn-xs(href='#', data-toggle='tooltip', data-placement='top', data-original-title='Удалить')
+                          i.fa.fa-times
+                  li.list__item
+                    input.cat__position(type='hidden', name='cat_position', value='1')
+                    input.cat__id(type='hidden', name='cat_id', value='900')
+                    .list__info
+                      .list__sort
+                        .fa.fa-sort
+                      .list__check
+                        .ckbox.ckbox-success
+                          input#id5(type='checkbox')
+                          label(for='id5')
+
+                      .list__img
+                        img.img-circle.img-responsive(src='img/avatar/4.png', alt='Daddy Botak')                 
+                      a(href="product-edit.html").list__link LED телевизор 4K Ultra HD LG 43UK6300PLB  
+                    .list__action
+                      .list__input
+                        .input-group
+                          input.form-control(type='text' value="1000000")
+                          span.input-group-btn
+                            button.btn.btn-success(type='button')
+                              i.fa.fa-floppy-o
+                            button(type='button').btn.btn-primary
+                              i.fa.fa-rub
+                        
+                        .input-group
+                          input.form-control(type='text' value="9999")
+                          span.input-group-btn
+                            button.btn.btn-success(type='button')
+                              i.fa.fa-floppy-o
+
+                      .list__btn
+                        a.list__active.active(href='#', data-toggle='tooltip', data-placement='top', data-original-title='Активен')
+                          i.fa.fa-circle
+                        a.btn.btn-default.btn-xs(href='#', data-toggle='tooltip', data-placement='top', data-original-title='Копировать')
+                          i.fa.fa-files-o
+                        
+                          
+                        
+                          
+                        a.btn.btn-danger.btn-xs(href='#', data-toggle='tooltip', data-placement='top', data-original-title='Удалить')
+                          i.fa.fa-times
+
+                  li.list__item
+                    input.cat__position(type='hidden', name='cat_position', value='1')
+                    input.cat__id(type='hidden', name='cat_id', value='900')
+                    .list__info
+                      .list__sort
+                        .fa.fa-sort
+                      .list__check
+                        .ckbox.ckbox-success
+                          input#id6(type='checkbox')
+                          label(for='id6')
+                          
+                      .list__img
+                        img.img-circle.img-responsive(src='img/avatar/4.png', alt='Daddy Botak')                 
+                      a(href="product-edit.html").list__link LED телевизор 4K Ultra HD LG 43UK6300PLB  
+                    .list__action
+                      .list__input
+                        .input-group
+                          input.form-control(type='text' value="1000000")
+                          span.input-group-btn
+                            button.btn.btn-success(type='button')
+                              i.fa.fa-floppy-o
+                            button(type='button').btn.btn-primary
+                              i.fa.fa-rub
+                        
+                        .input-group
+                          input.form-control(type='text' value="9999")
+                          span.input-group-btn
+                            button.btn.btn-success(type='button')
+                              i.fa.fa-floppy-o
+
+                      .list__btn
+                        a.list__active(href='#', data-toggle='tooltip', data-placement='top', data-original-title='Не активен')
+                          i.fa.fa-circle
+                        a.btn.btn-default.btn-xs(href='#', data-toggle='tooltip', data-placement='top', data-original-title='Копировать')
+                          i.fa.fa-files-o
+                        
+                          
+                        
+                          
+                        a.btn.btn-danger.btn-xs(href='#', data-toggle='tooltip', data-placement='top', data-original-title='Удалить')
+                          i.fa.fa-times
+                  li.list__item
+                    input.cat__position(type='hidden', name='cat_position', value='1')
+                    input.cat__id(type='hidden', name='cat_id', value='900')
+                    .list__info
+                      .list__sort
+                        .fa.fa-sort
+                      .list__check
+                        .ckbox.ckbox-success
+                          input#id7(type='checkbox')
+                          label(for='id7')
+
+                      .list__img
+                        img.img-circle.img-responsive(src='img/avatar/4.png', alt='Daddy Botak')                 
+                      a(href="product-edit.html").list__link LED телевизор 4K Ultra HD LG 43UK6300PLB  
+                    .list__action
+                      .list__input
+                        .input-group
+                          input.form-control(type='text' value="1000000")
+                          span.input-group-btn
+                            button.btn.btn-success(type='button')
+                              i.fa.fa-floppy-o
+                            button(type='button').btn.btn-primary
+                              i.fa.fa-rub
+                        
+                        .input-group
+                          input.form-control(type='text' value="9999")
+                          span.input-group-btn
+                            button.btn.btn-success(type='button')
+                              i.fa.fa-floppy-o
+
+                      .list__btn
+                        a.list__active.active(href='#', data-toggle='tooltip', data-placement='top', data-original-title='Активен')
+                          i.fa.fa-circle
+                        a.btn.btn-default.btn-xs(href='#', data-toggle='tooltip', data-placement='top', data-original-title='Копировать')
+                          i.fa.fa-files-o
+                        
+                          
+                        
+                          
+                        a.btn.btn-danger.btn-xs(href='#', data-toggle='tooltip', data-placement='top', data-original-title='Удалить')
+                          i.fa.fa-times
+
+                  li.list__item
+                    input.cat__position(type='hidden', name='cat_position', value='1')
+                    input.cat__id(type='hidden', name='cat_id', value='900')
+                    .list__info
+                      .list__sort
+                        .fa.fa-sort
+                      .list__check
+                        .ckbox.ckbox-success
+                          input#id8(type='checkbox')
+                          label(for='id8')
+                          
+                      .list__img
+                        img.img-circle.img-responsive(src='img/avatar/4.png', alt='Daddy Botak')                 
+                      a(href="product-edit.html").list__link LED телевизор 4K Ultra HD LG 43UK6300PLB  
+                    .list__action
+                      .list__input
+                        .input-group
+                          input.form-control(type='text' value="1000000")
+                          span.input-group-btn
+                            button.btn.btn-success(type='button')
+                              i.fa.fa-floppy-o
+                            button(type='button').btn.btn-primary
+                              i.fa.fa-rub
+                        
+                        .input-group
+                          input.form-control(type='text' value="9999")
+                          span.input-group-btn
+                            button.btn.btn-success(type='button')
+                              i.fa.fa-floppy-o
+
+                      .list__btn
+                        a.list__active(href='#', data-toggle='tooltip', data-placement='top', data-original-title='Не активен')
+                          i.fa.fa-circle
+                        a.btn.btn-default.btn-xs(href='#', data-toggle='tooltip', data-placement='top', data-original-title='Копировать')
+                          i.fa.fa-files-o
+                        
+                          
+                        
+                          
+                        a.btn.btn-danger.btn-xs(href='#', data-toggle='tooltip', data-placement='top', data-original-title='Удалить')
+                          i.fa.fa-times
+                  li.list__item
+                    input.cat__position(type='hidden', name='cat_position', value='1')
+                    input.cat__id(type='hidden', name='cat_id', value='900')
+                    .list__info
+                      .list__sort
+                        .fa.fa-sort
+                      .list__check
+                        .ckbox.ckbox-success
+                          input#id9(type='checkbox')
+                          label(for='id9')
+
+                      .list__img
+                        img.img-circle.img-responsive(src='img/avatar/4.png', alt='Daddy Botak')                 
+                      a(href="product-edit.html").list__link LED телевизор 4K Ultra HD LG 43UK6300PLB  
+                    .list__action
+                      
+                      .list__input.list__inputs
+                        div.mb-5
+                          label.control-label 40"
+                          .input-group.mr-15
+                            input.form-control(type='text' value="1000000")
+                            span.input-group-btn
+                              button.btn.btn-success(type='button')
+                                i.fa.fa-floppy-o
+                              button(type='button').btn.btn-primary
+                                i.fa.fa-rub                          
+                          .input-group
+                            input.form-control(type='text' value="9999")
+                            span.input-group-btn
+                              button.btn.btn-success(type='button')
+                                i.fa.fa-floppy-o
+                        div.mb-5
+                          label.control-label 46"
+                          .input-group.mr-15
+                            input.form-control(type='text' value="1000000")
+                            span.input-group-btn
+                              button.btn.btn-success(type='button')
+                                i.fa.fa-floppy-o
+                              button(type='button').btn.btn-primary
+                                i.fa.fa-rub
+                          
+                          .input-group
+                            input.form-control(type='text' value="9999")
+                            span.input-group-btn
+                              button.btn.btn-success(type='button')
+                                i.fa.fa-floppy-o
+                        
+                        div.mb-5
+                          label.control-label 48"
+                          .input-group.mr-15
+                            input.form-control(type='text' value="1000000")
+                            span.input-group-btn
+                              button.btn.btn-success(type='button')
+                                i.fa.fa-floppy-o
+                              button(type='button').btn.btn-primary
+                                i.fa.fa-rub
+                          
+                          .input-group
+                            input.form-control(type='text' value="9999")
+                            span.input-group-btn
+                              button.btn.btn-success(type='button')
+                                i.fa.fa-floppy-o
+                        
+                        div.mb-5
+                          label.control-label 50"
+                          .input-group.mr-15
+                            input.form-control(type='text' value="1000000")
+                            span.input-group-btn
+                              button.btn.btn-success(type='button')
+                                i.fa.fa-floppy-o
+                              button(type='button').btn.btn-primary
+                                i.fa.fa-rub
+                          
+                          .input-group
+                            input.form-control(type='text' value="9999")
+                            span.input-group-btn
+                              button.btn.btn-success(type='button')
+                                i.fa.fa-floppy-o
+                      
+
+                      .list__btn
+                        a.list__active.active(href='#', data-toggle='tooltip', data-placement='top', data-original-title='Активен')
+                          i.fa.fa-circle
+                        a.btn.btn-default.btn-xs(href='#', data-toggle='tooltip', data-placement='top', data-original-title='Копировать')
+                          i.fa.fa-files-o
+                        
+                          
+                        
+                          
+                        a.btn.btn-danger.btn-xs(href='#', data-toggle='tooltip', data-placement='top', data-original-title='Удалить')
+                          i.fa.fa-times
+
+                  li.list__item
+                    input.cat__position(type='hidden', name='cat_position', value='1')
+                    input.cat__id(type='hidden', name='cat_id', value='900')
+                    .list__info
+                      .list__sort
+                        .fa.fa-sort
+                      .list__check
+                        .ckbox.ckbox-success
+                          input#id10(type='checkbox')
+                          label(for='id10')
+                          
+                      .list__img
+                        img.img-circle.img-responsive(src='img/avatar/4.png', alt='Daddy Botak')                 
+                      a(href="product-edit.html").list__link LED телевизор 4K Ultra HD LG 43UK6300PLB  
+                    .list__action
+                      .list__input
+                        .input-group
+                          input.form-control(type='text' value="1000000")
+                          span.input-group-btn
+                            button.btn.btn-success(type='button')
+                              i.fa.fa-floppy-o
+                            button(type='button').btn.btn-primary
+                              i.fa.fa-rub
+                        
+                        .input-group
+                          input.form-control(type='text' value="9999")
+                          span.input-group-btn
+                            button.btn.btn-success(type='button')
+                              i.fa.fa-floppy-o
+
+                      .list__btn
+                        a.list__active(href='#', data-toggle='tooltip', data-placement='top', data-original-title='Не активен')
+                          i.fa.fa-circle
+                        a.btn.btn-default.btn-xs(href='#', data-toggle='tooltip', data-placement='top', data-original-title='Копировать')
+                          i.fa.fa-files-o
+                        
+                          
+                        
+                          
+                        a.btn.btn-danger.btn-xs(href='#', data-toggle='tooltip', data-placement='top', data-original-title='Удалить')
+                          i.fa.fa-times
+                  li.list__item
+                    input.cat__position(type='hidden', name='cat_position', value='1')
+                    input.cat__id(type='hidden', name='cat_id', value='900')
+                    .list__info
+                      .list__sort
+                        .fa.fa-sort
+                      .list__check
+                        .ckbox.ckbox-success
+                          input#id11(type='checkbox')
+                          label(for='id11')
+
+                      .list__img
+                        img.img-circle.img-responsive(src='img/avatar/4.png', alt='Daddy Botak')                 
+                      a(href="product-edit.html").list__link LED телевизор 4K Ultra HD LG 43UK6300PLB  
+                    .list__action
+                      .list__input
+                        .input-group
+                          input.form-control(type='text' value="1000000")
+                          span.input-group-btn
+                            button.btn.btn-success(type='button')
+                              i.fa.fa-floppy-o
+                            button(type='button').btn.btn-primary
+                              i.fa.fa-rub
+                        
+                        .input-group
+                          input.form-control(type='text' value="9999")
+                          span.input-group-btn
+                            button.btn.btn-success(type='button')
+                              i.fa.fa-floppy-o
+
+                      .list__btn
+                        a.list__active.active(href='#', data-toggle='tooltip', data-placement='top', data-original-title='Активен')
+                          i.fa.fa-circle
+                        a.btn.btn-default.btn-xs(href='#', data-toggle='tooltip', data-placement='top', data-original-title='Копировать')
+                          i.fa.fa-files-o
+                        
+                          
+                        
+                          
+                        a.btn.btn-danger.btn-xs(href='#', data-toggle='tooltip', data-placement='top', data-original-title='Удалить')
+                          i.fa.fa-times
+
+                  li.list__item
+                    input.cat__position(type='hidden', name='cat_position', value='1')
+                    input.cat__id(type='hidden', name='cat_id', value='900')
+                    .list__info
+                      .list__sort
+                        .fa.fa-sort
+                      .list__check
+                        .ckbox.ckbox-success
+                          input#id12(type='checkbox')
+                          label(for='id12')
+                          
+                      .list__img
+                        img.img-circle.img-responsive(src='img/avatar/4.png', alt='Daddy Botak')                 
+                      a(href="product-edit.html").list__link LED телевизор 4K Ultra HD LG 43UK6300PLB  
+                    .list__action
+                      .list__input
+                        .input-group
+                          input.form-control(type='text' value="1000000")
+                          span.input-group-btn
+                            button.btn.btn-success(type='button')
+                              i.fa.fa-floppy-o
+                            button(type='button').btn.btn-primary
+                              i.fa.fa-rub
+                        
+                        .input-group
+                          input.form-control(type='text' value="9999")
+                          span.input-group-btn
+                            button.btn.btn-success(type='button')
+                              i.fa.fa-floppy-o
+
+                      .list__btn
+                        a.list__active(href='#', data-toggle='tooltip', data-placement='top', data-original-title='Не активен')
+                          i.fa.fa-circle
+                        a.btn.btn-default.btn-xs(href='#', data-toggle='tooltip', data-placement='top', data-original-title='Копировать')
+                          i.fa.fa-files-o
+                        
+                          
+                        
+                          
+                        a.btn.btn-danger.btn-xs(href='#', data-toggle='tooltip', data-placement='top', data-original-title='Удалить')
+                          i.fa.fa-times
+
+          include ../inc/pagination
+
+        .col-lg-3.hidden-md.hidden-sm.hidden-xs
+          .panel.panel-success.shadow.opt#opt
+            .panel-heading
+              .pull-left
+                h3.panel-title Выбрано товаров:
+                  strong 
+
+              .pull-right
+                button.btn.btn-sm(data-action='collapse', data-container='body', data-toggle='tooltip', data-placement='top', data-title='Collapse', data-original-title='', title='')
+                  i.fa.fa-angle-up             
+              .clearfix
+            .panel-body
+              .form-group
+                label(for='description').control-label Размер наценки (%)
+                input#extra_charge.form-control.mb-10(type='text', name='extra_charge' placeholder='Например, -7 или 5.2')
+                input#pre_extra_charge_btn.btn.btn-success.mb-10(type='buttom', value='Выставить наценку', name='pre_extra_charge_btn')
+                input#extra_charge_btn.btn.btn-primary.mb-10(type='buttom', value='Сохранить наценку', name='extra_charge_btn')
+                input#cansel_extra_charge_btn.btn.btn-warning(type='buttom', value='Отменить наценку', name='cansel_extra_charge_btn')
+              .form-group
+                label(for='description').control-label Массовое удаление
+                input#delete_all_obj.btn.btn-danger(type='buttom', value='Удалить выбранное', name='delete_all_obj')
+
+              .form-group
+                label(for='description').control-label Изменить категорию
+                select#new_category.form-control.mb-10(name='new_category')
+                  option(value='822') Резьбовые фитинги
+                  option(value='823')      Американки
+                  option(value='824')      Водорозетки
+                  option(value='825')      Заглушки
+                  option(value='826')      Контргайки
+                  option(value='827')      Концовки для коллекторов
+                  option(value='828')      Крестовины
+                  option(value='829')      Муфты
+                  option(value='830')      Ниппели
+                  option(value='831')      Переходники
+                  option(value='832')      Сгоны
+                  option(value='833')      Тройники
+                  option(value='834')      Уголки
+                  option(value='835')      Удлинительные бочонки
+                  option(value='836')      Удлинители
+                  option(value='837')      Футорки
+                  option(value='838')      Штуцеры
+                  option(value='879')      Обвод
+                  option(value='880')      Бочонок
+                  option(value='881')      Отводы
+                  option(value='882')      Резьба
+                  option(value='883')      Фланцы, комплектующие для фланцев
+                  option(value='819') Запорная арматура
+                  option(value='821')      Миникраны шаровые
+                  option(value='820')      Краны шаровые
+                  option(value='873')      Шаровые краны под сварку
+                  option(value='874')      Фланцевые краны
+                  option(value='875')      Балансировочные клапаны
+                  option(value='876')      Обратные клапана
+                  option(value='877')      Вентиля, задвижки клиновые
+                  option(value='878')      Водоотводы
+                  option(value='844') Отопление и водоснабжение
+                  option(value='845')      Радиаторные терморегуляторы и запорные клапаны
+                  option(value='846')      Фильтры, водоочистка и водоподготовка
+                  option(value='932')           Системы водоочистки
+                  option(value='933')           Аксессуары для водоочистителей
+                  option(value='934')           Фильтры для воды
+                  option(value='935')           Комплектующие
+                  option(value='847')      Нейтрализаторы магнитные
+                  option(value='848')      Теплоавтоматика
+                  option(value='854')      Система антиобледенения
+                  option(value='855')      Электрические конвекторы, котлы и комплектующие
+                  option(value='856')      Отопление пола
+                  option(value='857')      Управление системами отопления
+                  option(value='858')      Бытовые насосы и комплектующие
+                  option(value='948')           Циркуляционные насосы
+                  option(value='949')           Циркуляционные насосы регулируемые
+                  option(value='950')           Вибрационные насосы
+                  option(value='951')           Гидроаккумуляторы и расширительные баки
+                  option(value='952')           Дренажные насосы, канализационные станции
+                  option(value='953')           Комплектующие к насосам
+                  option(value='954')           Станции водоснабжения
+                  option(value='955')           Насосы
+                  option(value='861')      Трубы
+                  option(value='860')      Уплотнение и герметизация
+                  option(value='957')           Герметики, лен
+                  option(value='958')           Нити, ленты
+                  option(value='959')           Сантехнаборы, прокладки
+                  option(value='976')           Изоляция
+                  option(value='859')      Аксессуары и принадлежности
+                  option(value='922')           Манометры, термоманометры, комплектующие
+                  option(value='960')           Средства для очистки рук
+                  option(value='975')           Крепление
+                  option(value='884')      Подводка
+                  option(value='885')      Шланги
+                  option(value='886')      Водосчетчики
+                  option(value='908')      Фитинги для  меди и бронзы
+                  option(value='909')      Коллекторы и комплектующие
+                  option(value='917')      Система контроля протечки воды, группы безопасности
+                  option(value='919')      Радиаторы и полотенцесушители
+                  option(value='921')           Комплектующие к радиаторам и полотенцесушителям
+                  option(value='941')           Радиаторы
+                  option(value='942')           Полотенцесушители
+                  option(value='920')      Вентили для радиаторов
+                  option(value='923')      Канализация
+                  option(value='924')           Канализация внутренняя
+                  option(value='925')           Наружная канализация
+                  option(value='926')           Бесшумная канализация
+                  option(value='927')           Водосборная канализация
+                  option(value='928')           Комплектующие к канализации
+                  option(value='956')           Инструмент для прочистки труб
+                  option(value='929')      Сифоны, арматура
+                  option(value='930')           Комплектующие к сифонам и арматуре
+                  option(value='931')           Трубы гибкие, латунные, гофры
+                  option(value='936')           Сифоны
+                  option(value='937')           Арматура
+                  option(value='938')           Сливы-переливы, выпуски
+                  option(value='939')           Трапы
+                  option(value='940')           Трубы фановые
+                  option(value='974')      Муфты, хомуты
+                  option(value='977')      Люки и воздуховоды
+                  option(value='978')           Сантехнические люки
+                  option(value='979')           Комплектующие к воздуховодам
+                  option(value='839') Пресс фитинги
+                  option(value='840')      Переходники
+                  option(value='841')      Уголки
+                  option(value='842')      Водорозетки
+                  option(value='843')      Тройники
+                  option(value='887') Сантехника из полипропилена
+                  option(value='888')      Вентиль
+                  option(value='889')      Трубы
+                  option(value='890')      Заглушки,опоры, соединительные элементы
+                  option(value='891')      Колено, крестовины
+                  option(value='892')      Коллекторы
+                  option(value='893')      Кран шаровый
+                  option(value='894')      Муфта, обратный клапан
+                  option(value='895')      Тройники
+                  option(value='849') Запорная и регулирующая арматура
+                  option(value='850')      Воздухоотведение
+                  option(value='851')      Клапаны предохранительные. Группы безопасности
+                  option(value='852')      Редукторы давления. Термосмесители
+                  option(value='896') Фитинги для ПЭ
+                  option(value='897')      Заглушка, гильза
+                  option(value='898')      Кран шаровый
+                  option(value='899')      Муфта
+                  option(value='900')      Отводы
+                  option(value='901')      Тройники
+                  option(value='902')      Трубы, хомуты
+                  option(value='903') Фитинги для металлопластика
+                  option(value='904')      Крестовины, муфты
+                  option(value='905')      Трубы и комплектующие
+                  option(value='906')      Тройники
+                  option(value='907')      Уголки
+                  option(value='910') Поливочные шланги и оборудование
+                  option(value='911')      Комплектующие
+                  option(value='912')      Шланги
+                  option(value='913')      Переходники, соединители для шлангов
+                  option(value='914') Смесители и душевые системы
+                  option(value='915')      Смесители
+                  option(value='916')      Комплектующие к смесителям
+                  option(value='965')           Шланги к смесителям
+                  option(value='966')           Изливы
+                  option(value='967')           Лейки
+                  option(value='968')           Картриджи
+                  option(value='969')           Держатели, стойки, кронштейны, отражатели
+                  option(value='970')           Кран-букса
+                  option(value='971')           Аэраторы, маховики
+                  option(value='972')           Крепление, пластины, кольца, наборы сантехнические
+                  option(value='973')           Дивертеры, эксцентрики, отводы, переходники
+                  option(value='982')      Мойки
+                  option(value='918') Оборудование
+                  option(value='961') Газовое оборудование
+                  option(value='962')      Муфта диэлектрическая
+                  option(value='963')      Краны шаровые для газа
+                  option(value='964')      Подводка сильфонного типа
+                  option(value='981') Распродажа
+                  option(value='983') Новое поступление
+                  option(value='984')      Аксессуары для душа
+                  option(value='985')           Стойки, крепления и держатели
+                  option(value='986')           Душевые шланги
+                  option(value='987')           Душевые лейки
+                  option(value='988')           Комплекты и лейки для биде
+                  option(value='989')           Установочные аксессуары
+                  option(value='990')      Аксессуары для ванной
+                  option(value='991')           Держатели полотенец, бумажных полотенец
+                  option(value='992')           Полочки, этажерки для ванной комнаты
+                  option(value='993')           Крючки
+                  option(value='994')           Стаканы, подстаканники
+                  option(value='995')           Мыльницы, дозаторы
+                  option(value='996')           Бумагодержатели, ерш
+                  option(value='997')           Поручни для ванной
+                  option(value='998')           Зеркала
+                  option(value='999')           Ведра
+                  option(value='1000')           Разные аксессуары для ванной
+                  option(value='1001')           Держатели фена, газет, освежителя воздуха
+                  option(value='1002')           Стойки для ванной и туалета
+                  option(value='1003')           Органайзеры, корзины для белья
+                  option(value='1004')           Шторки для ванной
+                  option(value='1010')           Коврики
+                  option(value='1005')      Инсталяции
+                  option(value='1006')           Инсталяции, комплекты
+                  option(value='1007')           Кнопки смыва
+                  option(value='1008')           Механизмы для сливных бачков
+                  option(value='1009')           Бачок сливной
+                  option(value='1011')      Смесители и аксессуары
+                  option(value='1012')           Смесители для кухни, раковины
+                  option(value='1013')           Аксессуары для кухни
+                  option(value='1014')           Смесители для биде
+                  option(value='1016')           Смесители для ванны и душа
+                  option(value='1017')           Наборы смесителей
+                  option(value='1018')           Для писсуаров
+                  option(value='1019')           Кран-буксы, картриджи
+                  option(value='1020')           Изливы, диверторы, аэраторы
+                  option(value='1021')           Ремкомплекты, гайки
+                  option(value='1022')           Гофрированная, гибкая подводка
+                input#save_new_category.btn.btn-primary(type='buttom', value='Применить', name='save_new_category')
+
+
+
+          .panel.panel-success.shadow
+            .panel-heading
+              .pull-left
+                h3.panel-title Поиск
+              .pull-right
+                button.btn.btn-sm(data-action='collapse', data-container='body', data-toggle='tooltip', data-placement='top', data-title='Collapse', data-original-title='', title='')
+                  i.fa.fa-angle-up             
+              .clearfix
+            .panel-body
+              form
+               .input-group
+                  input.form-control(type='text' placeholder="Что будем искать?")
+                  span.input-group-btn
+                    button.btn.btn-success(type='submit')
+                      i.fa.fa-search
+
+          .panel.panel-success.shadow
+            .panel-heading
+              .pull-left
+                h3.panel-title Фильтр
+              .pull-right
+                button.btn.btn-sm(data-action='collapse', data-container='body', data-toggle='tooltip', data-placement='top', data-title='Collapse', data-original-title='', title='')
+                  i.fa.fa-angle-up             
+              .clearfix
+            .panel-body.no-padding
+              .list-group.no-margin
+                a.list-group-item(href='#') Все
+                a.list-group-item(href='#') Активные
+                a.list-group-item.active(href='#') Не активные
+
+          .panel.panel-success.shadow
+            .panel-heading
+              .pull-left
+                h3.panel-title Категории
+              .pull-right
+                button.btn.btn-sm(data-action='collapse', data-container='body', data-toggle='tooltip', data-placement='top', data-title='Collapse', data-original-title='', title='')
+                  i.fa.fa-angle-up             
+              .clearfix
+            .panel-body.no-padding
+              .list-group.no-margin
+                a.list-group-item(href='#') Все категории
+                a.list-group-item(href='#') Телевизоры
+                a.list-group-item.active(href='#') Телевизоры  
+                a.list-group-item(href='#') Телевизоры
+                a.list-group-item(href='#') Телевизоры
+                a.list-group-item(href='#') Телевизоры
+                a.list-group-item(href='#') Телевизоры
+
+          .panel.panel-success.shadow
+            .panel-heading
+              .pull-left
+                h3.panel-title Производители
+              .pull-right
+                button.btn.btn-sm(data-action='collapse', data-container='body', data-toggle='tooltip', data-placement='top', data-title='Collapse', data-original-title='', title='')
+                  i.fa.fa-angle-up             
+              .clearfix
+            .panel-body.no-padding
+              .list-group.no-margin
+                a.list-group-item(href='#') Все категории
+                a.list-group-item(href='#') Hyundai
+                a.list-group-item(href='#') LG     
+                a.list-group-item(href='#') Panasonic     
+                a.list-group-item(href='#') Philips     
+                a.list-group-item(href='#') Samsung     
+                a.list-group-item.active(href='#') Sharp     
+                a.list-group-item(href='#') Sony     
+                a.list-group-item(href='#') Supra     
+                a.list-group-item(href='#') TCL     
+                a.list-group-item(href='#') Telefunken     
+                a.list-group-item(href='#') Toshiba   
+                
+                
+    include ../inc/sidebar-filter.pug
+    include ../inc/footer
+
+  .filter__btn
+    a(href="#")
+      i.fa.fa-sliders

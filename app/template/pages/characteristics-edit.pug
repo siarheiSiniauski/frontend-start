@@ -1,0 +1,155 @@
+extends ../main.layout.pug
+
+block title
+  | Создание новой характеристики
+
+
+block content
+  include ../inc/head
+  include ../inc/sidebar-left.pug
+  section#page-content.page.page__characteristics
+    .header-content
+      h2 Создание новой характеристики 
+      .breadcrumb-wrapper.hidden-xs
+        ol.breadcrumb
+          li
+            i.fa.fa-home
+            a(href='/') Главная
+            i.fa.fa-angle-right
+          li.active Создание новой характеристики 
+
+
+    .body-content
+      .row
+        .col-md-8
+          .panel.panel-success.shadow
+            .panel-heading
+              .pull-left
+                h3.panel-title Параметры
+              .pull-right
+                button.btn.btn-sm(data-action='collapse', data-container='body', data-toggle='tooltip', data-placement='top', data-title='Collapse', data-original-title='', title='')
+                  i.fa.fa-angle-up 
+              .clearfix
+
+            .panel-body.padding-15
+              .form-group
+                label.control-label Название
+                input.form-control(type='text' placeholder="Введите название")
+
+              .form-group
+                label.control-label Размерность
+                input.form-control(type='text' placeholder="Введите размерность")
+              
+              .form-group
+                label.control-label Тип
+                select.form-control
+                  option Выбрать
+                  option Checkbox
+                  option Radio
+                  option Range
+
+              .form-group
+                .ckbox.ckbox-success
+                  input#filter-add(type='checkbox')
+                  label(for='filter-add') Выводить в фильтре
+      
+              button.btn.btn-success(type="submit")  Сохранить    
+         
+
+
+        .col-md-4
+          .panel.panel-success.shadow
+            .panel-heading
+              .pull-left
+                h3.panel-title Где отображать
+              .pull-right
+                button.btn.btn-sm(data-action='collapse', data-container='body', data-toggle='tooltip', data-placement='top', data-title='Collapse', data-original-title='', title='')
+                  i.fa.fa-angle-up 
+              .clearfix
+            .panel-body
+              .list.list__sidebar
+                .list__checks
+                  .ckbox.ckbox-success
+                    input#checkbox-all(type='checkbox') 
+                    label(for='checkbox-all') Выбрать все
+                ul.list__wrap
+                  li.list__item.list__addcat
+                    .list__check
+                      .ckbox.ckbox-success
+                        input#id1(type='checkbox')
+                        label(for='id1') Телевизор
+                  li.list__item.list__addcat.list__level
+                    .list__check
+                      .ckbox.ckbox-success
+                        input#id2(type='checkbox')
+                        label(for='id2') Телевизор
+                  li.list__item.list__addcat.list__level
+                    .list__check
+                      .ckbox.ckbox-success
+                        input#id3(type='checkbox')
+                        label(for='id3') Телевизор                  
+                  li.list__item.list__addcat
+                    .list__check
+                      .ckbox.ckbox-success
+                        input#id4(type='checkbox')
+                        label(for='id4') Телевизор
+                  li.list__item.list__addcat
+                    .list__check
+                      .ckbox.ckbox-success
+                        input#id5(type='checkbox')
+                        label(for='id5') Телевизор
+                  li.list__item.list__addcat
+                    .list__check
+                      .ckbox.ckbox-success
+                        input#id6(type='checkbox')
+                        label(for='id6') Телевизор
+                  li.list__item.list__addcat.list__level
+                    .list__check
+                      .ckbox.ckbox-success
+                        input#id7(type='checkbox')
+                        label(for='id7') Телевизор
+                  li.list__item.list__addcat.list__level--two
+                    .list__check
+                      .ckbox.ckbox-success
+                        input#id8(type='checkbox')
+                        label(for='id8') Телевизор                  
+                  li.list__item.list__addcat.list__level--two
+                    .list__check
+                      .ckbox.ckbox-success
+                        input#id9(type='checkbox')
+                        label(for='id9') Телевизор
+                  li.list__item.list__addcat.list__level--two
+                    .list__check
+                      .ckbox.ckbox-success
+                        input#id10(type='checkbox')
+                        label(for='id10') Телевизор
+                  li.list__item.list__addcat.list__level--two
+                    .list__check
+                      .ckbox.ckbox-success
+                        input#id11(type='checkbox')
+                        label(for='id11') Телевизор
+                  li.list__item.list__addcat.list__level--three
+                    .list__check
+                      .ckbox.ckbox-success
+                        input#id12(type='checkbox')
+                        label(for='id12') Телевизор
+                  li.list__item.list__addcat
+                    .list__check
+                      .ckbox.ckbox-success
+                        input#id13(type='checkbox')
+                        label(for='id13') Телевизор
+                  
+                  li.list__item.list__addcat
+                    .list__check
+                      .ckbox.ckbox-success
+                        input#id13(type='checkbox')
+                        label(for='id13') Телевизор
+                  li.list__item.list__addcat
+                    .list__check
+                      .ckbox.ckbox-success
+                        input#id14(type='checkbox')
+                        label(for='id14') Телевизор
+
+    include ../inc/footer
+
+    

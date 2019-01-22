@@ -1,0 +1,124 @@
+{
+  "data": [
+    [
+      "1",
+      "canada",
+      "yukon",
+      "YT",
+      "13",
+      "yes"
+    ],
+    [
+      "2",
+      "canada",
+      "alberta",
+      "AB",
+      "1",
+      "yes"
+    ],
+    [
+      "3",
+      "canada",
+      "british columbia",
+      "BC",
+      "2",
+      "yes"
+    ],
+    [
+      "4",
+      "canada",
+      "manitoba",
+      "MB",
+      "3",
+      "yes"
+    ],
+    [
+      "5",
+      "canada",
+      "new brunswick",
+      "NB",
+      "4",
+      "yes"
+    ],
+    [
+      "6",
+      "canada",
+      "ontario",
+      "ON",
+      "9",
+      "no"
+    ],
+    [
+      "7",
+      "united states",
+      "washington",
+      "WA",
+      "57",
+      "yes"
+    ],
+    [
+      "8",
+      "canada",
+      "nunavut",
+      "NU",
+      "8",
+      "yes"
+    ],
+    [
+      "9",
+      "united states",
+      "tennessee",
+      "TN",
+      "51",
+      "yes"
+    ],
+    [
+      "10",
+      "united states",
+      "ohio",
+      "OH",
+      "42",
+      "yes"
+    ],
+    [
+      "11",
+      "united states",
+      "oregon",
+      "OR",
+      "44",
+      "yes"
+    ],
+    [
+      "12",
+      "united states",
+      "oklahoma",
+      "OK",
+      "43",
+      "yes"
+    ],
+    [
+      "13",
+      "united states",
+      "texas",
+      "TX",
+      "52",
+      "yes"
+    ],
+    [
+      "14",
+      "united states",
+      "utah",
+      "UT",
+      "53",
+      "yes"
+    ],
+    [
+      "15",
+      "united states",
+      "virginia",
+      "VA",
+      "56",
+      "yes"
+    ]
+  ]
+}
