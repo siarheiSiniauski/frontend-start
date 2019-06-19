@@ -2,8 +2,6 @@
 /production/
 /.git/
 yarn.lock/
-/app/css/
-/app/js/
 package-lock.json/
 /**/_backstage
 /**/Thumbs.db
